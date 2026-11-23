@@ -1,0 +1,262 @@
+{
+ "period_start": "2026-11-13",
+ "period_end": "2026-11-20",
+ "n_days": 8,
+ "has_history": false,
+ "backfilled_days": 0,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 6073.81,
+  "date": "2026-11-20"
+ },
+ "year_low": {
+  "elev_ft": 6071.55,
+  "date": "2026-11-13"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 6073.81,
+   "high_date": "2026-11-20",
+   "low": 6071.55,
+   "low_date": "2026-11-13",
+   "n": 8,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 6072.86,
+   "n": 8
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-07",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6071.55,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6072.02,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.47
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6072.48,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.46
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6072.86,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.38
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6073.12,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.26
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6073.42,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.3
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6073.63,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.21
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 6073.81,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.18
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-22",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-23",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-24",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6071.55
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6072.02
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6072.48
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6072.86
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6073.12
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6073.42
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6073.63
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 6073.81
+  }
+ ],
+ "gaps": [],
+ "lake_id": "navajo-lake-nm"
+}

@@ -1,0 +1,665 @@
+{
+ "period_start": "2022-01-01",
+ "period_end": "2026-11-22",
+ "n_days": 1786,
+ "has_history": true,
+ "backfilled_days": 1778,
+ "record_high": {
+  "elev_ft": 619.05,
+  "date": "2024-05-03"
+ },
+ "record_low": {
+  "elev_ft": 599.49,
+  "date": "2024-11-02"
+ },
+ "year_high": {
+  "elev_ft": 616.78,
+  "date": "2026-06-15"
+ },
+ "year_low": {
+  "elev_ft": 599.92,
+  "date": "2026-03-06"
+ },
+ "same_day_last_year": {
+  "elev_ft": 601.01,
+  "date": "2025-11-22"
+ },
+ "median_this_date": {
+  "elev_ft": 600.55,
+  "years": 5,
+  "first_year": 2022,
+  "last_year": 2026
+ },
+ "yearly": [
+  {
+   "year": 2022,
+   "high": 612.26,
+   "high_date": "2022-06-02",
+   "low": 600.33,
+   "low_date": "2022-11-21",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2023,
+   "high": 608.91,
+   "high_date": "2023-03-27",
+   "low": 600.45,
+   "low_date": "2023-12-23",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2024,
+   "high": 619.05,
+   "high_date": "2024-05-03",
+   "low": 599.49,
+   "low_date": "2024-11-02",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2025,
+   "high": 613.23,
+   "high_date": "2025-07-29",
+   "low": 600.73,
+   "low_date": "2025-11-19",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2026,
+   "high": 616.78,
+   "high_date": "2026-06-15",
+   "low": 599.92,
+   "low_date": "2026-03-06",
+   "n": 325,
+   "partial": false
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2022,
+   "month": 1,
+   "avg": 607.04,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 2,
+   "avg": 607.3,
+   "n": 28
+  },
+  {
+   "year": 2022,
+   "month": 3,
+   "avg": 608.09,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 4,
+   "avg": 607.99,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 5,
+   "avg": 609.83,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 6,
+   "avg": 609.17,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 7,
+   "avg": 605.48,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 8,
+   "avg": 603.4,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 9,
+   "avg": 601.35,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 10,
+   "avg": 600.82,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 11,
+   "avg": 600.59,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 12,
+   "avg": 601.34,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 1,
+   "avg": 601.57,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 2,
+   "avg": 602.73,
+   "n": 28
+  },
+  {
+   "year": 2023,
+   "month": 3,
+   "avg": 607.61,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 4,
+   "avg": 606.84,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 5,
+   "avg": 604.76,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 6,
+   "avg": 604.21,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 7,
+   "avg": 602.47,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 8,
+   "avg": 603.55,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 9,
+   "avg": 602.15,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 10,
+   "avg": 601.16,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 11,
+   "avg": 600.75,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 12,
+   "avg": 600.55,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 1,
+   "avg": 601.44,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 2,
+   "avg": 605.09,
+   "n": 29
+  },
+  {
+   "year": 2024,
+   "month": 3,
+   "avg": 604.63,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 4,
+   "avg": 606.64,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 5,
+   "avg": 615.66,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 6,
+   "avg": 607.63,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 7,
+   "avg": 611.39,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 8,
+   "avg": 606.11,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 9,
+   "avg": 602.05,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "avg": 600.01,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "avg": 600.06,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "avg": 600.87,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "avg": 601.87,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "avg": 601.73,
+   "n": 28
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "avg": 603.17,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "avg": 609.14,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "avg": 606.93,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "avg": 607.37,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "avg": 607.56,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "avg": 607.05,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "avg": 603.89,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "avg": 601.51,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "avg": 601.01,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "avg": 601.01,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "avg": 601.11,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "avg": 600.61,
+   "n": 28
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "avg": 604.5,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "avg": 610.25,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "avg": 608.97,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "avg": 612.16,
+   "n": 29
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "avg": 608.16,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "avg": 604.33,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 9,
+   "avg": 602.83,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 10,
+   "avg": 602.88,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 602.38,
+   "n": 22
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-09",
+   "elev_ft": 602.71,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.02
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 602.71,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.0
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 602.62,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.09
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 602.52,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.1
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 602.44,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.08
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 602.44,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.0
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 602.34,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.1
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 602.29,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 602.18,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.11
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 602.17,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.01
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 602.18,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.01
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 602.17,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.01
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 602.12,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 602.16,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.04
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-24",
+   "elev_ft": 602.34
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": 602.32
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": 602.26
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": 602.19
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": 602.18
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": 602.14
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": 602.14
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": 602.16
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": 602.18
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": 602.14
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": 602.22
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": 602.34
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": 602.52
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": 602.63
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": 602.67
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": 602.69
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": 602.71
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 602.71
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 602.62
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 602.52
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 602.44
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 602.44
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 602.34
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 602.29
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 602.18
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 602.17
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 602.18
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 602.17
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 602.12
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 602.16
+  }
+ ],
+ "gaps": [
+  [
+   "2026-06-13",
+   "2026-06-13"
+  ]
+ ],
+ "lake_id": "mark-twain-lake-mo"
+}

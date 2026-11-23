@@ -1,0 +1,138 @@
+{
+  "lcra": {
+    "slug": "lcra",
+    "name": "Lower Colorado River Authority",
+    "short": "LCRA",
+    "official_url": "https://www.lcra.org/",
+    "has_public_feed": false,
+    "note": "LCRA posts its own lake levels on its Hydromet site. The Highland Lakes levels on this site come from the Texas Water Development Board's daily data, which takes them from LCRA."
+  },
+  "city-of-corpus-christi": {
+    "slug": "city-of-corpus-christi",
+    "name": "City of Corpus Christi",
+    "short": "Corpus Christi",
+    "official_url": "https://www.corpuschristitx.gov/",
+    "has_public_feed": false,
+    "note": "Lake levels for the water-supply system come from TWDB."
+  },
+  "ca-dwr": {
+    "slug": "ca-dwr",
+    "name": "California Department of Water Resources",
+    "short": "DWR",
+    "official_url": "https://water.ca.gov/",
+    "has_public_feed": true,
+    "note": "Reservoir data through CDEC (cdec.water.ca.gov)."
+  },
+  "usbr": {
+    "slug": "usbr",
+    "name": "U.S. Bureau of Reclamation",
+    "short": "USBR",
+    "official_url": "https://www.usbr.gov/",
+    "has_public_feed": true,
+    "note": "Daily reservoir data through RISE (data.usbr.gov)."
+  },
+  "grda": {
+    "slug": "grda",
+    "name": "Grand River Dam Authority",
+    "short": "GRDA",
+    "official_url": "https://www.grda.com/",
+    "has_public_feed": false,
+    "note": "Grand Lake's level is read from the USACE Tulsa District CWMS series PENS (Pensacola Dam)."
+  },
+  "alabama-power": {
+    "slug": "alabama-power",
+    "name": "Alabama Power",
+    "short": "Alabama Power",
+    "official_url": "https://www.alabamapower.com/",
+    "has_public_feed": false,
+    "note": "Its lake levels are read from USACE Mobile District CWMS series marked APCO."
+  },
+  "usace-little-rock": {
+    "slug": "usace-little-rock",
+    "name": "USACE Little Rock District",
+    "short": "USACE SWL",
+    "official_url": "https://www.swl.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office SWL."
+  },
+  "usace-tulsa": {
+    "slug": "usace-tulsa",
+    "name": "USACE Tulsa District",
+    "short": "USACE SWT",
+    "official_url": "https://www.swt.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office SWT."
+  },
+  "usace-savannah": {
+    "slug": "usace-savannah",
+    "name": "USACE Savannah District",
+    "short": "USACE SAS",
+    "official_url": "https://www.sas.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office SAS."
+  },
+  "usace-mobile": {
+    "slug": "usace-mobile",
+    "name": "USACE Mobile District",
+    "short": "USACE SAM",
+    "official_url": "https://www.sam.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office SAM."
+  },
+  "usace-louisville": {
+    "slug": "usace-louisville",
+    "name": "USACE Louisville District",
+    "short": "USACE LRL",
+    "official_url": "https://www.lrl.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office LRL."
+  },
+  "usace-nashville": {
+    "slug": "usace-nashville",
+    "name": "USACE Nashville District",
+    "short": "USACE LRN",
+    "official_url": "https://www.lrn.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office LRN."
+  },
+  "usace-wilmington": {
+    "slug": "usace-wilmington",
+    "name": "USACE Wilmington District",
+    "short": "USACE SAW",
+    "official_url": "https://www.saw.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office SAW."
+  },
+  "usace-vicksburg": {
+    "slug": "usace-vicksburg",
+    "name": "USACE Vicksburg District",
+    "short": "USACE MVK",
+    "official_url": "https://www.mvk.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office MVK."
+  },
+  "usace-st-louis": {
+    "slug": "usace-st-louis",
+    "name": "USACE St. Louis District",
+    "short": "USACE MVS",
+    "official_url": "https://www.mvs.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office MVS."
+  },
+  "usace-huntington": {
+    "slug": "usace-huntington",
+    "name": "USACE Huntington District",
+    "short": "USACE LRH",
+    "official_url": "https://www.lrh.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office LRH."
+  },
+  "usace-pittsburgh": {
+    "slug": "usace-pittsburgh",
+    "name": "USACE Pittsburgh District",
+    "short": "USACE LRP",
+    "official_url": "https://www.lrp.usace.army.mil/",
+    "has_public_feed": true,
+    "note": "Hourly or 15-minute pool elevations from the CWMS Data API, office LRP."
+  }
+}

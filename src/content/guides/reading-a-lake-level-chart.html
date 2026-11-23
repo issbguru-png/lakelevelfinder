@@ -1,0 +1,50 @@
+<!--
+title: How to Read a Lake Level Chart
+description: A practical guide to lake level charts: the full-pool line, the scale, daily and instant readings, last year's line, seasonal targets, gaps and provisional data.
+h1: How to read a lake level chart
+updated: 2026-11-23
+-->
+<p>A lake level chart answers three questions at a glance: where the water is now compared with full pool, which way it is heading, and how this year compares with last year. This guide walks through the parts of the charts on {{site.name}} lake pages and the mistakes that are easy to make when reading any lake chart.</p>
+
+<h2>The parts of the chart</h2>
+<h3>The level line</h3>
+<p>The main line is the lake's water surface elevation, in feet above the vertical datum named on the page. It is a height above a reference near sea level, not the depth of the lake. Our 30-day and 1-year charts are drawn from the daily series we store for each lake: one point per day.</p>
+<h3>The full-pool line</h3>
+<p>A horizontal line marks full pool: the top of the conservation pool, or the operator's equivalent term, in the same datum as the level. The gap between the level line and the full-pool line is the "feet above or below full pool" figure in the headline panel. On lakes built for flood control, a level above this line is floodwater being held for later release, not extra water supply. Our guide <a href="/guides/what-is-full-pool/">What is full pool?</a> explains the zones.</p>
+<h3>The vertical scale</h3>
+<p>The scale does not start at zero. It is set to the range of the data so that changes of a foot or two are visible. That makes every movement look steep. Before deciding a lake has "crashed" or "soared", read the numbers on the axis: a line that drops from the top of the chart to the bottom may cover only a few feet. Compare the change with the figures in the change table (24 hours, 7 days, 30 days, same day last year).</p>
+<h3>Last year's line</h3>
+<p>The 1-year chart can show last year's levels as a second line. Where the current line sits above it, the lake is higher than on the same dates a year ago. "Same day last year" in the change table uses the nearest valid reading within 3 days of that date.</p>
+<h3>Highest and lowest points</h3>
+<p>Labels for the highest and lowest values refer only to the period the chart covers. Records on the page always state their period of record: the first and last dates in our stored data for that lake. "Highest in our record" is not the same as "highest ever" unless the source's full history has been loaded.</p>
+
+<h2>Reading the shape</h2>
+<ul>
+<li><strong>A steady slope down</strong> over weeks means outflow, evaporation and water use are larger than inflow.</li>
+<li><strong>A sharp step up</strong> means inflow suddenly exceeded outflow, usually after heavy rain upstream.</li>
+<li><strong>A rise followed by a planned fall</strong> on a flood-control lake often shows the operator storing a flood and then releasing it. The Corps of Engineers' Fort Worth District describes this: the lake stores a portion of incoming runoff and releases it under its water control plan, because releasing too much too quickly can worsen flooding downstream (<a href="https://www.army.mil/article/295109/when_the_water_rises_a_lakes_purpose" rel="noopener">U.S. Army</a>).</li>
+<li><strong>A yearly up-and-down pattern</strong> on some lakes is planned. Many reservoirs follow a guide curve, which the Corps' Hydrologic Engineering Center defines as "the target or desired pool elevation for the reservoir". When the pool is above the guide curve, releases are increased to draw it down; when it is below, releases are reduced to refill it (<a href="https://www.hec.usace.army.mil/confluence/ResSimDocs/rsum/reservoir-operations/reservoir-operations-the-basics" rel="noopener">USACE HEC</a>). On a lake with a winter drawdown, a level below summer full pool in winter can be the target, not a shortage. Lake pages say when a lake follows a seasonal target.</li>
+<li><strong>Small zig-zags</strong> of a few hundredths of a foot are usually wind, waves or gauge noise. That is why our trend label uses the median of several readings for hourly gauges and ignores changes smaller than 0.05 ft.</li>
+</ul>
+
+<h2>Daily points and instant readings</h2>
+<p>Some sources publish a daily average, others a reading every 15 minutes or every hour. TWDB, for example, calculates a daily average from gauge data it polls about every six hours, and shows only that average (<a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a>). Our charts plot one value per day, so a quick spike within a day will not appear. The headline panel and the "About this reading" block tell you which kind of reading the page shows and when it was taken. The last point on a daily chart is often yesterday.</p>
+
+<h2>Gaps and late data</h2>
+<p>If a source has no valid value for some days, the chart shows a break in the line rather than a straight line across the missing days. A gap is not a reading of zero. At the right-hand end, the newest days may be missing because the source has not published them yet; some sources leave their newest rows blank until they are filled in.</p>
+<p>If the latest reading is older than the source's normal schedule, the page shows "This reading may be out of date". If it is much older, the page says "Current level unknown" and the chart ends at the last good reading.</p>
+
+<h2>Provisional data on charts</h2>
+<p>Recent points are usually provisional. USGS warns that provisional data "may be inaccurate due to instrument malfunctions or physical changes at the measurement site" and may be revised after review (<a href="https://water.usgs.gov/data/provisional.html" rel="noopener">USGS provisional data statement</a>). Reclamation's RISE data for Lake Mead carry the note that they "are provisional and subject to revision unless otherwise noted" (<a href="https://data.usbr.gov/rise/api/catalog-item/6123" rel="noopener">Reclamation RISE</a>). A single odd point at the end of a chart may disappear or move when the agency reviews it. We download the last 60 days again each week, so revisions appear in our charts too.</p>
+
+<h2>A quick checklist</h2>
+<ol>
+<li>Check the date of the last point and whether it is a daily average or an instant reading.</li>
+<li>Read the vertical axis before judging how big a change is.</li>
+<li>Compare the level line with the full-pool line, in the same datum.</li>
+<li>Look at last year's line or the "same day last year" figure for context.</li>
+<li>Check whether the lake follows a seasonal target before calling a level low.</li>
+<li>Remember that a chart is not a depth map: it cannot tell you the depth at a ramp, dock or channel.</li>
+</ol>
+<p>Lake data on this site is provisional and is not for navigation, flood or safety decisions. In an emergency, follow local officials and the National Weather Service.</p>
+<p class="src">Sources: <a href="https://www.army.mil/article/295109/when_the_water_rises_a_lakes_purpose" rel="noopener">U.S. Army: When the Water Rises</a> · <a href="https://www.hec.usace.army.mil/confluence/ResSimDocs/rsum/reservoir-operations/reservoir-operations-the-basics" rel="noopener">USACE HEC: reservoir operations basics</a> · <a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a> · <a href="https://water.usgs.gov/data/provisional.html" rel="noopener">USGS provisional data statement</a> · <a href="https://data.usbr.gov/rise/api/catalog-item/6123" rel="noopener">Reclamation RISE: Lake Mead</a>.</p>

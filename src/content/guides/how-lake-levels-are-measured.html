@@ -1,0 +1,48 @@
+<!--
+title: How Lake Levels Are Measured: Gauges, Rating Curves & Data
+description: How agencies measure lake and reservoir levels, turn them into storage with rating curves, publish daily averages or instant readings, and revise provisional data.
+h1: How lake levels are measured
+updated: 2026-11-23
+-->
+<p>Every lake level on this site starts at a gauge on or near a dam. Knowing how that number is made, and what happens to it before it reaches you, explains most of the small differences you will see between websites, and why a reading can change after it is first published.</p>
+
+<h2>Gauges measure the water surface</h2>
+<p>A lake gauge records the elevation of the water surface: its height above a vertical datum. The Texas Water Development Board (TWDB) explains that its partners' gauges measure water surface elevation automatically and send it to the partner agency, and that TWDB then collects the values over the internet (<a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a>). In Texas those partners include the U.S. Geological Survey (USGS), the International Boundary and Water Commission, the U.S. Army Corps of Engineers, the Bureau of Reclamation and the Lower Colorado River Authority (<a href="https://www.waterdatafortexas.org/reservoirs/about" rel="noopener">TWDB: data providers</a>).</p>
+<p>Who runs the gauge varies by lake. USGS operates monitoring locations nationwide and publishes their most recent measurements through its Water Data APIs (<a href="https://api.waterdata.usgs.gov/" rel="noopener">USGS Water Data APIs</a>). Corps of Engineers districts publish pool elevations for their projects through the Corps Water Management System data service (<a href="https://cwms-data.usace.army.mil/cwms-data/" rel="noopener">USACE CWMS Data API</a>). Reclamation publishes its reservoir data in RISE, which it describes as its system "for viewing, accessing, and downloading Reclamation's water and water-related data" (<a href="https://data.usbr.gov/" rel="noopener">Reclamation RISE</a>). In California, the Department of Water Resources manages the California Data Exchange Center, CDEC (<a href="https://cdec.water.ca.gov/" rel="noopener">CDEC</a>).</p>
+<p>Each measurement belongs to a datum. USGS even uses different codes for lake elevation above NGVD 1929 (62614) and above NAVD 1988 (62615) (<a href="https://api.waterdata.usgs.gov/ogcapi/v0/collections/parameter-codes/items?f=json&amp;id=62614,62615,00062" rel="noopener">USGS parameter codes</a>). Our guide <a href="/guides/what-is-full-pool/">What is full pool?</a> explains why that matters.</p>
+
+<h2>From level to volume: rating curves</h2>
+<p>A gauge measures height, not volume. To report how much water a lake holds, agencies use an elevation-area-capacity curve, often called a rating curve: a table that gives the surface area and the storage for each elevation. TWDB says it converts elevation to volume with rating curves in most cases, and that the curves come from surveys and bathymetric models. Where no curve exists, as for Lake Amistad, it takes the storage figure directly from the source agency (<a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a>).</p>
+<p>Rating curves are revised. TWDB's Hydrographic Survey Program has surveyed more than 100 reservoirs since 1993; many reservoirs had not been resurveyed since they were built, some older capacity estimates came from topographic maps of limited accuracy, and reservoirs lose capacity to sediment over time (<a href="https://www.waterdatafortexas.org/reservoirs/about" rel="noopener">TWDB: data providers</a>). TWDB's data files list which curve applies to which dates (<a href="https://www.waterdatafortexas.org/reservoirs/individual/travis-30day.csv" rel="noopener">TWDB: Travis data file</a>). This is why two agencies can agree on the level but report different storage or percent full.</p>
+
+<h2>Daily averages and instant readings</h2>
+<p>Sources publish lake levels in two different forms, and it helps to know which one you are looking at.</p>
+<ul>
+<li><strong>Instant readings</strong> are the level at one moment, such as 2:15 PM. USGS gauges and many Corps series report every 15 minutes or every hour.</li>
+<li><strong>Daily values</strong> describe a whole day. TWDB polls gauge data about every six hours, calculates a daily average and displays only that average; it says its site may not suit uses that need near-instant or unaveraged data (<a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a>). Reclamation's RISE series for Lake Mead is a daily series "updated once daily" (<a href="https://data.usbr.gov/rise/api/catalog-item/6123" rel="noopener">Reclamation RISE: Lake Mead elevation</a>).</li>
+</ul>
+<p>A daily average and an instant reading for the same lake will rarely match exactly, and a daily figure is usually for yesterday. On a lake that is rising during a flood, today's instant reading can be well above yesterday's average. Each lake page states which kind of reading it shows and its date. On some Texas lakes the page also shows a "Latest gauge reading" line from a USGS gauge; it is labelled separately and never replaces the TWDB daily figure.</p>
+
+<h2>Provisional data: why readings can change</h2>
+<p>Most lake data is published before anyone has reviewed it. USGS puts it plainly: "Data are provisional and subject to revision until they have been thoroughly reviewed and received final approval." It adds that provisional data "may be inaccurate due to instrument malfunctions or physical changes at the measurement site", and that later review "may result in significant revisions" (<a href="https://water.usgs.gov/data/provisional.html" rel="noopener">USGS provisional data statement</a>). USGS also says satellite-relayed data are screened automatically so improbable values are not shown until verified.</p>
+<p>Other agencies say the same in their own words. Reclamation's RISE item for Lake Mead states that the data "are provisional and subject to revision unless otherwise noted" (<a href="https://data.usbr.gov/rise/api/catalog-item/6123" rel="noopener">Reclamation RISE</a>). TWDB describes its figures as "best estimates" and gives no warranties (<a href="https://www.waterdatafortexas.org/reservoirs/individual/travis-30day.csv" rel="noopener">TWDB data file</a>), marks its instantaneous readings as provisional (<a href="https://www.waterdatafortexas.org/reservoirs/individual/canyon" rel="noopener">TWDB: Canyon Lake</a>), and notes that gauges can fail or report wrong values briefly until it corrects or removes them (<a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a>).</p>
+<p>What this means for you: a reading from yesterday may be adjusted next week, and a sudden spike or drop may be an instrument problem rather than a real change. Treat any single reading with care, and never rely on it for safety.</p>
+
+<h2>Why websites show different numbers</h2>
+<p>TWDB's own FAQ lists the main reasons its numbers can differ from USGS, LCRA, IBWC and others (<a href="https://www.waterdatafortexas.org/reservoirs/faq" rel="noopener">TWDB FAQ</a>):</p>
+<ul>
+<li>Current water levels should match the source; historical levels may differ because TWDB adjusted them to a single vertical datum.</li>
+<li>Storage and surface area may differ because rating curves from new surveys are not always shared with every partner.</li>
+<li>Dead pool and conservation pool elevations can vary between agencies.</li>
+</ul>
+<p>Add timing (a daily average for yesterday against a reading from this morning) and rounding, and most differences between websites are explained.</p>
+
+<h2>What this site does with the measurements</h2>
+<ul>
+<li>Each lake has one primary source, named on the page with its gauge or series id. We do not blend sources.</li>
+<li>Each reading is checked for unit, plausible range, timestamp and sudden jumps before it is used, and it always shows its own date.</li>
+<li>Readings are treated as provisional. Once a week we download the last 60 days again and replace any values the agency has revised.</li>
+<li>If a source stops updating, the page warns that the reading may be out of date, then says "Current level unknown".</li>
+</ul>
+<p>The full rules are on <a href="/sources/">Data sources and methods</a>.</p>
+<p class="src">Sources: <a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB methodology</a> · <a href="https://www.waterdatafortexas.org/reservoirs/about" rel="noopener">TWDB data providers</a> · <a href="https://www.waterdatafortexas.org/reservoirs/faq" rel="noopener">TWDB FAQ</a> · <a href="https://www.waterdatafortexas.org/reservoirs/individual/canyon" rel="noopener">TWDB: Canyon Lake</a> · <a href="https://water.usgs.gov/data/provisional.html" rel="noopener">USGS provisional data statement</a> · <a href="https://api.waterdata.usgs.gov/" rel="noopener">USGS Water Data APIs</a> · <a href="https://cwms-data.usace.army.mil/cwms-data/" rel="noopener">USACE CWMS Data API</a> · <a href="https://data.usbr.gov/rise/api/catalog-item/6123" rel="noopener">Reclamation RISE: Lake Mead</a> · <a href="https://cdec.water.ca.gov/" rel="noopener">CDEC</a>.</p>

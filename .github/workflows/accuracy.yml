@@ -1,0 +1,38 @@
+name: accuracy
+# Daily accuracy spot check (plan §8.7, docs/runbook.md): for 30 lakes in rotation, re-fetch the source
+# directly and compare elevation and reading date with what the live lake page shows.
+# Appends a row to docs/accuracy-log.md; opens or comments an 'accuracy-mismatch' issue on a mismatch.
+# Started daily by the watchdog Worker at about 14:00 UTC; GitHub's cron is the backup.
+on:
+  schedule:
+    - cron: "37 14 * * *"
+  workflow_dispatch:
+permissions: { contents: write, issues: write }
+concurrency: { group: accuracy, cancel-in-progress: false }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Spot check
+        id: check
+        continue-on-error: true
+        run: python3 tools/accuracy_check.py --alert
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USGS_API_KEY: ${{ secrets.USGS_API_KEY }}
+      - name: Commit the log row
+        run: |
+          git config user.name "lakelevelfinder-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/accuracy-log.md
+          if git diff --cached --quiet; then echo "log unchanged"; exit 0; fi
+          git commit -q -m "accuracy check $(date -u +%Y-%m-%d)"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep 10; done
+          exit 1
+      - name: Fail the run on a mismatch
+        if: steps.check.outcome == 'failure'
+        run: exit 1

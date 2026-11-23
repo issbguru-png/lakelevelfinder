@@ -1,0 +1,262 @@
+{
+ "period_start": "2026-11-13",
+ "period_end": "2026-11-21",
+ "n_days": 9,
+ "has_history": false,
+ "backfilled_days": 0,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 8234.44,
+  "date": "2026-11-14"
+ },
+ "year_low": {
+  "elev_ft": 8233.17,
+  "date": "2026-11-21"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 8234.44,
+   "high_date": "2026-11-14",
+   "low": 8233.17,
+   "low_date": "2026-11-21",
+   "n": 9,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 8233.97,
+   "n": 9
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-08",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 8234.42,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 8234.44,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.02
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 8234.4,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 8234.29,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.11
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 8234.09,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.2
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 8233.85,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.24
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 8233.63,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.22
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 8233.4,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.23
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 8233.17,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.23
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-23",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-24",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 8234.42
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 8234.44
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 8234.4
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 8234.29
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 8234.09
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 8233.85
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 8233.63
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 8233.4
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 8233.17
+  }
+ ],
+ "gaps": [],
+ "lake_id": "lake-granby-co"
+}

@@ -1,0 +1,55 @@
+name: watchdog-deploy
+# Manual: deploy the watchdog Worker (watchdog/). Creates its KV namespace on the first run.
+# The alert address comes from repo secret WATCHDOG_ALERT_TO (must be a verified Email Routing destination).
+# Repo secret GH_DISPATCH_TOKEN (fine-grained token, this repo only, Actions: read and write) becomes the Worker
+# secret GH_TOKEN, which lets the Worker start the hourly `update` run and the daily `accuracy` run.
+# Placeholders are filled on the runner only; nothing private is committed.
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      ALERT_TO: ${{ secrets.WATCHDOG_ALERT_TO }}
+      GH_DISPATCH_TOKEN: ${{ secrets.GH_DISPATCH_TOKEN }}
+      KV_TITLE: lakelevelfinder-watchdog-kv
+    defaults: { run: { working-directory: watchdog } }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find or create the KV namespace
+        run: |
+          find_id() { curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces?per_page=100" \
+            | python3 -c "import json,os,sys;d=json.load(sys.stdin);print(next((n['id'] for n in d.get('result') or [] if n['title']==os.environ['KV_TITLE']),''))"; }
+          id=$(find_id)
+          if [ -z "$id" ]; then
+            curl -sS -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" \
+              --data "{\"title\":\"$KV_TITLE\"}" \
+              "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces" \
+              | python3 -c "import json,sys;d=json.load(sys.stdin);print('create success:',d['success']);sys.exit(0 if d['success'] else 1)"
+            id=$(find_id)
+          fi
+          test -n "$id" || { echo "KV namespace not found"; exit 1; }
+          echo "KV namespace: $KV_TITLE"
+          echo "KV_ID=$id" >> "$GITHUB_ENV"
+      - name: Fill the config (runner copy only, not committed)
+        run: |
+          test -n "$ALERT_TO" || { echo "Secret WATCHDOG_ALERT_TO is empty"; exit 1; }
+          python3 - <<'PY'
+          import os
+          p = "wrangler.jsonc"; s = open(p).read()
+          s = (s.replace("REPLACE_WITH_KV_ID", os.environ["KV_ID"])
+                .replace("REPLACE_WITH_VERIFIED_ADDRESS", os.environ["ALERT_TO"])
+                .replace("REPLACE_WITH_OWNER/REPLACE_WITH_REPO", os.environ["GITHUB_REPOSITORY"]))
+          assert "REPLACE_WITH_" not in s, "a placeholder is still unfilled"
+          open(p, "w").write(s)
+          PY
+      - name: Deploy
+        run: npx --yes wrangler@4 deploy
+      - name: Set the dispatch token (Worker secret GH_TOKEN)
+        run: |
+          if [ -z "$GH_DISPATCH_TOKEN" ]; then echo "::warning::Repo secret GH_DISPATCH_TOKEN is empty: hourly dispatch stays off"; exit 0; fi
+          printf %s "$GH_DISPATCH_TOKEN" | npx --yes wrangler@4 secret put GH_TOKEN

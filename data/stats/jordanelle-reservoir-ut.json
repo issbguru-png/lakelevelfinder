@@ -1,0 +1,262 @@
+{
+ "period_start": "2026-11-13",
+ "period_end": "2026-11-19",
+ "n_days": 7,
+ "has_history": false,
+ "backfilled_days": 0,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 6117.01,
+  "date": "2026-11-19"
+ },
+ "year_low": {
+  "elev_ft": 6116.67,
+  "date": "2026-11-13"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 6117.01,
+   "high_date": "2026-11-19",
+   "low": 6116.67,
+   "low_date": "2026-11-13",
+   "n": 7,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 6116.84,
+   "n": 7
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-06",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6116.67,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6116.74,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.07
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6116.79,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.05
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6116.83,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.04
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6116.89,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.06
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6116.94,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.05
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6117.01,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.07
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-21",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-22",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-23",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-24",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6116.67
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6116.74
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6116.79
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6116.83
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6116.89
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6116.94
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6117.01
+  }
+ ],
+ "gaps": [],
+ "lake_id": "jordanelle-reservoir-ut"
+}

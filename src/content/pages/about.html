@@ -1,0 +1,40 @@
+<!--
+title: About Lake Level Finder | Lake and Reservoir Levels
+description: Lake Level Finder is an independent site that shows US lake and reservoir levels from public agency data, with the date and source of every reading.
+h1: About Lake Level Finder
+updated: 2026-11-23
+-->
+<p>{{site.name}} shows the water level of US lakes and reservoirs, how it compares with full pool, and whether it is rising or falling. Each lake page gives the reading, the date and time it was taken, and a link to the agency that published it. We cover {{count.live_lakes}} lakes in {{count.states}} states.</p>
+
+<h2>An independent site</h2>
+<p>{{site.name}} is an independent service. It is not a government website, and it is not run by or affiliated with any of the agencies, utilities or river authorities whose data it shows. Dams and reservoirs are operated by those organizations. For notices, closures and anything that affects your plans, go to the operator's own page, which every lake page links.</p>
+
+<h2>Who it is for</h2>
+<ul>
+<li><strong>Boaters and anglers</strong> who want to know how far a lake is above or below full pool and how fast it is changing.</li>
+<li><strong>Lake-home and dock owners</strong> who follow the level through the year.</li>
+<li><strong>Reporters and water-supply watchers</strong> who need a dated, sourced figure, last year's level for comparison, and a CSV download.</li>
+<li><strong>Day visitors</strong> who want a plain-language answer: full, near full, low or very low.</li>
+</ul>
+
+<h2>How it works</h2>
+<ol>
+<li>An automated job reads the public data feeds of the agencies that measure each lake: the Texas Water Development Board, the U.S. Army Corps of Engineers, the Bureau of Reclamation, the California Department of Water Resources and the U.S. Geological Survey. It checks every hour; daily sources are read as often as they publish.</li>
+<li>Every new reading is checked before it is used. It must be in feet, inside the lake's plausible range, not dated in the future, and not a sudden jump the next check does not confirm. A reading that fails a check is held back and the last good reading stays on the page with its own date.</li>
+<li>The site compares the reading with the lake's full-pool level from the same agency (or from the operator's published value, with its link), then labels the level and the 24-hour trend using fixed rules.</li>
+<li>Pages are rebuilt from those files. If a source stops updating, the page first warns that the reading may be out of date, then says "Current level unknown" and keeps the last reading visible with its date. This check also runs in your browser, so it works even if our own updates stop.</li>
+</ol>
+<p>The full rules, thresholds and sources are on <a href="/sources/">Data sources and methods</a>. Readings are provisional and are not for navigation, flood or safety decisions; see the <a href="/disclaimer/">disclaimer</a>.</p>
+
+<h2>What we never do</h2>
+<ul>
+<li>We never type a water level, full-pool value or record into a page by hand. Every number comes from an agency feed or a dated, linked agency page.</li>
+<li>We never blend two sources into one number. Each lake has one primary source, named on its page.</li>
+<li>We never show a level without the date it was measured.</li>
+</ul>
+
+<h2>Advertising</h2>
+<p>The site may show advertising to cover its running costs. Ads are never placed inside the level panel at the top of a lake page or between that panel and the change table.</p>
+
+<h2>Contact</h2>
+<p>Questions, corrections or requests from agencies: <a href="mailto:{{site.contact_email}}">{{site.contact_email}}</a>. To report a wrong reading, see <a href="/corrections/">Corrections</a>.</p>

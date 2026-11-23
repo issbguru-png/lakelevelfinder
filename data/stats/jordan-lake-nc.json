@@ -1,0 +1,323 @@
+{
+ "period_start": "2026-03-17",
+ "period_end": "2026-11-22",
+ "n_days": 244,
+ "has_history": false,
+ "backfilled_days": 236,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 217.01,
+  "date": "2026-03-17"
+ },
+ "year_low": {
+  "elev_ft": 211.83,
+  "date": "2026-11-21"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 217.01,
+   "high_date": "2026-03-17",
+   "low": 211.83,
+   "low_date": "2026-11-21",
+   "n": 244,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 3,
+   "avg": 216.53,
+   "n": 15
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "avg": 216.38,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "avg": 215.24,
+   "n": 28
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "avg": 213.74,
+   "n": 27
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "avg": 213.75,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "avg": 216.29,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 9,
+   "avg": 215.01,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 10,
+   "avg": 213.43,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 212.22,
+   "n": 21
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-09",
+   "elev_ft": 212.37,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 212.33,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 212.29,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 212.24,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 212.14,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 212.1,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 212.05,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 212.01,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 211.96,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 211.92,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 211.87,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 211.83,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.04
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 211.9,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.07
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-24",
+   "elev_ft": 213.11
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": 213.02
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": 212.94
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": 212.89
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": 212.85
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": 212.77
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": 212.72
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": 212.65
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": 212.6
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": 212.51
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": 212.45
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": 212.37
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": 212.31
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": 212.45
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": 212.44
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": 212.4
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": 212.37
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 212.33
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 212.29
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 212.24
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 212.14
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 212.1
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 212.05
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 212.01
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 211.96
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 211.92
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 211.87
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 211.83
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 211.9
+  }
+ ],
+ "gaps": [
+  [
+   "2026-05-29",
+   "2026-05-31"
+  ],
+  [
+   "2026-06-13",
+   "2026-06-15"
+  ],
+  [
+   "2026-11-13",
+   "2026-11-13"
+  ]
+ ],
+ "lake_id": "jordan-lake-nc"
+}

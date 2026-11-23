@@ -1,0 +1,101 @@
+name: probe
+# Manual: fetch a list of source URLs once from a US runner, with an honest User-Agent, and print
+# HTTP status, time, size and content type for each. Bodies are kept as an artifact for 7 days.
+# One polite GET per URL. A 403, a challenge page or a timeout is recorded as it is: never retry with
+# other headers, proxies or a browser (plan §3.3).
+# The default list is plan §3.8's must-test list. To probe other URLs, paste them (space-separated) into "urls".
+# "repeat" re-runs the CWMS list N times in a row to look for throttling (plan §3.8 item 2: use 50).
+on:
+  workflow_dispatch:
+    inputs:
+      urls: { description: "Space-separated URLs (empty = the built-in plan §3.8 list)", required: false, default: "" }
+      repeat: { description: "Extra back-to-back runs of the CWMS Table Rock call (throttle test; 0 = off)", required: false, default: "0" }
+permissions: { contents: read }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Probe
+        env:
+          URLS: ${{ inputs.urls }}
+          REPEAT: ${{ inputs.repeat }}
+        run: |
+          set -u
+          mkdir -p out
+          UA="LakeLevelFinder/1.0 (+https://lakelevelfinder.com/about/; contact@lakelevelfinder.com)"
+          END=$(date -u +%Y-%m-%dT00:00:00Z); BEGIN=$(date -u -d '7 days ago' +%Y-%m-%dT00:00:00Z)
+          D0=$(date -u -d '4 days ago' +%Y-%m-%d); D1=$(date -u +%Y-%m-%d); D10=$(date -u -d '10 days ago' +%Y-%m-%d)
+          CW="https://cwms-data.usace.army.mil/cwms-data"
+          if [ -z "$URLS" ]; then
+            URLS="
+          https://www.waterdatafortexas.org/reservoirs/recent-conditions.json
+          https://www.waterdatafortexas.org/reservoirs/individual/travis-30day.csv
+          https://www.waterdatafortexas.org/reservoirs/individual/medina-30day.csv
+          https://www.waterdatafortexas.org/reservoirs/individual/canyon-30day.csv
+          $CW/timeseries?office=SWL&name=Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev&begin=$BEGIN&end=$END&unit=EN
+          $CW/timeseries?office=SAM&name=Buford.Elev.Inst.15Minutes.0.Raw-USGS&begin=$BEGIN&end=$END&unit=EN
+          $CW/timeseries?office=SAS&name=Hartwell.Elev-Head.Inst.1Hour.0.Raw-SHEF_SAS&begin=$BEGIN&end=$END&unit=EN
+          $CW/levels?office=SWL&level-id-mask=Table_Rock*&unit=EN
+          $CW/levels?office=SAM&level-id-mask=Buford*&unit=EN
+          $CW/levels?office=SAS&level-id-mask=Hartwell*&unit=EN
+          $CW/catalog/TIMESERIES?office=SWL&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SAM&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SAS&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SWT&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SWF&like=*Elev*
+          $CW/catalog/TIMESERIES?office=LRL&like=*Elev*
+          $CW/catalog/TIMESERIES?office=LRN&like=*Elev*
+          $CW/catalog/TIMESERIES?office=MVK&like=*Elev*
+          $CW/catalog/TIMESERIES?office=MVS&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SAJ&like=*Elev*
+          $CW/catalog/TIMESERIES?office=NWK&like=*Elev*
+          $CW/catalog/TIMESERIES?office=SAW&like=*Elev*
+          https://data.usbr.gov/rise/api/catalog-item/6123
+          https://data.usbr.gov/rise/api/result?itemId=6123&dateTime%5Bafter%5D=$D10&itemsPerPage=10
+          https://data.usbr.gov/rise/api/result?itemId=6128&dateTime%5Bafter%5D=$D10&itemsPerPage=10
+          https://data.usbr.gov/rise/api/result?itemId=6133&dateTime%5Bafter%5D=$D10&itemsPerPage=10
+          https://data.usbr.gov/rise/api/catalog-item?itemsPerPage=100&page=1
+          https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=SHA,FOL,ORO&SensorNums=6,15&dur_code=D&Start=$D0&End=$D1
+          https://cdec.water.ca.gov/
+          https://api.waterdata.usgs.gov/ogcapi/v0/collections/latest-continuous/items?f=json&parameter_code=62614,62615&state_name=Texas&limit=50
+          https://api.waterdata.usgs.gov/ogcapi/v0/collections?f=json
+          https://waterservices.usgs.gov/nwis/iv/?format=json&sites=08179500&parameterCd=62614
+          https://hydromet.lcra.org/
+          https://hydromet.lcra.org/Reports/LakeLevel
+          https://hydrometdata.lcra.org/
+          https://www.tva.com/environment/lake-levels
+          https://lakeinfo.tva.gov/web/sites/pickwick.htm
+          https://www.duke-energy.com/community/lakes
+          https://lakes.duke-energy.com/Data/Lakes/1.txt
+          https://apcshorelines.com/
+          https://www.georgiapower.com/
+          https://www.ameren.com/property/lake-of-the-ozarks/reports
+          https://www.smithmtn.com/lake-levels/
+          https://grda.com/lake-levels/
+          https://www.dominionenergy.com/
+          https://srpnet.com/water/arizona-water.aspx
+          https://tpwd.texas.gov/
+          https://api.water.noaa.gov/nwps/v1/gauges?bbox.xmin=-98.2&bbox.ymin=29.8&bbox.xmax=-97.8&bbox.ymax=30.0&srid=EPSG_4326&limit=5
+          https://api.weather.gov/points/30.39,-97.91
+          "
+          fi
+          i=0
+          printf '%-4s %-5s %-8s %-10s %-28s %s\n' n code seconds bytes type url | tee out/index.txt
+          for u in $URLS; do
+            i=$((i+1))
+            r=$(curl -sS -m 45 -A "$UA" -o "out/$i.body" -w "%{http_code} %{time_total} %{size_download} %{content_type}" "$u" 2>>out/errors.txt || echo "ERR - - -")
+            set -- $r
+            printf '%-4s %-5s %-8s %-10s %-28s %s\n' "$i" "$1" "$2" "$3" "${4:--}" "$u" | tee -a out/index.txt
+          done
+          n=${REPEAT:-0}
+          if [ "$n" -gt 0 ] 2>/dev/null; then
+            echo "--- CWMS throttle test: $n calls in a row" | tee -a out/index.txt
+            for k in $(seq 1 "$n"); do
+              curl -sS -m 45 -A "$UA" -o /dev/null -w "$k %{http_code} %{time_total}\n" \
+                "$CW/timeseries?office=SWL&name=Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev&begin=$BEGIN&end=$END&unit=EN" \
+                | tee -a out/index.txt || echo "$k ERR" | tee -a out/index.txt
+            done
+          fi
+      - uses: actions/upload-artifact@v4
+        with: { name: probe, path: out, retention-days: 7 }

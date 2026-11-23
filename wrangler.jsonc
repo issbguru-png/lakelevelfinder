@@ -1,0 +1,19 @@
+{
+  // Static site on Cloudflare Workers static assets (free: asset requests are unlimited, no Worker script runs).
+  // Deploy with ./deploy.sh (builds dist/ first) or the `update` workflow when repo variable DEPLOY is "true".
+  // The domain must be registered and set in src/site.json (domain_confirmed: true) before the first deploy.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lakelevelfinder",
+  "compatibility_date": "2026-11-23",
+  "assets": {
+    "directory": "dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "lakelevelfinder.com", "custom_domain": true }
+  ],
+  // no *.workers.dev or preview hosts: no duplicate copy for Google to index
+  "workers_dev": false,
+  "preview_urls": false
+}

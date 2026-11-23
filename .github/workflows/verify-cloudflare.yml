@@ -1,0 +1,19 @@
+name: verify-cloudflare
+# Manual check that the Cloudflare secrets work. Prints only success/status and a count, never the token.
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Token is active
+        env: { CF_TOKEN: "${{ secrets.CLOUDFLARE_API_TOKEN }}" }
+        run: |
+          curl -sS -H "Authorization: Bearer $CF_TOKEN" https://api.cloudflare.com/client/v4/user/tokens/verify \
+            | python3 -c "import json,sys;d=json.load(sys.stdin);print('success:',d['success'],'status:',(d.get('result') or {}).get('status'));sys.exit(0 if d['success'] else 1)"
+      - name: Token can read Workers in the account
+        env: { CF_TOKEN: "${{ secrets.CLOUDFLARE_API_TOKEN }}", CF_ACCOUNT: "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" }
+        run: |
+          curl -sS -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/workers/scripts" \
+            | python3 -c "import json,sys;d=json.load(sys.stdin);print('success:',d['success'],'workers:',len(d.get('result') or []));sys.exit(0 if d['success'] else 1)"

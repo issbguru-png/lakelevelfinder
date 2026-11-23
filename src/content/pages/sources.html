@@ -1,0 +1,136 @@
+<!--
+title: Data Sources and Methods | Lake Level Finder
+description: Where each lake level on Lake Level Finder comes from, how often it is checked, which datum it uses, and the exact rules behind every label, trend and record.
+h1: Data sources and methods
+updated: 2026-11-23
+-->
+<p>Every lake page on {{site.name}} rests on one primary source: a public data feed from the agency that measures that lake. The source, its gauge or series id, the reading's own date and time, the datum and the full-pool definition are printed in the "About this reading" block on each page. This page explains the sources and the rules we apply to them.</p>
+
+<h2>The sources</h2>
+
+<h3>Texas Water Development Board (TWDB), Water Data for Texas</h3>
+<ul>
+<li><strong>What we read:</strong> TWDB's statewide reservoir file for Texas reservoirs (and Elephant Butte in New Mexico): the estimated daily average water level, percent full, conservation pool elevation, conservation storage and capacity, and surface area.</li>
+<li><strong>Cadence:</strong> TWDB collects levels from gauges run by its partners (USGS, the International Boundary and Water Commission, the Corps of Engineers, the Bureau of Reclamation and LCRA), polls them about every six hours, and publishes a daily average. The latest value is normally for the previous day. We check every 3 hours.</li>
+<li><strong>Full pool and percent full:</strong> both come from TWDB. Percent full is conservation storage divided by conservation capacity. Conservation storage is capped at capacity, so a lake in its flood pool shows 100%; we use the elevation above the conservation pool to show how far above full it is.</li>
+<li><strong>Datum:</strong> TWDB states the vertical datum for each lake (for example "NAVD88 +0.6" for Lake Travis, NGVD29 for Canyon Lake). We print it on the lake page.</li>
+<li><strong>Status of the data:</strong> TWDB describes its figures as "best estimates" and gives no warranties. Its instantaneous readings are marked provisional.</li>
+<li><strong>Credit:</strong> Texas Water Development Board, Water Data for Texas, with a link to the lake's TWDB page.</li>
+</ul>
+<p class="src">Sources: <a href="https://www.waterdatafortexas.org/reservoirs/methodology" rel="noopener">TWDB: how we get the numbers</a> · <a href="https://www.waterdatafortexas.org/reservoirs/glossary" rel="noopener">TWDB: glossary</a> · <a href="https://www.waterdatafortexas.org/reservoirs/about" rel="noopener">TWDB: data providers</a> · <a href="https://www.waterdatafortexas.org/reservoirs/statewide" rel="noopener">TWDB: statewide reservoir conditions</a>.</p>
+
+<h3>U.S. Army Corps of Engineers (USACE), CWMS Data API</h3>
+<ul>
+<li><strong>What we read:</strong> the pool elevation series each Corps district publishes for its projects through the Corps Water Management System (CWMS) data service, in feet. Where the district publishes a "Top of Conservation" level for the lake, we use it as full pool; otherwise we use the value on the district's own page, stored with its link and the date we checked it.</li>
+<li><strong>Cadence:</strong> hourly or every 15 minutes, depending on the series. Some districts post their values in batches once or twice a day, so the newest value can be several hours old. We check every hour.</li>
+<li><strong>Datum:</strong> the Corps records a datum for each project location (its record for Buford Dam and Lake Lanier, for example, uses NGVD 29). We print the datum stored for each lake.</li>
+<li><strong>Status of the data:</strong> readings appear as the district receives them. We treat them as provisional.</li>
+<li><strong>Credit:</strong> U.S. Army Corps of Engineers, with the district and the series name.</li>
+</ul>
+<p class="src">Sources: <a href="https://cwms-data.usace.army.mil/cwms-data/" rel="noopener">USACE CWMS Data API</a> · <a href="https://cwms-data.usace.army.mil/cwms-data/locations/Buford?office=SAM" rel="noopener">CWMS location record: Buford Dam and Lake Lanier</a>.</p>
+
+<h3>Bureau of Reclamation, RISE</h3>
+<ul>
+<li><strong>What we read:</strong> the daily reservoir elevation series in Reclamation's RISE data system (for example, Lake Mead at Hoover Dam). RISE does not carry a full-pool value, so full pool comes from a Reclamation page, stored with its link.</li>
+<li><strong>Cadence:</strong> daily, updated once a day and usually about one day behind. We check every 6 hours.</li>
+<li><strong>Datum:</strong> Reclamation's Lower Colorado reports give elevations in feet above mean sea level.</li>
+<li><strong>Status of the data:</strong> Reclamation states that its RISE data "are provisional and subject to revision unless otherwise noted."</li>
+<li><strong>Credit:</strong> Bureau of Reclamation, with the RISE item.</li>
+</ul>
+<p class="src">Sources: <a href="https://data.usbr.gov/" rel="noopener">Reclamation RISE</a> · <a href="https://www.usbr.gov/lc/region/g4000/hourly/levels.html" rel="noopener">Reclamation: Lower Colorado River daily report</a>.</p>
+
+<h3>California Department of Water Resources, CDEC</h3>
+<ul>
+<li><strong>What we read:</strong> reservoir elevation (sensor 6, in feet) and storage (sensor 15, in acre-feet) from the California Data Exchange Center, which DWR manages. Percent full is storage divided by the reservoir's capacity, taken from a DWR or Reclamation page and stored with its link.</li>
+<li><strong>Cadence:</strong> daily (some stations also hourly). The newest rows are often blank until they are filled in; we use the latest row that has a value and show its own date. We check every 3 hours (every hour for hourly stations).</li>
+<li><strong>Status of the data:</strong> we treat CDEC readings as provisional.</li>
+<li><strong>Credit:</strong> California Department of Water Resources, CDEC, with the station id.</li>
+</ul>
+<p class="src">Sources: <a href="https://cdec.water.ca.gov/" rel="noopener">CDEC</a> · <a href="https://cdec.water.ca.gov/reservoir.html" rel="noopener">CDEC: reservoirs</a>.</p>
+
+<h3>U.S. Geological Survey (USGS), Water Data APIs</h3>
+<ul>
+<li><strong>What we read:</strong> the most recent lake and reservoir elevation values from USGS monitoring locations. The parameter code tells us the datum: 62614 is lake or reservoir elevation above NGVD 1929, 62615 is above NAVD 1988, and 00062 is reservoir elevation above a stated datum. USGS gauges also supply the "Latest gauge reading" line on some Texas lakes; that line never replaces the TWDB daily figure or feeds records.</li>
+<li><strong>Cadence:</strong> typically every 15 to 60 minutes. We check every hour.</li>
+<li><strong>Status of the data:</strong> USGS states that "data are provisional and subject to revision until they have been thoroughly reviewed and received final approval," and that provisional data may be inaccurate because of instrument malfunctions or changes at the site.</li>
+<li><strong>Credit:</strong> U.S. Geological Survey, with the monitoring location id.</li>
+</ul>
+<p class="src">Sources: <a href="https://api.waterdata.usgs.gov/" rel="noopener">USGS Water Data APIs</a> · <a href="https://api.waterdata.usgs.gov/ogcapi/v0/collections/parameter-codes/items?f=json&amp;id=62614,62615,00062" rel="noopener">USGS parameter codes</a> · <a href="https://water.usgs.gov/data/provisional.html" rel="noopener">USGS provisional data statement</a>.</p>
+
+<h3>Operators without a public data feed</h3>
+<p>Some lakes are run by utilities or authorities that post levels on their own websites but offer no data feed we can use. We do not copy numbers from those pages. Where a USGS or Corps gauge measures the same lake, we may use it; otherwise the lake page links to the operator and does not show a level.</p>
+
+<h2>How we choose and check a reading</h2>
+<ul>
+<li><strong>One primary source per lake.</strong> The headline level, label, trend, charts and records all come from that source. When a lake has several feeds, we prefer TWDB (Texas), then the Corps, then Reclamation, then CDEC, then USGS.</li>
+<li><strong>One optional fallback.</strong> If the primary source stops updating and a second feed is current, the page uses it and says so. We never average or blend two sources.</li>
+<li><strong>Checks before a reading is used:</strong> the unit must be feet; the level must be inside the lake's plausible range; the timestamp must not be in the future or older than the last accepted reading; percent full must be between 0 and 100. A change of more than 15 feet in 24 hours is held until the next check confirms it. A whole feed is rejected if it returns an error page, a changed format or far fewer lakes than expected.</li>
+<li><strong>Same datum only.</strong> We only compare a level with a full-pool value in the same vertical datum. If two sources for one lake disagree by more than 0.5 ft at the same time, we hold the lake until the difference is explained.</li>
+</ul>
+
+<h2>Level labels</h2>
+<p>Each lake with a full-pool value gets one label. When the source gives percent full (a storage figure), the label uses it; otherwise it uses feet above or below full pool.</p>
+<table>
+<thead><tr><th>Label</th><th>When percent full is available</th><th>When only the level and full pool are known</th></tr></thead>
+<tbody>
+<tr><td>Above full pool</td><td>level is 0.50 ft or more above full pool</td><td>same</td></tr>
+<tr><td>Full</td><td>97.0% full or more, and less than 0.50 ft above full pool</td><td>from 0.50 ft above to 1.00 ft below full pool</td></tr>
+<tr><td>Near full</td><td>85.0% to under 97.0%</td><td>1.01 to 3.00 ft below</td></tr>
+<tr><td>Below full</td><td>60.0% to under 85.0%</td><td>3.01 to 10.00 ft below</td></tr>
+<tr><td>Low</td><td>30.0% to under 60.0%</td><td>10.01 to 25.00 ft below</td></tr>
+<tr><td>Very low</td><td>under 30.0%</td><td>more than 25.00 ft below</td></tr>
+<tr><td>Level only</td><td colspan="2">no full-pool value on record: the level and its change are shown without a label</td></tr>
+</tbody>
+</table>
+<p>A lake with a flood pool is also marked <strong>In flood pool</strong> when its level is 2.00 ft or more above full pool. A few very deep lakes and lakes with a planned winter drawdown use their own thresholds; their pages say "bands set for this lake". These labels are ours, not agency classifications.</p>
+
+<h2>Trend</h2>
+<p>The trend comes from the change over the last 24 hours. For daily sources it is the latest day's value minus the previous day's. For hourly gauges it is the median of the last 3 readings compared with the median of the 3 readings 24 hours earlier, which damps wind and gauge noise.</p>
+<table>
+<thead><tr><th>Trend</th><th>24-hour change</th></tr></thead>
+<tbody>
+<tr><td>Rising fast</td><td>+1.00 ft or more</td></tr>
+<tr><td>Rising</td><td>+0.05 to +0.99 ft</td></tr>
+<tr><td>Steady</td><td>between −0.04 and +0.04 ft</td></tr>
+<tr><td>Falling</td><td>−0.05 to −0.99 ft</td></tr>
+<tr><td>Falling fast</td><td>−1.00 ft or less</td></tr>
+</tbody>
+</table>
+<p>No trend is shown when there are not two valid readings 20 to 28 hours apart (hourly sources) or no previous day (daily sources). The 7-day change is printed as a number, without a label.</p>
+
+<h2>Freshness</h2>
+<p>Each reading's age is measured from its own timestamp. For a daily average, that is the end of the day it covers, in the lake's time zone.</p>
+<ul>
+<li><strong>Current:</strong> the reading is within the source's normal schedule.</li>
+<li><strong>Delayed:</strong> the reading is older than expected. The page shows "This reading may be out of date" and keeps the label and trend, with the date.</li>
+<li><strong>Current level unknown:</strong> the reading is much older than expected, or the source failed its checks. The headline says "Current level unknown", the last reading stays visible with its date and source, the label and trend are removed, and the lake is left out of ranking lists.</li>
+</ul>
+<table>
+<thead><tr><th>Source</th><th>Normal schedule</th><th>Delayed after</th><th>Unknown after</th></tr></thead>
+<tbody>
+<tr><td>TWDB</td><td>daily average, published the next day</td><td>48 hours</td><td>96 hours</td></tr>
+<tr><td>Reclamation RISE</td><td>daily, about one day behind</td><td>60 hours</td><td>120 hours</td></tr>
+<tr><td>CDEC daily</td><td>daily</td><td>48 hours</td><td>96 hours</td></tr>
+<tr><td>CDEC hourly</td><td>hourly</td><td>6 hours</td><td>48 hours</td></tr>
+<tr><td>Corps of Engineers</td><td>hourly or every 15 minutes; several districts post their values in batches once or twice a day</td><td>24 hours</td><td>72 hours</td></tr>
+<tr><td>USGS</td><td>every 15 to 60 minutes</td><td>6 hours</td><td>48 hours</td></tr>
+</tbody>
+</table>
+<p>A few series are posted later than their source normally does (for example some Upper Colorado reservoirs on Reclamation RISE, about four days behind). For those lakes the thresholds are 108 hours and 168 hours.</p>
+<p>The page also runs this check in your browser from the reading's timestamp, so a page cannot keep looking current if our updates stop. Times on the page are the reading's own time, never the time the page was built.</p>
+
+<h2>Records, history and comparisons</h2>
+<ul>
+<li>Records, yearly highs and lows, "same day last year" and "median for this date" are computed from the daily series we store for each lake.</li>
+<li>Every record states its <strong>period of record</strong>: the first and last dates in our stored series for that lake. "Highest in our record" means highest within those dates, not necessarily the highest ever. We call a record "all-time" only when the source's full history has been loaded.</li>
+<li>A lake with less than a year of stored data gets no records and no history page.</li>
+<li>"Same day last year" uses the nearest valid reading within 3 days of that date. "Median for this date" is shown only with at least 5 years of data, and the years are stated. Years with fewer than 300 daily values are marked "partial".</li>
+<li>Gaps in the data show as breaks in charts, not as straight lines across the gap.</li>
+<li>Agencies revise provisional data. Once a week we download the last 60 days again for each lake and replace any values the source has changed.</li>
+</ul>
+
+<h2>Manual holds and notes</h2>
+<p>If a feed is clearly wrong, we can hold a lake as "Current level unknown" with the reason shown, or add a dated note linked to an agency notice (for example, a planned drawdown). Every hold or note needs a link to the evidence and expires within 14 days unless it is renewed. We never type a water level by hand.</p>
+
+<h2>Credit and reuse</h2>
+<p>We republish facts (levels, dates, storage) with credit and a link to each agency. We do not copy agency charts, maps, photos or text, and we do not use agency logos. If you represent an agency or operator and want us to change how we use or credit your data, write to <a href="mailto:{{site.contact_email}}">{{site.contact_email}}</a> and we will act on it right away.</p>

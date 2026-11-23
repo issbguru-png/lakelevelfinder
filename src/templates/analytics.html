@@ -1,0 +1,6 @@
+<script>/* Google Analytics 4 (production host only). Consent Mode v2: no ad storage anywhere; analytics cookies off by default in the EEA, UK and Switzerland (cookieless pings only). */
+if(location.hostname==="{{domain}}"){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"granted"});
+gtag("consent","default",{analytics_storage:"denied",region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB","CH"]});
+gtag("js",new Date());gtag("config","{{ga4_id}}");
+var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id={{ga4_id}}";document.head.appendChild(s)}</script>

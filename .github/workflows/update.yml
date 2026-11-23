@@ -1,0 +1,66 @@
+name: update
+# Hourly (started by the watchdog Worker; GitHub cron as backup):
+# fetch sources -> data/ -> tests -> build --check -> notify -> commit data -> deploy.
+# While the repo variable DEPLOY is not "true", the run commits data/ but does not deploy.
+# The repo variable PUBLISH_BATCH limits the release batch (unset = every published state).
+on:
+  schedule: [{ cron: "20 * * * *" }]
+  workflow_dispatch: {}
+concurrency: { group: update, cancel-in-progress: false }
+permissions: { contents: write, issues: write }
+jobs:
+  # GitHub's cron is only a backup: the watchdog Worker starts this workflow (workflow_dispatch) when the data is
+  # 55+ minutes old. A scheduled run that arrives while the data is still fresh stops here instead of running twice.
+  gate:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs: { stale: "${{ steps.age.outputs.stale }}" }
+    steps:
+      - id: age
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, time, urllib.request
+          from datetime import datetime
+          try:
+              req = urllib.request.Request(f"https://lakelevelfinder.com/data/status.json?t={int(time.time())}",
+                                           headers={"User-Agent": "lakelevelfinder-update-gate"})
+              s = json.load(urllib.request.urlopen(req, timeout=20))
+              age = time.time() - datetime.fromisoformat(s["generated_at"].replace("Z", "+00:00")).timestamp()
+              stale = age >= 40 * 60
+          except Exception:
+              stale = True
+          print(f"stale={'true' if stale else 'false'}")
+          PY
+          cat "$GITHUB_OUTPUT"
+  run:
+    needs: gate
+    if: ${{ always() && (needs.gate.result == 'skipped' || needs.gate.outputs.stale == 'true') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Pipeline (fetch, validate, write data/)
+        run: python3 pipeline/run.py
+        env: { USGS_API_KEY: "${{ secrets.USGS_API_KEY }}" }
+      - name: Unit tests (fixtures only, no network)
+        run: python3 -m unittest discover -s tests
+      - name: Build check
+        run: python3 build.py --check
+        env: { PUBLISH_BATCH: "${{ vars.PUBLISH_BATCH }}" }
+      - name: Alerts to GitHub Issues
+        run: python3 pipeline/notify.py
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+      - name: Commit data
+        run: ./scripts/commit-data.sh
+      - name: Deploy
+        if: ${{ vars.DEPLOY == 'true' }}
+        run: npx --yes wrangler@4 deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - if: failure()
+        run: python3 pipeline/notify.py --workflow-failed
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }

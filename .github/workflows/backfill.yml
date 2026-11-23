@@ -1,0 +1,44 @@
+name: backfill
+# Manual: download history for one source (and optionally one lake) from a US runner into data/series/,
+# then commit it. Space requests out (tools/backfill.py waits between calls). Run once per source;
+# re-run only to repair a lake. Plan §8.8.
+on:
+  workflow_dispatch:
+    inputs:
+      source: { description: "Source: twdb, cwms, rise, cdec or usgs", required: true }
+      lake: { description: "One lake id, e.g. lake-travis-tx (empty = every lake on that source)", required: false, default: "" }
+permissions: { contents: write }
+concurrency: { group: update, cancel-in-progress: false }   # never write data/ at the same time as an update run
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Backfill
+        env:
+          SOURCE: ${{ inputs.source }}
+          LAKE: ${{ inputs.lake }}
+          USGS_API_KEY: ${{ secrets.USGS_API_KEY }}
+        run: |
+          case "$SOURCE" in twdb|cwms|rise|cdec|usgs) ;; *) echo "Unknown source: $SOURCE"; exit 1;; esac
+          if [ -n "$LAKE" ]; then
+            echo "$LAKE" | grep -Eq '^[a-z0-9-]+$' || { echo "Bad lake id: $LAKE"; exit 1; }
+            python3 tools/backfill.py --source "$SOURCE" --lake "$LAKE"
+          else
+            python3 tools/backfill.py --source "$SOURCE"
+          fi
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests
+      - name: Commit series
+        env: { SOURCE: "${{ inputs.source }}", LAKE: "${{ inputs.lake }}" }
+        run: |
+          git config user.name "lakelevelfinder-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/series data/stats
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "backfill: $SOURCE ${LAKE:-all lakes} ($(git diff --cached --name-only | wc -l | tr -d ' ') files)"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep 10; done
+          exit 1

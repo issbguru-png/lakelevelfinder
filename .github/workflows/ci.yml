@@ -1,0 +1,14 @@
+name: ci
+# Every push and pull request: unit tests on saved fixtures (no network) and the build check. Never deploys.
+on: [push, pull_request]
+permissions: { contents: read }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 -m unittest discover -s tests
+      - run: python3 build.py --check

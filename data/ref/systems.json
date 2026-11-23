@@ -1,0 +1,49 @@
+{
+  "highland-lakes": {
+    "slug": "highland-lakes",
+    "name": "Highland Lakes",
+    "operator": "lcra",
+    "members": [
+      "inks-lake-tx",
+      "lake-austin-tx",
+      "lake-buchanan-tx",
+      "lake-lbj-tx",
+      "lake-marble-falls-tx",
+      "lake-travis-tx"
+    ],
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/statewide",
+    "membership_basis": "TWDB tag 'highland' in recent-conditions.json",
+    "intro": "src/content/systems/highland-lakes.html",
+    "combined": [
+      "lake-buchanan-tx",
+      "lake-travis-tx"
+    ],
+    "combined_note": "LCRA reports the combined storage of Lake Buchanan and Lake Travis, the two water-supply reservoirs."
+  },
+  "corpus-christi-water-supply": {
+    "slug": "corpus-christi-water-supply",
+    "name": "Corpus Christi water supply",
+    "operator": "city-of-corpus-christi",
+    "members": [
+      "choke-canyon-reservoir-tx",
+      "lake-corpus-christi-tx",
+      "lake-texana-tx"
+    ],
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/statewide",
+    "membership_basis": "TWDB tag 'municipal_corpus_christi' (Choke Canyon, Lake Corpus Christi, Lake Texana)",
+    "intro": "src/content/systems/corpus-christi-water-supply.html"
+  },
+  "colorado-river-reservoirs": {
+    "slug": "colorado-river-reservoirs",
+    "name": "Colorado River reservoirs (Lake Mead and Lake Powell)",
+    "operator": "usbr",
+    "members": [
+      "lake-mead-nv",
+      "lake-powell-az"
+    ],
+    "source_url": "https://www.usbr.gov/lc/riverops.html",
+    "membership_basis": "the two Colorado River storage reservoirs named in the plan",
+    "intro": "src/content/systems/colorado-river-reservoirs.html",
+    "title_name": "Lake Mead & Lake Powell"
+  }
+}

@@ -1,0 +1,262 @@
+{
+ "period_start": "2026-11-02",
+ "period_end": "2026-11-22",
+ "n_days": 21,
+ "has_history": false,
+ "backfilled_days": 20,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 111.51,
+  "date": "2026-11-02"
+ },
+ "year_low": {
+  "elev_ft": 103.78,
+  "date": "2026-11-22"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 111.51,
+   "high_date": "2026-11-02",
+   "low": 103.78,
+   "low_date": "2026-11-22",
+   "n": 21,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 108.65,
+   "n": 21
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-09",
+   "elev_ft": 109.57,
+   "pct_full": 92.0,
+   "storage_af": 38545,
+   "change_ft": -0.77
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 108.83,
+   "pct_full": 90.1,
+   "storage_af": 37737,
+   "change_ft": -0.74
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 108.29,
+   "pct_full": 88.7,
+   "storage_af": 37148,
+   "change_ft": -0.54
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 108.21,
+   "pct_full": 88.5,
+   "storage_af": 37060,
+   "change_ft": -0.08
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 108.19,
+   "pct_full": 88.4,
+   "storage_af": 37038,
+   "change_ft": -0.02
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 108.17,
+   "pct_full": 88.4,
+   "storage_af": 37017,
+   "change_ft": -0.02
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 108.21,
+   "pct_full": 88.5,
+   "storage_af": 37060,
+   "change_ft": 0.04
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 108.22,
+   "pct_full": 88.5,
+   "storage_af": 37071,
+   "change_ft": 0.01
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 107.97,
+   "pct_full": 87.8,
+   "storage_af": 36798,
+   "change_ft": -0.25
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 107.15,
+   "pct_full": 85.7,
+   "storage_af": 35905,
+   "change_ft": -0.82
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 106.27,
+   "pct_full": 83.4,
+   "storage_af": 34947,
+   "change_ft": -0.88
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 105.4,
+   "pct_full": 81.1,
+   "storage_af": 34002,
+   "change_ft": -0.87
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 104.53,
+   "pct_full": 78.8,
+   "storage_af": 33057,
+   "change_ft": -0.87
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 103.78,
+   "pct_full": 76.9,
+   "storage_af": 32243,
+   "change_ft": -0.75
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-24",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": 111.51
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": 111.5
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": 111.49
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": 111.47
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": 111.45
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": 111.15
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": 110.34
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": 109.57
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 108.83
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 108.29
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 108.21
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 108.19
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 108.17
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 108.21
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 108.22
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 107.97
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 107.15
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 106.27
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 105.4
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 104.53
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 103.78
+  }
+ ],
+ "gaps": [],
+ "lake_id": "arbuckle-reservoir-tx"
+}

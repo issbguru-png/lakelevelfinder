@@ -1,0 +1,262 @@
+{
+ "period_start": "2026-11-13",
+ "period_end": "2026-11-19",
+ "n_days": 7,
+ "has_history": false,
+ "backfilled_days": 0,
+ "record_high": null,
+ "record_low": null,
+ "year_high": {
+  "elev_ft": 6003.7,
+  "date": "2026-11-13"
+ },
+ "year_low": {
+  "elev_ft": 6003.27,
+  "date": "2026-11-19"
+ },
+ "same_day_last_year": null,
+ "median_this_date": null,
+ "yearly": [
+  {
+   "year": 2026,
+   "high": 6003.7,
+   "high_date": "2026-11-13",
+   "low": 6003.27,
+   "low_date": "2026-11-19",
+   "n": 7,
+   "partial": true
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 6003.47,
+   "n": 7
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-06",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6003.7,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": null
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6003.65,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6003.54,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.11
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6003.44,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.1
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6003.39,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6003.3,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.09
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6003.27,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-21",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-22",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-23",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-24",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": null
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 6003.7
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 6003.65
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 6003.54
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 6003.44
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 6003.39
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 6003.3
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 6003.27
+  }
+ ],
+ "gaps": [],
+ "lake_id": "flaming-gorge-reservoir-ut"
+}

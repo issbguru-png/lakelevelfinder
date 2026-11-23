@@ -1,0 +1,2346 @@
+{
+ "addicks-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8592,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "aquilla-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12622,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "arbuckle-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 21,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "b-a-steinhagen-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 14152,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "bardwell-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13668,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "barker-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 6609,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "belton-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12541,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "benbrook-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13157,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "bois-darc-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 1818,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "brady-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10088,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "caddo-lake-la": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 4752,
+  "updated": "2026-11-23T08:22:35Z"
+ },
+ "canyon-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13685,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "cedar-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10970,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "champion-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10645,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "choke-canyon-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9799,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "coleto-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10182,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "comanche-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11669,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "e-v-spence-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10784,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "eagle-mountain-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12377,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "elephant-butte-lake-nm": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 40668,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "falcon-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 26733,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "gibbons-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 3493,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "granger-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11249,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "grapevine-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13281,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "greenbelt-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9874,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "halbert-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8904,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "hords-creek-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9499,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "houston-county-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10024,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "hubbard-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10785,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "inks-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 18669,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "jim-chapman-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9419,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "joe-pool-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12547,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-abilene-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9612,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-alan-henry-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9992,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-amistad-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 21307,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-amon-g-carter-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10065,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-arlington-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12854,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-arrowhead-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10893,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-athens-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10067,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-austin-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 18669,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-bob-sandlin-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 14095,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-bonham-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10020,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-bridgeport-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10818,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-brownwood-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10014,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-buchanan-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 30785,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-cherokee-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 3567,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-cisco-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10100,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-coleman-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10107,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-colorado-city-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10909,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-conroe-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10966,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-corpus-christi-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10201,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-crook-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10005,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-cypress-springs-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10336,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-fork-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13745,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-fort-phantom-hill-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10110,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-georgetown-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11368,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-graham-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10891,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-granbury-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 14204,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-houston-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11049,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-j-b-thomas-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9628,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-jacksonville-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9983,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-kemp-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11353,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-kickapoo-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8166,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-lavon-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13636,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-lbj-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 27471,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-leon-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10083,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-lewisville-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13487,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-limestone-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11336,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-livingston-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8460,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-mackenzie-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9326,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-marble-falls-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 18569,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-meredith-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11418,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-mineral-wells-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10095,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-nacogdoches-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10988,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-nasworthy-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10842,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-nocona-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9688,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-o-h-ivie-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10852,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-o-the-pines-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13493,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-palestine-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10029,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-palo-pinto-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10024,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-pat-cleburne-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10338,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-ray-hubbard-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10990,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-somerville-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11259,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-stamford-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10093,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-striker-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 3538,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-sulphur-springs-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10055,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-sweetwater-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9994,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-tawakoni-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11308,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-texana-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9842,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-texoma-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11611,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-travis-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 30721,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-tyler-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9949,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-waco-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11298,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-waxahachie-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10034,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-weatherford-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10096,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-whitney-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9890,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lake-worth-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10023,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "lost-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10105,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "martin-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11307,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "medina-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9968,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "millers-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 7426,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "monticello-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9954,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "moss-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9540,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "mountain-creek-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13885,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "murvaul-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9686,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "navarro-mills-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13524,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "new-terrell-city-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9861,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "north-fork-buffalo-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10198,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "o-c-fisher-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9342,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "oak-creek-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10022,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "palo-duro-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8919,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "pat-mayse-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13321,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "possum-kingdom-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 28877,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "proctor-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9065,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "ray-roberts-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 14028,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "red-bluff-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 9913,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "richland-chambers-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 11681,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "sam-rayburn-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13824,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "stillhouse-hollow-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 13339,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "toledo-bend-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 14651,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "twin-buttes-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 8931,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "white-river-reservoir-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 10082,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "wright-patman-lake-tx": {
+  "done": [
+   "all"
+  ],
+  "complete": true,
+  "rows": 12879,
+  "updated": "2026-11-23T08:25:12Z"
+ },
+ "camanche-reservoir-ca": {
+  "done": [
+   "cdec:CMN:2017",
+   "cdec:CMN:2018",
+   "cdec:CMN:2019",
+   "cdec:CMN:2020",
+   "cdec:CMN:2021",
+   "cdec:CMN:2022",
+   "cdec:CMN:2023",
+   "cdec:CMN:2024",
+   "cdec:CMN:2025"
+  ],
+  "complete": false,
+  "rows": 3587,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "don-pedro-reservoir-ca": {
+  "done": [
+   "cdec:DNP:2017",
+   "cdec:DNP:2018",
+   "cdec:DNP:2019",
+   "cdec:DNP:2020",
+   "cdec:DNP:2021",
+   "cdec:DNP:2022",
+   "cdec:DNP:2023",
+   "cdec:DNP:2024",
+   "cdec:DNP:2025"
+  ],
+  "complete": false,
+  "rows": 3595,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "folsom-lake-ca": {
+  "done": [
+   "cdec:FOL:2017",
+   "cdec:FOL:2018",
+   "cdec:FOL:2019",
+   "cdec:FOL:2020",
+   "cdec:FOL:2021",
+   "cdec:FOL:2022",
+   "cdec:FOL:2023",
+   "cdec:FOL:2024",
+   "cdec:FOL:2025"
+  ],
+  "complete": false,
+  "rows": 3608,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-berryessa-ca": {
+  "done": [
+   "cdec:BER:2017",
+   "cdec:BER:2018",
+   "cdec:BER:2019",
+   "cdec:BER:2020",
+   "cdec:BER:2021",
+   "cdec:BER:2022",
+   "cdec:BER:2023",
+   "cdec:BER:2024",
+   "cdec:BER:2025"
+  ],
+  "complete": false,
+  "rows": 3610,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-casitas-ca": {
+  "done": [
+   "cdec:CSI:2017",
+   "cdec:CSI:2018",
+   "cdec:CSI:2019",
+   "cdec:CSI:2020",
+   "cdec:CSI:2021",
+   "cdec:CSI:2022",
+   "cdec:CSI:2023",
+   "cdec:CSI:2024",
+   "cdec:CSI:2025"
+  ],
+  "complete": false,
+  "rows": 1747,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-isabella-ca": {
+  "done": [
+   "cdec:ISB:2017",
+   "cdec:ISB:2018",
+   "cdec:ISB:2019",
+   "cdec:ISB:2020",
+   "cdec:ISB:2021",
+   "cdec:ISB:2022",
+   "cdec:ISB:2023",
+   "cdec:ISB:2024",
+   "cdec:ISB:2025"
+  ],
+  "complete": false,
+  "rows": 3538,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-kaweah-ca": {
+  "done": [
+   "cdec:TRM:2017",
+   "cdec:TRM:2018",
+   "cdec:TRM:2019",
+   "cdec:TRM:2020",
+   "cdec:TRM:2021",
+   "cdec:TRM:2022",
+   "cdec:TRM:2023",
+   "cdec:TRM:2024",
+   "cdec:TRM:2025"
+  ],
+  "complete": false,
+  "rows": 3600,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-mcclure-ca": {
+  "done": [
+   "cdec:EXC:2017",
+   "cdec:EXC:2018",
+   "cdec:EXC:2019",
+   "cdec:EXC:2020",
+   "cdec:EXC:2021",
+   "cdec:EXC:2022",
+   "cdec:EXC:2023",
+   "cdec:EXC:2024",
+   "cdec:EXC:2025"
+  ],
+  "complete": false,
+  "rows": 3606,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-mendocino-ca": {
+  "done": [
+   "cdec:COY:2017",
+   "cdec:COY:2018",
+   "cdec:COY:2019",
+   "cdec:COY:2020",
+   "cdec:COY:2021",
+   "cdec:COY:2022",
+   "cdec:COY:2023",
+   "cdec:COY:2024",
+   "cdec:COY:2025"
+  ],
+  "complete": false,
+  "rows": 3603,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-oroville-ca": {
+  "done": [
+   "cdec:ORO:2017",
+   "cdec:ORO:2018",
+   "cdec:ORO:2019",
+   "cdec:ORO:2020",
+   "cdec:ORO:2021",
+   "cdec:ORO:2022",
+   "cdec:ORO:2023",
+   "cdec:ORO:2024",
+   "cdec:ORO:2025"
+  ],
+  "complete": false,
+  "rows": 3596,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-sonoma-ca": {
+  "done": [
+   "cdec:WRS:2017",
+   "cdec:WRS:2018",
+   "cdec:WRS:2019",
+   "cdec:WRS:2020",
+   "cdec:WRS:2021",
+   "cdec:WRS:2022",
+   "cdec:WRS:2023",
+   "cdec:WRS:2024",
+   "cdec:WRS:2025"
+  ],
+  "complete": false,
+  "rows": 3603,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "lake-success-ca": {
+  "done": [
+   "cdec:SCC:2017",
+   "cdec:SCC:2018",
+   "cdec:SCC:2019",
+   "cdec:SCC:2020",
+   "cdec:SCC:2021",
+   "cdec:SCC:2022",
+   "cdec:SCC:2023",
+   "cdec:SCC:2024",
+   "cdec:SCC:2025"
+  ],
+  "complete": false,
+  "rows": 3605,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "millerton-lake-ca": {
+  "done": [
+   "cdec:MIL:2017",
+   "cdec:MIL:2018",
+   "cdec:MIL:2019",
+   "cdec:MIL:2020",
+   "cdec:MIL:2021",
+   "cdec:MIL:2022",
+   "cdec:MIL:2023",
+   "cdec:MIL:2024",
+   "cdec:MIL:2025"
+  ],
+  "complete": false,
+  "rows": 3610,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "new-bullards-bar-reservoir-ca": {
+  "done": [
+   "cdec:BUL:2017",
+   "cdec:BUL:2018",
+   "cdec:BUL:2019",
+   "cdec:BUL:2020",
+   "cdec:BUL:2021",
+   "cdec:BUL:2022",
+   "cdec:BUL:2023",
+   "cdec:BUL:2024",
+   "cdec:BUL:2025"
+  ],
+  "complete": false,
+  "rows": 3586,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "new-hogan-lake-ca": {
+  "done": [
+   "cdec:NHG:2017",
+   "cdec:NHG:2018",
+   "cdec:NHG:2019",
+   "cdec:NHG:2020",
+   "cdec:NHG:2021",
+   "cdec:NHG:2022",
+   "cdec:NHG:2023",
+   "cdec:NHG:2024",
+   "cdec:NHG:2025"
+  ],
+  "complete": false,
+  "rows": 3606,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "new-melones-lake-ca": {
+  "done": [
+   "cdec:NML:2017",
+   "cdec:NML:2018",
+   "cdec:NML:2019",
+   "cdec:NML:2020",
+   "cdec:NML:2021",
+   "cdec:NML:2022",
+   "cdec:NML:2023",
+   "cdec:NML:2024",
+   "cdec:NML:2025"
+  ],
+  "complete": false,
+  "rows": 3605,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "pine-flat-lake-ca": {
+  "done": [
+   "cdec:PNF:2017",
+   "cdec:PNF:2018",
+   "cdec:PNF:2019",
+   "cdec:PNF:2020",
+   "cdec:PNF:2021",
+   "cdec:PNF:2022",
+   "cdec:PNF:2023",
+   "cdec:PNF:2024",
+   "cdec:PNF:2025"
+  ],
+  "complete": false,
+  "rows": 3603,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "san-luis-reservoir-ca": {
+  "done": [
+   "cdec:SNL:2017",
+   "cdec:SNL:2018",
+   "cdec:SNL:2019",
+   "cdec:SNL:2020",
+   "cdec:SNL:2021",
+   "cdec:SNL:2022",
+   "cdec:SNL:2023",
+   "cdec:SNL:2024",
+   "cdec:SNL:2025"
+  ],
+  "complete": false,
+  "rows": 3613,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "shasta-lake-ca": {
+  "done": [
+   "cdec:SHA:2017",
+   "cdec:SHA:2018",
+   "cdec:SHA:2019",
+   "cdec:SHA:2020",
+   "cdec:SHA:2021",
+   "cdec:SHA:2022",
+   "cdec:SHA:2023",
+   "cdec:SHA:2024",
+   "cdec:SHA:2025"
+  ],
+  "complete": false,
+  "rows": 3609,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "trinity-lake-ca": {
+  "done": [
+   "cdec:CLE:2017",
+   "cdec:CLE:2018",
+   "cdec:CLE:2019",
+   "cdec:CLE:2020",
+   "cdec:CLE:2021",
+   "cdec:CLE:2022",
+   "cdec:CLE:2023",
+   "cdec:CLE:2024",
+   "cdec:CLE:2025"
+  ],
+  "complete": false,
+  "rows": 3607,
+  "updated": "2026-11-23T08:45:34Z"
+ },
+ "allegheny-reservoir-pa": {
+  "done": [
+   "cwms:LRP:Kinzua-Lake.Elev.Inst.1Hour.0.OBS:2022",
+   "cwms:LRP:Kinzua-Lake.Elev.Inst.1Hour.0.OBS:2023",
+   "cwms:LRP:Kinzua-Lake.Elev.Inst.1Hour.0.OBS:2024",
+   "cwms:LRP:Kinzua-Lake.Elev.Inst.1Hour.0.OBS:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "arkabutla-lake-ms": {
+  "done": [
+   "cwms:MVK:Arkabutla Lake.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Arkabutla Lake.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Arkabutla Lake.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Arkabutla Lake.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "atwood-lake-oh": {
+  "done": [
+   "cwms:LRH:Atwood-Lake.Elev.Inst.15Minutes.0.OBS:2022",
+   "cwms:LRH:Atwood-Lake.Elev.Inst.15Minutes.0.OBS:2023",
+   "cwms:LRH:Atwood-Lake.Elev.Inst.15Minutes.0.OBS:2024",
+   "cwms:LRH:Atwood-Lake.Elev.Inst.15Minutes.0.OBS:2025"
+  ],
+  "complete": false,
+  "rows": 1785,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "barren-river-lake-ky": {
+  "done": [
+   "cwms:LRL:Barren.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Barren.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Barren.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Barren.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "beaver-lake-ar": {
+  "done": [
+   "cwms:SWL:Beaver_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Beaver_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Beaver_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Beaver_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "broken-bow-lake-ok": {
+  "done": [
+   "cwms:SWT:BROK.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:BROK.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:BROK.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:BROK.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "brookville-lake-in": {
+  "done": [
+   "cwms:LRL:Brookville.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Brookville.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Brookville.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Brookville.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "bull-shoals-lake-ar": {
+  "done": [
+   "cwms:SWL:Bull_Shoals_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Bull_Shoals_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Bull_Shoals_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Bull_Shoals_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "canton-lake-ok": {
+  "done": [
+   "cwms:SWT:CANT.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:CANT.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:CANT.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:CANT.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "carlyle-lake-il": {
+  "done": [
+   "cwms:MVS:Carlyle Lk-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2022",
+   "cwms:MVS:Carlyle Lk-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2023",
+   "cwms:MVS:Carlyle Lk-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2024",
+   "cwms:MVS:Carlyle Lk-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "carters-lake-ga": {
+  "done": [
+   "cwms:SAM:Carters.Elev.Inst.15Minutes.0.Raw-USGS:2022",
+   "cwms:SAM:Carters.Elev.Inst.15Minutes.0.Raw-USGS:2023",
+   "cwms:SAM:Carters.Elev.Inst.15Minutes.0.Raw-USGS:2024",
+   "cwms:SAM:Carters.Elev.Inst.15Minutes.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "cave-run-lake-ky": {
+  "done": [
+   "cwms:LRL:CaveRun.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:CaveRun.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:CaveRun.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:CaveRun.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "center-hill-lake-tn": {
+  "done": [
+   "cwms:LRN:CEHT1-CENTER_HILL.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:CEHT1-CENTER_HILL.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:CEHT1-CENTER_HILL.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:CEHT1-CENTER_HILL.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "clearwater-lake-mo": {
+  "done": [
+   "cwms:SWL:Clearwater_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Clearwater_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Clearwater_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Clearwater_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "copan-lake-ok": {
+  "done": [
+   "cwms:SWT:COPA.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:COPA.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:COPA.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:COPA.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "dale-hollow-lake-tn": {
+  "done": [
+   "cwms:LRN:DLHT1-DALE_HOLLOW.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:DLHT1-DALE_HOLLOW.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:DLHT1-DALE_HOLLOW.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:DLHT1-DALE_HOLLOW.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "degray-lake-ar": {
+  "done": [
+   "cwms:MVK:Degray Lake.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Degray Lake.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Degray Lake.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Degray Lake.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "el-dorado-lake-ks": {
+  "done": [
+   "cwms:SWT:ELDR.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:ELDR.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:ELDR.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:ELDR.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "elk-city-lake-ks": {
+  "done": [
+   "cwms:SWT:ELKC.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:ELKC.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:ELKC.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:ELKC.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "enid-lake-ms": {
+  "done": [
+   "cwms:MVK:Enid Lake.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Enid Lake.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Enid Lake.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Enid Lake.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "fall-river-lake-ks": {
+  "done": [
+   "cwms:SWT:FALL.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:FALL.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:FALL.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:FALL.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "falls-lake-nc": {
+  "done": [
+   "cwms:SAW:NEU FLP.Elev.Inst.15Minutes.0.USGS-raw:2022",
+   "cwms:SAW:NEU FLP.Elev.Inst.15Minutes.0.USGS-raw:2023",
+   "cwms:SAW:NEU FLP.Elev.Inst.15Minutes.0.USGS-raw:2024",
+   "cwms:SAW:NEU FLP.Elev.Inst.15Minutes.0.USGS-raw:2025"
+  ],
+  "complete": false,
+  "rows": 1748,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "fort-gibson-lake-ok": {
+  "done": [
+   "cwms:SWT:FGIB.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:FGIB.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:FGIB.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:FGIB.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "grand-lake-ok": {
+  "done": [
+   "cwms:SWT:PENS.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:PENS.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:PENS.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:PENS.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "green-river-lake-ky": {
+  "done": [
+   "cwms:LRL:Green.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Green.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Green.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Green.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "greers-ferry-lake-ar": {
+  "done": [
+   "cwms:SWL:GreersFerry_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:GreersFerry_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:GreersFerry_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:GreersFerry_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "grenada-lake-ms": {
+  "done": [
+   "cwms:MVK:Grenada Lake.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Grenada Lake.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Grenada Lake.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Grenada Lake.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "hugo-lake-ok": {
+  "done": [
+   "cwms:SWT:HUGO.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:HUGO.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:HUGO.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:HUGO.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "hulah-lake-ok": {
+  "done": [
+   "cwms:SWT:HULA.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:HULA.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:HULA.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:HULA.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "john-redmond-reservoir-ks": {
+  "done": [
+   "cwms:SWT:JOHN.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:JOHN.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:JOHN.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:JOHN.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "jordan-lake-nc": {
+  "done": [
+   "cwms:SAW:CFR BEJ.Elev.Inst.15Minutes.0.USGS-raw:2022",
+   "cwms:SAW:CFR BEJ.Elev.Inst.15Minutes.0.USGS-raw:2023",
+   "cwms:SAW:CFR BEJ.Elev.Inst.15Minutes.0.USGS-raw:2024",
+   "cwms:SAW:CFR BEJ.Elev.Inst.15Minutes.0.USGS-raw:2025"
+  ],
+  "complete": false,
+  "rows": 244,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "kaw-lake-ok": {
+  "done": [
+   "cwms:SWT:KAWL.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:KAWL.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:KAWL.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:KAWL.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "kerr-lake-va": {
+  "done": [
+   "cwms:SAW:ROA JHK.Elev.Inst.5Minutes.0.USGS-raw:2022",
+   "cwms:SAW:ROA JHK.Elev.Inst.5Minutes.0.USGS-raw:2023",
+   "cwms:SAW:ROA JHK.Elev.Inst.5Minutes.0.USGS-raw:2024",
+   "cwms:SAW:ROA JHK.Elev.Inst.5Minutes.0.USGS-raw:2025"
+  ],
+  "complete": false,
+  "rows": 633,
+  "updated": "2026-11-23T17:16:22Z"
+ },
+ "keystone-lake-ok": {
+  "done": [
+   "cwms:SWT:KEYS.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:KEYS.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:KEYS.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:KEYS.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-allatoona-ga": {
+  "done": [
+   "cwms:SAM:Allatoona.Elev.Inst.1Hour.0.Raw-USGS:2022",
+   "cwms:SAM:Allatoona.Elev.Inst.1Hour.0.Raw-USGS:2023",
+   "cwms:SAM:Allatoona.Elev.Inst.1Hour.0.Raw-USGS:2024",
+   "cwms:SAM:Allatoona.Elev.Inst.1Hour.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-barkley-ky": {
+  "done": [
+   "cwms:LRN:BAHK2-BARKLEY.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:BAHK2-BARKLEY.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:BAHK2-BARKLEY.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:BAHK2-BARKLEY.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-cumberland-ky": {
+  "done": [
+   "cwms:LRN:WLCK2-WOLF_CREEK.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:WLCK2-WOLF_CREEK.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:WLCK2-WOLF_CREEK.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:WLCK2-WOLF_CREEK.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-eufaula-ok": {
+  "done": [
+   "cwms:SWT:EUFA.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:EUFA.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:EUFA.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:EUFA.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-greeson-ar": {
+  "done": [
+   "cwms:MVK:Narrows Dam.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Narrows Dam.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Narrows Dam.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Narrows Dam.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-hartwell-ga": {
+  "done": [
+   "cwms:SAS:Hartwell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2022",
+   "cwms:SAS:Hartwell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2023",
+   "cwms:SAS:Hartwell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2024",
+   "cwms:SAS:Hartwell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-lanier-ga": {
+  "done": [
+   "cwms:SAM:Buford.Elev.Inst.15Minutes.0.Raw-USGS:2022",
+   "cwms:SAM:Buford.Elev.Inst.15Minutes.0.Raw-USGS:2023",
+   "cwms:SAM:Buford.Elev.Inst.15Minutes.0.Raw-USGS:2024",
+   "cwms:SAM:Buford.Elev.Inst.15Minutes.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-martin-al": {
+  "done": [
+   "cwms:SAM:Martin.Elev.Inst.1Hour.0.Raw-APCO:2022",
+   "cwms:SAM:Martin.Elev.Inst.1Hour.0.Raw-APCO:2023",
+   "cwms:SAM:Martin.Elev.Inst.1Hour.0.Raw-APCO:2024",
+   "cwms:SAM:Martin.Elev.Inst.1Hour.0.Raw-APCO:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-ouachita-ar": {
+  "done": [
+   "cwms:MVK:Blakely.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Blakely.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Blakely.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Blakely.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-russell-ga": {
+  "done": [
+   "cwms:SAS:Russell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2022",
+   "cwms:SAS:Russell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2023",
+   "cwms:SAS:Russell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2024",
+   "cwms:SAS:Russell.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-seminole-fl": {
+  "done": [
+   "cwms:SAM:JimWoodruff.Elev.Inst.15Minutes.0.Raw-USGS:2022",
+   "cwms:SAM:JimWoodruff.Elev.Inst.15Minutes.0.Raw-USGS:2023",
+   "cwms:SAM:JimWoodruff.Elev.Inst.15Minutes.0.Raw-USGS:2024",
+   "cwms:SAM:JimWoodruff.Elev.Inst.15Minutes.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-shelbyville-il": {
+  "done": [
+   "cwms:MVS:Lk Shelbyville-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2022",
+   "cwms:MVS:Lk Shelbyville-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2023",
+   "cwms:MVS:Lk Shelbyville-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2024",
+   "cwms:MVS:Lk Shelbyville-Kaskaskia.Elev.Inst.30Minutes.0.lrgsShef-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lake-tenkiller-ok": {
+  "done": [
+   "cwms:SWT:TENK.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:TENK.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:TENK.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:TENK.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "laurel-river-lake-ky": {
+  "done": [
+   "cwms:LRN:LAPK2-LAUREL.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:LAPK2-LAUREL.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:LAPK2-LAUREL.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:LAPK2-LAUREL.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "lewis-smith-lake-al": {
+  "done": [
+   "cwms:SAM:Smith.Elev.Inst.1Hour.0.Raw-APCO:2022",
+   "cwms:SAM:Smith.Elev.Inst.1Hour.0.Raw-APCO:2023",
+   "cwms:SAM:Smith.Elev.Inst.1Hour.0.Raw-APCO:2024",
+   "cwms:SAM:Smith.Elev.Inst.1Hour.0.Raw-APCO:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "logan-martin-lake-al": {
+  "done": [
+   "cwms:SAM:LoganMartin.Elev.Inst.1Hour.0.Raw-APCO:2022",
+   "cwms:SAM:LoganMartin.Elev.Inst.1Hour.0.Raw-APCO:2023",
+   "cwms:SAM:LoganMartin.Elev.Inst.1Hour.0.Raw-APCO:2024",
+   "cwms:SAM:LoganMartin.Elev.Inst.1Hour.0.Raw-APCO:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "mark-twain-lake-mo": {
+  "done": [
+   "cwms:MVS:Mark Twain Lk-Salt.Elev.Inst.30Minutes.0.lrgsShef-rev:2022",
+   "cwms:MVS:Mark Twain Lk-Salt.Elev.Inst.30Minutes.0.lrgsShef-rev:2023",
+   "cwms:MVS:Mark Twain Lk-Salt.Elev.Inst.30Minutes.0.lrgsShef-rev:2024",
+   "cwms:MVS:Mark Twain Lk-Salt.Elev.Inst.30Minutes.0.lrgsShef-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "millwood-lake-ar": {
+  "done": [
+   "cwms:SWL:Millwood_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Millwood_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Millwood_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Millwood_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "monroe-lake-in": {
+  "done": [
+   "cwms:LRL:Monroe.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Monroe.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Monroe.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Monroe.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "nolin-river-lake-ky": {
+  "done": [
+   "cwms:LRL:Nolin.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Nolin.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Nolin.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Nolin.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "norfork-lake-ar": {
+  "done": [
+   "cwms:SWL:Norfork_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Norfork_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Norfork_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Norfork_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "old-hickory-lake-tn": {
+  "done": [
+   "cwms:LRN:OHHT1-OLD_HICKORY.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:OHHT1-OLD_HICKORY.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:OHHT1-OLD_HICKORY.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:OHHT1-OLD_HICKORY.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1025,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "oologah-lake-ok": {
+  "done": [
+   "cwms:SWT:OOLO.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:OOLO.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:OOLO.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:OOLO.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "patoka-lake-in": {
+  "done": [
+   "cwms:LRL:Patoka.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Patoka.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Patoka.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Patoka.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "percy-priest-lake-tn": {
+  "done": [
+   "cwms:LRN:JPHT1-J_PERCY_PRIEST.Elev-Pool.Inst.1Hour.0.dcp-rev:2022",
+   "cwms:LRN:JPHT1-J_PERCY_PRIEST.Elev-Pool.Inst.1Hour.0.dcp-rev:2023",
+   "cwms:LRN:JPHT1-J_PERCY_PRIEST.Elev-Pool.Inst.1Hour.0.dcp-rev:2024",
+   "cwms:LRN:JPHT1-J_PERCY_PRIEST.Elev-Pool.Inst.1Hour.0.dcp-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1026,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "rend-lake-il": {
+  "done": [
+   "cwms:MVS:Rend Lk-Big Muddy.Elev.Inst.30Minutes.0.lrgsShef-rev:2022",
+   "cwms:MVS:Rend Lk-Big Muddy.Elev.Inst.30Minutes.0.lrgsShef-rev:2023",
+   "cwms:MVS:Rend Lk-Big Muddy.Elev.Inst.30Minutes.0.lrgsShef-rev:2024",
+   "cwms:MVS:Rend Lk-Big Muddy.Elev.Inst.30Minutes.0.lrgsShef-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1785,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "rough-river-lake-ky": {
+  "done": [
+   "cwms:LRL:Rough.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Rough.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Rough.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Rough.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "sardis-lake-ms": {
+  "done": [
+   "cwms:MVK:Sardis Lake.Elev.Inst.1Hour.0.DCP-rev:2022",
+   "cwms:MVK:Sardis Lake.Elev.Inst.1Hour.0.DCP-rev:2023",
+   "cwms:MVK:Sardis Lake.Elev.Inst.1Hour.0.DCP-rev:2024",
+   "cwms:MVK:Sardis Lake.Elev.Inst.1Hour.0.DCP-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "skiatook-lake-ok": {
+  "done": [
+   "cwms:SWT:SKIA.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:SKIA.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:SKIA.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:SKIA.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "summersville-lake-wv": {
+  "done": [
+   "cwms:LRH:Summersville-Lake.Elev.Inst.15Minutes.0.OBS:2022",
+   "cwms:LRH:Summersville-Lake.Elev.Inst.15Minutes.0.OBS:2023",
+   "cwms:LRH:Summersville-Lake.Elev.Inst.15Minutes.0.OBS:2024",
+   "cwms:LRH:Summersville-Lake.Elev.Inst.15Minutes.0.OBS:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "table-rock-lake-mo": {
+  "done": [
+   "cwms:SWL:Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2022",
+   "cwms:SWL:Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2023",
+   "cwms:SWL:Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2024",
+   "cwms:SWL:Table_Rock_Dam-Headwater.Elev.Inst.1Hour.0.Decodes-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "taylorsville-lake-ky": {
+  "done": [
+   "cwms:LRL:Taylorsville.Elev.Inst.1Hour.0.lrldlb-comp:2022",
+   "cwms:LRL:Taylorsville.Elev.Inst.1Hour.0.lrldlb-comp:2023",
+   "cwms:LRL:Taylorsville.Elev.Inst.1Hour.0.lrldlb-comp:2024",
+   "cwms:LRL:Taylorsville.Elev.Inst.1Hour.0.lrldlb-comp:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "thurmond-lake-ga": {
+  "done": [
+   "cwms:SAS:Thurmond.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2022",
+   "cwms:SAS:Thurmond.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2023",
+   "cwms:SAS:Thurmond.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2024",
+   "cwms:SAS:Thurmond.Elev-Pool.Inst.1Hour.0.Raw-SHEF_SAS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "walter-f-george-lake-ga": {
+  "done": [
+   "cwms:SAM:WalterFGeorge.Elev.Inst.15Minutes.0.Raw-USGS:2022",
+   "cwms:SAM:WalterFGeorge.Elev.Inst.15Minutes.0.Raw-USGS:2023",
+   "cwms:SAM:WalterFGeorge.Elev.Inst.15Minutes.0.Raw-USGS:2024",
+   "cwms:SAM:WalterFGeorge.Elev.Inst.15Minutes.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "wappapello-lake-mo": {
+  "done": [
+   "cwms:MVS:Wappapello Lk-St Francis.Elev.Inst.30Minutes.0.lrgsShef-rev:2022",
+   "cwms:MVS:Wappapello Lk-St Francis.Elev.Inst.30Minutes.0.lrgsShef-rev:2023",
+   "cwms:MVS:Wappapello Lk-St Francis.Elev.Inst.30Minutes.0.lrgsShef-rev:2024",
+   "cwms:MVS:Wappapello Lk-St Francis.Elev.Inst.30Minutes.0.lrgsShef-rev:2025"
+  ],
+  "complete": false,
+  "rows": 1786,
+  "updated": "2026-11-23T16:58:09Z"
+ },
+ "weiss-lake-al": {
+  "done": [
+   "cwms:SAM:Weiss.Elev.Inst.1Hour.0.Raw-APCO:2022",
+   "cwms:SAM:Weiss.Elev.Inst.1Hour.0.Raw-APCO:2023",
+   "cwms:SAM:Weiss.Elev.Inst.1Hour.0.Raw-APCO:2024",
+   "cwms:SAM:Weiss.Elev.Inst.1Hour.0.Raw-APCO:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T16:58:09Z"
+ },
+ "west-point-lake-ga": {
+  "done": [
+   "cwms:SAM:WestPoint.Elev.Inst.15Minutes.0.Raw-USGS:2022",
+   "cwms:SAM:WestPoint.Elev.Inst.15Minutes.0.Raw-USGS:2023",
+   "cwms:SAM:WestPoint.Elev.Inst.15Minutes.0.Raw-USGS:2024",
+   "cwms:SAM:WestPoint.Elev.Inst.15Minutes.0.Raw-USGS:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "wister-lake-ok": {
+  "done": [
+   "cwms:SWT:WIST.Elev.Inst.1Hour.0.Ccp-Rev:2022",
+   "cwms:SWT:WIST.Elev.Inst.1Hour.0.Ccp-Rev:2023",
+   "cwms:SWT:WIST.Elev.Inst.1Hour.0.Ccp-Rev:2024",
+   "cwms:SWT:WIST.Elev.Inst.1Hour.0.Ccp-Rev:2025"
+  ],
+  "complete": false,
+  "rows": 1787,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "youghiogheny-river-lake-pa": {
+  "done": [
+   "cwms:LRP:Youghiogheny-Lake.Elev.Inst.1Hour.0.OBS:2022",
+   "cwms:LRP:Youghiogheny-Lake.Elev.Inst.1Hour.0.OBS:2023",
+   "cwms:LRP:Youghiogheny-Lake.Elev.Inst.1Hour.0.OBS:2024",
+   "cwms:LRP:Youghiogheny-Lake.Elev.Inst.1Hour.0.OBS:2025"
+  ],
+  "complete": false,
+  "rows": 1784,
+  "updated": "2026-11-23T12:14:39Z"
+ },
+ "blue-mesa-reservoir-co": {
+  "done": [
+   "rise:78:1990",
+   "rise:78:1991",
+   "rise:78:1992",
+   "rise:78:1993",
+   "rise:78:1994",
+   "rise:78:1995",
+   "rise:78:1996",
+   "rise:78:1997",
+   "rise:78:1998",
+   "rise:78:1999",
+   "rise:78:2000",
+   "rise:78:2001",
+   "rise:78:2002",
+   "rise:78:2003",
+   "rise:78:2004",
+   "rise:78:2005",
+   "rise:78:2006",
+   "rise:78:2007",
+   "rise:78:2008",
+   "rise:78:2009",
+   "rise:78:2010",
+   "rise:78:2011",
+   "rise:78:2012",
+   "rise:78:2013",
+   "rise:78:2014",
+   "rise:78:2015",
+   "rise:78:2016",
+   "rise:78:2017",
+   "rise:78:2018",
+   "rise:78:2019",
+   "rise:78:2020",
+   "rise:78:2021",
+   "rise:78:2022",
+   "rise:78:2023",
+   "rise:78:2024",
+   "rise:78:2025"
+  ],
+  "complete": false,
+  "rows": 13472,
+  "updated": "2026-11-23T11:51:51Z"
+ },
+ "caballo-lake-nm": {
+  "done": [
+   "rise:212:1990",
+   "rise:212:1991",
+   "rise:212:1992",
+   "rise:212:1993",
+   "rise:212:1994",
+   "rise:212:1995",
+   "rise:212:1996",
+   "rise:212:1997",
+   "rise:212:1998",
+   "rise:212:1999",
+   "rise:212:2000",
+   "rise:212:2001",
+   "rise:212:2002",
+   "rise:212:2003",
+   "rise:212:2004",
+   "rise:212:2005",
+   "rise:212:2006",
+   "rise:212:2007",
+   "rise:212:2008",
+   "rise:212:2009",
+   "rise:212:2010",
+   "rise:212:2011",
+   "rise:212:2012",
+   "rise:212:2013",
+   "rise:212:2014",
+   "rise:212:2015",
+   "rise:212:2016",
+   "rise:212:2017",
+   "rise:212:2018",
+   "rise:212:2019",
+   "rise:212:2020",
+   "rise:212:2021",
+   "rise:212:2022",
+   "rise:212:2023",
+   "rise:212:2024",
+   "rise:212:2025"
+  ],
+  "complete": false,
+  "rows": 13445,
+  "updated": "2026-11-23T11:51:51Z"
+ },
+ "cachuma-lake-ca": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/result/download?type=json&itemId=10786&after=2019-01-01&before=2019-12-31)"
+ },
+ "canyon-ferry-lake-mt": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/14)"
+ },
+ "cheney-reservoir-ks": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/133978)"
+ },
+ "flaming-gorge-reservoir-ut": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/341)"
+ },
+ "horsetooth-reservoir-co": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/87)"
+ },
+ "jordanelle-reservoir-ut": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/471)"
+ },
+ "lake-granby-co": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/384)"
+ },
+ "lake-havasu-az": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/6128)"
+ },
+ "lake-mead-nv": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/6123)"
+ },
+ "lake-mohave-az": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/6133)"
+ },
+ "lake-powell-az": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/508)"
+ },
+ "navajo-lake-nm": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/612)"
+ },
+ "pathfinder-reservoir-wy": {
+  "done": [],
+  "complete": false,
+  "last_error": "2026-11-23T11:51:51Z URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known> (https://data.usbr.gov/rise/api/catalog-item/645)"
+ },
+ "pueblo-reservoir-co": {
+  "done": [
+   "rise:682:1990",
+   "rise:682:1991",
+   "rise:682:1992",
+   "rise:682:1993",
+   "rise:682:1994",
+   "rise:682:1995",
+   "rise:682:1996",
+   "rise:682:1997",
+   "rise:682:1998",
+   "rise:682:1999",
+   "rise:682:2000",
+   "rise:682:2001",
+   "rise:682:2002",
+   "rise:682:2003",
+   "rise:682:2004",
+   "rise:682:2005",
+   "rise:682:2006",
+   "rise:682:2007",
+   "rise:682:2008",
+   "rise:682:2009",
+   "rise:682:2010",
+   "rise:682:2011",
+   "rise:682:2012",
+   "rise:682:2013",
+   "rise:682:2014",
+   "rise:682:2015",
+   "rise:682:2016",
+   "rise:682:2017",
+   "rise:682:2018",
+   "rise:682:2019",
+   "rise:682:2020",
+   "rise:682:2021",
+   "rise:682:2022",
+   "rise:682:2023",
+   "rise:682:2024",
+   "rise:682:2025"
+  ],
+  "complete": false,
+  "rows": 13446,
+  "updated": "2026-11-23T11:51:51Z"
+ },
+ "willard-bay-ut": {
+  "done": [
+   "rise:869:1990",
+   "rise:869:1991",
+   "rise:869:1992",
+   "rise:869:1993",
+   "rise:869:1994",
+   "rise:869:1995",
+   "rise:869:1996",
+   "rise:869:1997",
+   "rise:869:1998",
+   "rise:869:1999",
+   "rise:869:2000",
+   "rise:869:2001",
+   "rise:869:2002",
+   "rise:869:2003",
+   "rise:869:2004",
+   "rise:869:2005",
+   "rise:869:2006",
+   "rise:869:2007",
+   "rise:869:2008",
+   "rise:869:2009",
+   "rise:869:2010",
+   "rise:869:2011",
+   "rise:869:2012",
+   "rise:869:2013",
+   "rise:869:2014",
+   "rise:869:2015",
+   "rise:869:2016",
+   "rise:869:2017",
+   "rise:869:2018",
+   "rise:869:2019",
+   "rise:869:2020",
+   "rise:869:2021",
+   "rise:869:2022",
+   "rise:869:2023",
+   "rise:869:2024",
+   "rise:869:2025"
+  ],
+  "complete": false,
+  "rows": 10977,
+  "updated": "2026-11-23T11:51:51Z"
+ }
+}

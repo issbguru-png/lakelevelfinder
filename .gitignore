@@ -1,0 +1,9 @@
+dist/
+node_modules/
+__pycache__/
+*.pyc
+.wrangler/
+.DS_Store
+dev/
+tests/fixtures/_fresh/
+.commitmsg

@@ -1,0 +1,16 @@
+{
+  "name": "Lake Level Finder",
+  "domain": "lakelevelfinder.com",
+  "domain_confirmed": false,
+  "tagline": "Lake and reservoir levels from official gauges. Independent. Not a government website.",
+  "contact_email": "contact@lakelevelfinder.com",
+  "corrections_email": "contact@lakelevelfinder.com",
+  "launch_date": null,
+  "ga4_id": "G-JJJC0WWL37",
+  "sister_sites": [
+    {
+      "name": "Burn Ban Finder",
+      "url": "https://burnbanfinder.com/"
+    }
+  ]
+}

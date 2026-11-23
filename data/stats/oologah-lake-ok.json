@@ -1,0 +1,665 @@
+{
+ "period_start": "2022-01-01",
+ "period_end": "2026-11-22",
+ "n_days": 1786,
+ "has_history": true,
+ "backfilled_days": 1778,
+ "record_high": {
+  "elev_ft": 656.11,
+  "date": "2025-06-23"
+ },
+ "record_low": {
+  "elev_ft": 635.1,
+  "date": "2024-10-28"
+ },
+ "year_high": {
+  "elev_ft": 653.37,
+  "date": "2026-06-29"
+ },
+ "year_low": {
+  "elev_ft": 638.04,
+  "date": "2026-01-04"
+ },
+ "same_day_last_year": {
+  "elev_ft": 638.43,
+  "date": "2025-11-22"
+ },
+ "median_this_date": {
+  "elev_ft": 638.43,
+  "years": 5,
+  "first_year": 2022,
+  "last_year": 2026
+ },
+ "yearly": [
+  {
+   "year": 2022,
+   "high": 649.34,
+   "high_date": "2022-05-15",
+   "low": 636.55,
+   "low_date": "2022-11-28",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2023,
+   "high": 638.85,
+   "high_date": "2023-08-17",
+   "low": 636.43,
+   "low_date": "2023-01-15",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2024,
+   "high": 647.4,
+   "high_date": "2024-05-09",
+   "low": 635.1,
+   "low_date": "2024-10-28",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2025,
+   "high": 656.11,
+   "high_date": "2025-06-23",
+   "low": 638.06,
+   "low_date": "2025-12-27",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2026,
+   "high": 653.37,
+   "high_date": "2026-06-29",
+   "low": 638.04,
+   "low_date": "2026-01-04",
+   "n": 325,
+   "partial": false
+  }
+ ],
+ "monthly": [
+  {
+   "year": 2022,
+   "month": 1,
+   "avg": 638.87,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 2,
+   "avg": 638.73,
+   "n": 28
+  },
+  {
+   "year": 2022,
+   "month": 3,
+   "avg": 639.01,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 4,
+   "avg": 638.59,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 5,
+   "avg": 645.97,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 6,
+   "avg": 644.84,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 7,
+   "avg": 639.93,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 8,
+   "avg": 638.57,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 9,
+   "avg": 637.83,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 10,
+   "avg": 637.02,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 11,
+   "avg": 636.75,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 12,
+   "avg": 636.69,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 1,
+   "avg": 636.61,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 2,
+   "avg": 637.04,
+   "n": 28
+  },
+  {
+   "year": 2023,
+   "month": 3,
+   "avg": 637.59,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 4,
+   "avg": 637.66,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 5,
+   "avg": 638.1,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 6,
+   "avg": 638.65,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 7,
+   "avg": 638.33,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 8,
+   "avg": 638.43,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 9,
+   "avg": 638.09,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 10,
+   "avg": 637.58,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 11,
+   "avg": 637.21,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 12,
+   "avg": 637.06,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 1,
+   "avg": 638.9,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 2,
+   "avg": 638.53,
+   "n": 29
+  },
+  {
+   "year": 2024,
+   "month": 3,
+   "avg": 638.49,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 4,
+   "avg": 638.66,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 5,
+   "avg": 644.68,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 6,
+   "avg": 641.24,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 7,
+   "avg": 638.23,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 8,
+   "avg": 637.46,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 9,
+   "avg": 636.6,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "avg": 635.63,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "avg": 638.66,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "avg": 638.26,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "avg": 638.37,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "avg": 638.59,
+   "n": 28
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "avg": 639.79,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "avg": 640.92,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "avg": 645.14,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "avg": 651.78,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "avg": 647.25,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "avg": 642.6,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "avg": 638.64,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "avg": 638.5,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "avg": 638.31,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "avg": 638.23,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "avg": 638.21,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "avg": 638.45,
+   "n": 28
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "avg": 638.84,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "avg": 640.77,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "avg": 640.56,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "avg": 645.47,
+   "n": 29
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "avg": 647.45,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "avg": 641.4,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 9,
+   "avg": 640.57,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 10,
+   "avg": 640.46,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 11,
+   "avg": 640.47,
+   "n": 22
+  }
+ ],
+ "last_14": [
+  {
+   "date": "2026-11-09",
+   "elev_ft": 640.53,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 640.53,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.0
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 640.51,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.02
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 640.56,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.05
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 640.51,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 640.45,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.06
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 640.44,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.01
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 640.41,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 640.36,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.05
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 640.38,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.02
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 640.35,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 640.32,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": -0.03
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 640.35,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.03
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 640.38,
+   "pct_full": null,
+   "storage_af": null,
+   "change_ft": 0.03
+  }
+ ],
+ "spark_30": [
+  {
+   "date": "2026-10-24",
+   "elev_ft": 640.5
+  },
+  {
+   "date": "2026-10-25",
+   "elev_ft": 640.48
+  },
+  {
+   "date": "2026-10-26",
+   "elev_ft": 640.47
+  },
+  {
+   "date": "2026-10-27",
+   "elev_ft": 640.47
+  },
+  {
+   "date": "2026-10-28",
+   "elev_ft": 640.45
+  },
+  {
+   "date": "2026-10-29",
+   "elev_ft": 640.45
+  },
+  {
+   "date": "2026-10-30",
+   "elev_ft": 640.49
+  },
+  {
+   "date": "2026-10-31",
+   "elev_ft": 640.47
+  },
+  {
+   "date": "2026-11-01",
+   "elev_ft": 640.47
+  },
+  {
+   "date": "2026-11-02",
+   "elev_ft": 640.4
+  },
+  {
+   "date": "2026-11-03",
+   "elev_ft": 640.47
+  },
+  {
+   "date": "2026-11-04",
+   "elev_ft": 640.54
+  },
+  {
+   "date": "2026-11-05",
+   "elev_ft": 640.57
+  },
+  {
+   "date": "2026-11-06",
+   "elev_ft": 640.61
+  },
+  {
+   "date": "2026-11-07",
+   "elev_ft": 640.56
+  },
+  {
+   "date": "2026-11-08",
+   "elev_ft": 640.56
+  },
+  {
+   "date": "2026-11-09",
+   "elev_ft": 640.53
+  },
+  {
+   "date": "2026-11-10",
+   "elev_ft": 640.53
+  },
+  {
+   "date": "2026-11-11",
+   "elev_ft": 640.51
+  },
+  {
+   "date": "2026-11-12",
+   "elev_ft": 640.56
+  },
+  {
+   "date": "2026-11-13",
+   "elev_ft": 640.51
+  },
+  {
+   "date": "2026-11-14",
+   "elev_ft": 640.45
+  },
+  {
+   "date": "2026-11-15",
+   "elev_ft": 640.44
+  },
+  {
+   "date": "2026-11-16",
+   "elev_ft": 640.41
+  },
+  {
+   "date": "2026-11-17",
+   "elev_ft": 640.36
+  },
+  {
+   "date": "2026-11-18",
+   "elev_ft": 640.38
+  },
+  {
+   "date": "2026-11-19",
+   "elev_ft": 640.35
+  },
+  {
+   "date": "2026-11-20",
+   "elev_ft": 640.32
+  },
+  {
+   "date": "2026-11-21",
+   "elev_ft": 640.35
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 640.38
+  }
+ ],
+ "gaps": [
+  [
+   "2026-06-13",
+   "2026-06-13"
+  ]
+ ],
+ "lake_id": "oologah-lake-ok"
+}

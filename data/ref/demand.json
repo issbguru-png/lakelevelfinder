@@ -1,0 +1,578 @@
+{
+ "lake-mead-nv": {
+  "volume": 60500
+ },
+ "lake-travis-tx": {
+  "volume": 49500
+ },
+ "canyon-lake-tx": {
+  "volume": 40500
+ },
+ "lake-powell-az": {
+  "volume": 33100
+ },
+ "medina-lake-tx": {
+  "volume": 27100
+ },
+ "lake-corpus-christi-tx": {
+  "volume": 27100
+ },
+ "choke-canyon-reservoir-tx": {
+  "volume": 22200
+ },
+ "lake-lanier-ga": {
+  "volume": 14800
+ },
+ "shasta-lake-ca": {
+  "volume": 12100
+ },
+ "kerr-lake-va": {
+  "volume": 12100
+ },
+ "table-rock-lake-mo": {
+  "volume": 12100
+ },
+ "lake-hartwell-ga": {
+  "volume": 9900
+ },
+ "toledo-bend-reservoir-tx": {
+  "volume": 9900
+ },
+ "smith-mountain-lake-va": {
+  "volume": 8100
+ },
+ "lake-okeechobee-fl": {
+  "volume": 6600
+ },
+ "elephant-butte-lake-nm": {
+  "volume": 6600
+ },
+ "sam-rayburn-reservoir-tx": {
+  "volume": 6600
+ },
+ "lake-buchanan-tx": {
+  "volume": 6600
+ },
+ "lake-oroville-ca": {
+  "volume": 6600
+ },
+ "truman-lake-mo": {
+  "volume": 6600
+ },
+ "cheney-reservoir-ks": {
+  "volume": 6600
+ },
+ "lake-amistad-tx": {
+  "volume": 5400
+ },
+ "thurmond-lake-ga": {
+  "volume": 5400
+ },
+ "bull-shoals-lake-ar": {
+  "volume": 5400
+ },
+ "grand-lake-ok": {
+  "volume": 5400
+ },
+ "cedar-creek-reservoir-tx": {
+  "volume": 5400
+ },
+ "lake-of-the-ozarks-mo": {
+  "volume": 5400
+ },
+ "keystone-lake-ok": {
+  "volume": 5400
+ },
+ "rough-river-lake-ky": {
+  "volume": 5400
+ },
+ "falcon-lake-tx": {
+  "volume": 4400
+ },
+ "lake-eufaula-ok": {
+  "volume": 4400
+ },
+ "lake-norman-nc": {
+  "volume": 4400
+ },
+ "falls-lake-nc": {
+  "volume": 4400
+ },
+ "nolin-river-lake-ky": {
+  "volume": 4400
+ },
+ "jordan-lake-nc": {
+  "volume": 3600
+ },
+ "lake-murray-sc": {
+  "volume": 3600
+ },
+ "barren-river-lake-ky": {
+  "volume": 3600
+ },
+ "lake-allatoona-ga": {
+  "volume": 3600
+ },
+ "beaver-lake-ar": {
+  "volume": 3600
+ },
+ "kaw-lake-ok": {
+  "volume": 3600
+ },
+ "oologah-lake-ok": {
+  "volume": 3600
+ },
+ "douglas-lake-tn": {
+  "volume": 3600
+ },
+ "folsom-lake-ca": {
+  "volume": 2900
+ },
+ "fort-gibson-lake-ok": {
+  "volume": 2900
+ },
+ "lake-tenkiller-ok": {
+  "volume": 2900
+ },
+ "lake-texoma-tx": {
+  "volume": 2400
+ },
+ "lake-berryessa-ca": {
+  "volume": 2400
+ },
+ "norris-lake-tn": {
+  "volume": 2400
+ },
+ "lake-cumberland-ky": {
+  "volume": 2400
+ },
+ "mark-twain-lake-mo": {
+  "volume": 1900
+ },
+ "lake-brownwood-tx": {
+  "volume": 1900
+ },
+ "lake-nacimiento-ca": {
+  "volume": 1900
+ },
+ "lake-texana-tx": {
+  "volume": 1900
+ },
+ "pomme-de-terre-lake-mo": {
+  "volume": 1900
+ },
+ "stockton-lake-mo": {
+  "volume": 1900
+ },
+ "lake-somerville-tx": {
+  "volume": 1900
+ },
+ "grenada-lake-ms": {
+  "volume": 1900
+ },
+ "lewis-smith-lake-al": {
+  "volume": 1900
+ },
+ "lake-fork-tx": {
+  "volume": 1900
+ },
+ "belton-lake-tx": {
+  "volume": 1600
+ },
+ "greers-ferry-lake-ar": {
+  "volume": 1600
+ },
+ "lake-martin-al": {
+  "volume": 1600
+ },
+ "lake-georgetown-tx": {
+  "volume": 1600
+ },
+ "lake-conroe-tx": {
+  "volume": 1600
+ },
+ "skiatook-lake-ok": {
+  "volume": 1600
+ },
+ "lake-tahoe-ca": {
+  "volume": 1600
+ },
+ "sardis-lake-ms": {
+  "volume": 1600
+ },
+ "cherokee-lake-tn": {
+  "volume": 1600
+ },
+ "flaming-gorge-reservoir-ut": {
+  "volume": 1600
+ },
+ "norfork-lake-ar": {
+  "volume": 1600
+ },
+ "lake-lavon-tx": {
+  "volume": 1300
+ },
+ "lake-mcconaughy-ne": {
+  "volume": 1300
+ },
+ "lake-limestone-tx": {
+  "volume": 1300
+ },
+ "green-river-lake-ky": {
+  "volume": 1300
+ },
+ "monroe-lake-in": {
+  "volume": 1300
+ },
+ "lake-ouachita-ar": {
+  "volume": 1300
+ },
+ "richland-chambers-reservoir-tx": {
+  "volume": 1300
+ },
+ "lake-casitas-ca": {
+  "volume": 1300
+ },
+ "lake-pleasant-az": {
+  "volume": 1000
+ },
+ "roosevelt-lake-az": {
+  "volume": 1000
+ },
+ "lake-marion-sc": {
+  "volume": 1000
+ },
+ "john-redmond-reservoir-ks": {
+  "volume": 1000
+ },
+ "lake-livingston-tx": {
+  "volume": 1000
+ },
+ "lake-havasu-az": {
+  "volume": 880
+ },
+ "eagle-mountain-lake-tx": {
+  "volume": 880
+ },
+ "cachuma-lake-ca": {
+  "volume": 880
+ },
+ "lake-barkley-ky": {
+  "volume": 880
+ },
+ "lake-lewisville-tx": {
+  "volume": 880
+ },
+ "broken-bow-lake-ok": {
+  "volume": 880
+ },
+ "copan-lake-ok": {
+  "volume": 880
+ },
+ "wright-patman-lake-tx": {
+  "volume": 880
+ },
+ "weiss-lake-al": {
+  "volume": 720
+ },
+ "blue-mesa-reservoir-co": {
+  "volume": 720
+ },
+ "navajo-lake-nm": {
+  "volume": 720
+ },
+ "millwood-lake-ar": {
+  "volume": 720
+ },
+ "hugo-lake-ok": {
+  "volume": 720
+ },
+ "lake-bridgeport-tx": {
+  "volume": 720
+ },
+ "fall-river-lake-ks": {
+  "volume": 720
+ },
+ "hubbard-creek-reservoir-tx": {
+  "volume": 720
+ },
+ "lake-tawakoni-tx": {
+  "volume": 720
+ },
+ "lake-waco-tx": {
+  "volume": 720
+ },
+ "wappapello-lake-mo": {
+  "volume": 720
+ },
+ "enid-lake-ms": {
+  "volume": 720
+ },
+ "cave-run-lake-ky": {
+  "volume": 720
+ },
+ "carlyle-lake-il": {
+  "volume": 720
+ },
+ "patoka-lake-in": {
+  "volume": 720
+ },
+ "taylorsville-lake-ky": {
+  "volume": 720
+ },
+ "lake-meredith-tx": {
+  "volume": 720
+ },
+ "lake-shelbyville-il": {
+  "volume": 720
+ },
+ "summersville-lake-wv": {
+  "volume": 590
+ },
+ "canton-lake-ok": {
+  "volume": 590
+ },
+ "brookville-lake-in": {
+  "volume": 590
+ },
+ "logan-martin-lake-al": {
+  "volume": 590
+ },
+ "lake-lbj-tx": {
+  "volume": 590
+ },
+ "lake-palestine-tx": {
+  "volume": 590
+ },
+ "el-dorado-lake-ks": {
+  "volume": 590
+ },
+ "grapevine-lake-tx": {
+  "volume": 590
+ },
+ "rend-lake-il": {
+  "volume": 590
+ },
+ "possum-kingdom-lake-tx": {
+  "volume": 590
+ },
+ "wister-lake-ok": {
+  "volume": 590
+ },
+ "hulah-lake-ok": {
+  "volume": 590
+ },
+ "elk-city-lake-ks": {
+  "volume": 590
+ },
+ "youghiogheny-river-lake-pa": {
+  "volume": 480
+ },
+ "lake-ray-hubbard-tx": {
+  "volume": 480
+ },
+ "trinity-lake-ca": {
+  "volume": 480
+ },
+ "lake-whitney-tx": {
+  "volume": 480
+ },
+ "lake-alan-henry-tx": {
+  "volume": 390
+ },
+ "lake-palo-pinto-tx": {
+  "volume": 390
+ },
+ "lake-o-the-pines-tx": {
+  "volume": 390
+ },
+ "proctor-lake-tx": {
+  "volume": 390
+ },
+ "lake-granbury-tx": {
+  "volume": 390
+ },
+ "dale-hollow-lake-tn": {
+  "volume": 390
+ },
+ "lake-isabella-ca": {
+  "volume": 390
+ },
+ "lake-sonoma-ca": {
+  "volume": 390
+ },
+ "atwood-lake-oh": {
+  "volume": 390
+ },
+ "degray-lake-ar": {
+  "volume": 390
+ },
+ "ray-roberts-lake-tx": {
+  "volume": 390
+ },
+ "clearwater-lake-mo": {
+  "volume": 390
+ },
+ "don-pedro-reservoir-ca": {
+  "volume": 390
+ },
+ "pine-flat-lake-ca": {
+  "volume": 390
+ },
+ "lake-austin-tx": {
+  "volume": 390
+ },
+ "percy-priest-lake-tn": {
+  "volume": 390
+ },
+ "lake-granby-co": {
+  "volume": 390
+ },
+ "lake-houston-tx": {
+  "volume": 390
+ },
+ "millerton-lake-ca": {
+  "volume": 320
+ },
+ "lake-kaweah-ca": {
+  "volume": 320
+ },
+ "jim-chapman-lake-tx": {
+  "volume": 320
+ },
+ "caddo-lake-la": {
+  "volume": 320
+ },
+ "lake-mohave-az": {
+  "volume": 320
+ },
+ "lake-russell-ga": {
+  "volume": 320
+ },
+ "greenbelt-lake-tx": {
+  "volume": 320
+ },
+ "granger-lake-tx": {
+  "volume": 320
+ },
+ "arkabutla-lake-ms": {
+  "volume": 260
+ },
+ "lake-mcclure-ca": {
+  "volume": 260
+ },
+ "jordanelle-reservoir-ut": {
+  "volume": 260
+ },
+ "inks-lake-tx": {
+  "volume": 260
+ },
+ "lake-greeson-ar": {
+  "volume": 260
+ },
+ "lake-leon-tx": {
+  "volume": 260
+ },
+ "hords-creek-lake-tx": {
+  "volume": 210
+ },
+ "lake-kemp-tx": {
+  "volume": 210
+ },
+ "caballo-lake-nm": {
+  "volume": 210
+ },
+ "willard-bay-ut": {
+  "volume": 210
+ },
+ "horsetooth-reservoir-co": {
+  "volume": 210
+ },
+ "walter-f-george-lake-ga": {
+  "volume": 210
+ },
+ "pat-mayse-lake-tx": {
+  "volume": 210
+ },
+ "benbrook-lake-tx": {
+  "volume": 210
+ },
+ "lake-abilene-tx": {
+  "volume": 170
+ },
+ "san-luis-reservoir-ca": {
+  "volume": 170
+ },
+ "lake-weatherford-tx": {
+  "volume": 170
+ },
+ "lake-stamford-tx": {
+  "volume": 170
+ },
+ "center-hill-lake-tn": {
+  "volume": 170
+ },
+ "allegheny-reservoir-pa": {
+  "volume": 140
+ },
+ "pueblo-reservoir-co": {
+  "volume": 140
+ },
+ "lake-coleman-tx": {
+  "volume": 140
+ },
+ "canyon-ferry-lake-mt": {
+  "volume": 110
+ },
+ "lake-mendocino-ca": {
+  "volume": 110
+ },
+ "lake-cypress-springs-tx": {
+  "volume": 110
+ },
+ "lake-bob-sandlin-tx": {
+  "volume": 110
+ },
+ "pathfinder-reservoir-wy": {
+  "volume": 110
+ },
+ "lake-worth-tx": {
+  "volume": 110
+ },
+ "white-river-reservoir-tx": {
+  "volume": 110
+ },
+ "oak-creek-reservoir-tx": {
+  "volume": 110
+ },
+ "twin-buttes-reservoir-tx": {
+  "volume": 110
+ },
+ "lake-tyler-tx": {
+  "volume": 110
+ },
+ "lake-kickapoo-tx": {
+  "volume": 110
+ },
+ "navarro-mills-lake-tx": {
+  "volume": 110
+ },
+ "lake-graham-tx": {
+  "volume": 90
+ },
+ "lost-creek-reservoir-tx": {
+  "volume": 90
+ },
+ "lake-seminole-fl": {
+  "volume": 90
+ },
+ "lake-marble-falls-tx": {
+  "volume": 90
+ },
+ "camanche-reservoir-ca": {
+  "volume": 90
+ },
+ "lake-success-ca": {
+  "volume": 90
+ }
+}

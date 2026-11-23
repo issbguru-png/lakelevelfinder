@@ -1,0 +1,142 @@
+{
+    "Location": {
+        "Name": "Lake Mead Hoover Dam and Powerplant",
+        "State": "AZ",
+        "Coordinates (long, lat)": "(-114.7374, 36.0163)"
+    },
+    "Timezone": "MT",
+    "Type": "Lake\/Reservoir",
+    "Reclamation Region": "LC",
+    "Parameter Name:": "Lake\/Reservoir Elevation",
+    "Units": "ft",
+    "Timestep": "daily",
+    "Aggregation": "instant",
+    "Note": "Datetime values are presented as UTC",
+    "0": {
+        "dateTime": "2026-11-01 07:00:00",
+        "result": 1038.93,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "1": {
+        "dateTime": "2026-11-02 07:00:00",
+        "result": 1039.06,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "2": {
+        "dateTime": "2026-11-03 07:00:00",
+        "result": 1039.21,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "3": {
+        "dateTime": "2026-11-04 07:00:00",
+        "result": 1039.29,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "4": {
+        "dateTime": "2026-11-05 07:00:00",
+        "result": 1039.41,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "5": {
+        "dateTime": "2026-11-06 07:00:00",
+        "result": 1039.46,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "6": {
+        "dateTime": "2026-11-07 07:00:00",
+        "result": 1039.55,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "7": {
+        "dateTime": "2026-11-08 07:00:00",
+        "result": 1039.66,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "8": {
+        "dateTime": "2026-11-09 07:00:00",
+        "result": 1039.86,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "9": {
+        "dateTime": "2026-11-10 07:00:00",
+        "result": 1040.21,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "10": {
+        "dateTime": "2026-11-11 07:00:00",
+        "result": 1040.48,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "11": {
+        "dateTime": "2026-11-12 07:00:00",
+        "result": 1040.71,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "12": {
+        "dateTime": "2026-11-13 07:00:00",
+        "result": 1040.86,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "13": {
+        "dateTime": "2026-11-14 07:00:00",
+        "result": 1041,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "14": {
+        "dateTime": "2026-11-15 07:00:00",
+        "result": 1041.14,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "15": {
+        "dateTime": "2026-11-16 07:00:00",
+        "result": 1041.16,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "16": {
+        "dateTime": "2026-11-17 07:00:00",
+        "result": 1041.23,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "17": {
+        "dateTime": "2026-11-18 07:00:00",
+        "result": 1041.27,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "18": {
+        "dateTime": "2026-11-19 07:00:00",
+        "result": 1041.27,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "19": {
+        "dateTime": "2026-11-20 07:00:00",
+        "result": 1041.36,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "20": {
+        "dateTime": "2026-11-21 07:00:00",
+        "result": 1041.41,
+        "timeStep": "day",
+        "resultType": "observed"
+    },
+    "Results": []
+}

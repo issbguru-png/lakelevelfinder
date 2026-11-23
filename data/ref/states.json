@@ -1,0 +1,747 @@
+{
+ "AL": {
+  "code": "AL",
+  "name": "Alabama",
+  "slug": "alabama",
+  "neighbours": [
+   "MS",
+   "TN",
+   "GA",
+   "FL"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "AK": {
+  "code": "AK",
+  "name": "Alaska",
+  "slug": "alaska",
+  "neighbours": [],
+  "timezones": [
+   "America/Anchorage",
+   "America/Juneau",
+   "America/Nome",
+   "America/Sitka",
+   "America/Yakutat",
+   "America/Metlakatla",
+   "America/Adak"
+  ]
+ },
+ "AZ": {
+  "code": "AZ",
+  "name": "Arizona",
+  "slug": "arizona",
+  "neighbours": [
+   "CA",
+   "NV",
+   "UT",
+   "NM",
+   "CO"
+  ],
+  "timezones": [
+   "America/Phoenix",
+   "America/Denver"
+  ]
+ },
+ "AR": {
+  "code": "AR",
+  "name": "Arkansas",
+  "slug": "arkansas",
+  "neighbours": [
+   "MO",
+   "TN",
+   "MS",
+   "LA",
+   "TX",
+   "OK"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "CA": {
+  "code": "CA",
+  "name": "California",
+  "slug": "california",
+  "neighbours": [
+   "OR",
+   "NV",
+   "AZ"
+  ],
+  "timezones": [
+   "America/Los_Angeles"
+  ]
+ },
+ "CO": {
+  "code": "CO",
+  "name": "Colorado",
+  "slug": "colorado",
+  "neighbours": [
+   "WY",
+   "NE",
+   "KS",
+   "OK",
+   "NM",
+   "AZ",
+   "UT"
+  ],
+  "timezones": [
+   "America/Denver"
+  ]
+ },
+ "CT": {
+  "code": "CT",
+  "name": "Connecticut",
+  "slug": "connecticut",
+  "neighbours": [
+   "NY",
+   "MA",
+   "RI"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "DE": {
+  "code": "DE",
+  "name": "Delaware",
+  "slug": "delaware",
+  "neighbours": [
+   "MD",
+   "PA",
+   "NJ"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "DC": {
+  "code": "DC",
+  "name": "District of Columbia",
+  "slug": "district-of-columbia",
+  "neighbours": [
+   "MD",
+   "VA"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "FL": {
+  "code": "FL",
+  "name": "Florida",
+  "slug": "florida",
+  "neighbours": [
+   "AL",
+   "GA"
+  ],
+  "timezones": [
+   "America/New_York",
+   "America/Chicago"
+  ]
+ },
+ "GA": {
+  "code": "GA",
+  "name": "Georgia",
+  "slug": "georgia",
+  "neighbours": [
+   "FL",
+   "AL",
+   "TN",
+   "NC",
+   "SC"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "HI": {
+  "code": "HI",
+  "name": "Hawaii",
+  "slug": "hawaii",
+  "neighbours": [],
+  "timezones": [
+   "Pacific/Honolulu"
+  ]
+ },
+ "ID": {
+  "code": "ID",
+  "name": "Idaho",
+  "slug": "idaho",
+  "neighbours": [
+   "WA",
+   "OR",
+   "NV",
+   "UT",
+   "WY",
+   "MT"
+  ],
+  "timezones": [
+   "America/Boise",
+   "America/Los_Angeles"
+  ]
+ },
+ "IL": {
+  "code": "IL",
+  "name": "Illinois",
+  "slug": "illinois",
+  "neighbours": [
+   "WI",
+   "IA",
+   "MO",
+   "KY",
+   "IN"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "IN": {
+  "code": "IN",
+  "name": "Indiana",
+  "slug": "indiana",
+  "neighbours": [
+   "MI",
+   "OH",
+   "KY",
+   "IL"
+  ],
+  "timezones": [
+   "America/Indiana/Indianapolis",
+   "America/Chicago"
+  ]
+ },
+ "IA": {
+  "code": "IA",
+  "name": "Iowa",
+  "slug": "iowa",
+  "neighbours": [
+   "MN",
+   "WI",
+   "IL",
+   "MO",
+   "NE",
+   "SD"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "KS": {
+  "code": "KS",
+  "name": "Kansas",
+  "slug": "kansas",
+  "neighbours": [
+   "NE",
+   "MO",
+   "OK",
+   "CO"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/Denver"
+  ]
+ },
+ "KY": {
+  "code": "KY",
+  "name": "Kentucky",
+  "slug": "kentucky",
+  "neighbours": [
+   "IN",
+   "OH",
+   "WV",
+   "VA",
+   "TN",
+   "MO",
+   "IL"
+  ],
+  "timezones": [
+   "America/New_York",
+   "America/Chicago"
+  ]
+ },
+ "LA": {
+  "code": "LA",
+  "name": "Louisiana",
+  "slug": "louisiana",
+  "neighbours": [
+   "TX",
+   "AR",
+   "MS"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "ME": {
+  "code": "ME",
+  "name": "Maine",
+  "slug": "maine",
+  "neighbours": [
+   "NH"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "MD": {
+  "code": "MD",
+  "name": "Maryland",
+  "slug": "maryland",
+  "neighbours": [
+   "PA",
+   "DE",
+   "VA",
+   "WV",
+   "DC"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "MA": {
+  "code": "MA",
+  "name": "Massachusetts",
+  "slug": "massachusetts",
+  "neighbours": [
+   "NY",
+   "VT",
+   "NH",
+   "RI",
+   "CT"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "MI": {
+  "code": "MI",
+  "name": "Michigan",
+  "slug": "michigan",
+  "neighbours": [
+   "WI",
+   "IN",
+   "OH"
+  ],
+  "timezones": [
+   "America/Detroit",
+   "America/Menominee"
+  ]
+ },
+ "MN": {
+  "code": "MN",
+  "name": "Minnesota",
+  "slug": "minnesota",
+  "neighbours": [
+   "ND",
+   "SD",
+   "IA",
+   "WI"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "MS": {
+  "code": "MS",
+  "name": "Mississippi",
+  "slug": "mississippi",
+  "neighbours": [
+   "LA",
+   "AR",
+   "TN",
+   "AL"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "MO": {
+  "code": "MO",
+  "name": "Missouri",
+  "slug": "missouri",
+  "neighbours": [
+   "IA",
+   "IL",
+   "KY",
+   "TN",
+   "AR",
+   "OK",
+   "KS",
+   "NE"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "MT": {
+  "code": "MT",
+  "name": "Montana",
+  "slug": "montana",
+  "neighbours": [
+   "ID",
+   "WY",
+   "SD",
+   "ND"
+  ],
+  "timezones": [
+   "America/Denver"
+  ]
+ },
+ "NE": {
+  "code": "NE",
+  "name": "Nebraska",
+  "slug": "nebraska",
+  "neighbours": [
+   "SD",
+   "IA",
+   "MO",
+   "KS",
+   "CO",
+   "WY"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/Denver"
+  ]
+ },
+ "NV": {
+  "code": "NV",
+  "name": "Nevada",
+  "slug": "nevada",
+  "neighbours": [
+   "OR",
+   "ID",
+   "UT",
+   "AZ",
+   "CA"
+  ],
+  "timezones": [
+   "America/Los_Angeles"
+  ]
+ },
+ "NH": {
+  "code": "NH",
+  "name": "New Hampshire",
+  "slug": "new-hampshire",
+  "neighbours": [
+   "VT",
+   "ME",
+   "MA"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "NJ": {
+  "code": "NJ",
+  "name": "New Jersey",
+  "slug": "new-jersey",
+  "neighbours": [
+   "NY",
+   "PA",
+   "DE"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "NM": {
+  "code": "NM",
+  "name": "New Mexico",
+  "slug": "new-mexico",
+  "neighbours": [
+   "AZ",
+   "UT",
+   "CO",
+   "OK",
+   "TX"
+  ],
+  "timezones": [
+   "America/Denver"
+  ]
+ },
+ "NY": {
+  "code": "NY",
+  "name": "New York",
+  "slug": "new-york",
+  "neighbours": [
+   "PA",
+   "NJ",
+   "CT",
+   "MA",
+   "VT"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "NC": {
+  "code": "NC",
+  "name": "North Carolina",
+  "slug": "north-carolina",
+  "neighbours": [
+   "VA",
+   "TN",
+   "GA",
+   "SC"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "ND": {
+  "code": "ND",
+  "name": "North Dakota",
+  "slug": "north-dakota",
+  "neighbours": [
+   "MT",
+   "SD",
+   "MN"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/Denver"
+  ]
+ },
+ "OH": {
+  "code": "OH",
+  "name": "Ohio",
+  "slug": "ohio",
+  "neighbours": [
+   "MI",
+   "PA",
+   "WV",
+   "KY",
+   "IN"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "OK": {
+  "code": "OK",
+  "name": "Oklahoma",
+  "slug": "oklahoma",
+  "neighbours": [
+   "KS",
+   "MO",
+   "AR",
+   "TX",
+   "NM",
+   "CO"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "OR": {
+  "code": "OR",
+  "name": "Oregon",
+  "slug": "oregon",
+  "neighbours": [
+   "WA",
+   "ID",
+   "NV",
+   "CA"
+  ],
+  "timezones": [
+   "America/Los_Angeles",
+   "America/Boise"
+  ]
+ },
+ "PA": {
+  "code": "PA",
+  "name": "Pennsylvania",
+  "slug": "pennsylvania",
+  "neighbours": [
+   "NY",
+   "NJ",
+   "DE",
+   "MD",
+   "WV",
+   "OH"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "RI": {
+  "code": "RI",
+  "name": "Rhode Island",
+  "slug": "rhode-island",
+  "neighbours": [
+   "CT",
+   "MA"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "SC": {
+  "code": "SC",
+  "name": "South Carolina",
+  "slug": "south-carolina",
+  "neighbours": [
+   "NC",
+   "GA"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "SD": {
+  "code": "SD",
+  "name": "South Dakota",
+  "slug": "south-dakota",
+  "neighbours": [
+   "ND",
+   "MN",
+   "IA",
+   "NE",
+   "WY",
+   "MT"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/Denver"
+  ]
+ },
+ "TN": {
+  "code": "TN",
+  "name": "Tennessee",
+  "slug": "tennessee",
+  "neighbours": [
+   "KY",
+   "VA",
+   "NC",
+   "GA",
+   "AL",
+   "MS",
+   "AR",
+   "MO"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/New_York"
+  ]
+ },
+ "TX": {
+  "code": "TX",
+  "name": "Texas",
+  "slug": "texas",
+  "neighbours": [
+   "NM",
+   "OK",
+   "AR",
+   "LA"
+  ],
+  "timezones": [
+   "America/Chicago",
+   "America/Denver"
+  ]
+ },
+ "UT": {
+  "code": "UT",
+  "name": "Utah",
+  "slug": "utah",
+  "neighbours": [
+   "ID",
+   "WY",
+   "CO",
+   "AZ",
+   "NV",
+   "NM"
+  ],
+  "timezones": [
+   "America/Denver"
+  ]
+ },
+ "VT": {
+  "code": "VT",
+  "name": "Vermont",
+  "slug": "vermont",
+  "neighbours": [
+   "NY",
+   "NH",
+   "MA"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "VA": {
+  "code": "VA",
+  "name": "Virginia",
+  "slug": "virginia",
+  "neighbours": [
+   "MD",
+   "DC",
+   "WV",
+   "KY",
+   "TN",
+   "NC"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "WA": {
+  "code": "WA",
+  "name": "Washington",
+  "slug": "washington",
+  "neighbours": [
+   "ID",
+   "OR"
+  ],
+  "timezones": [
+   "America/Los_Angeles"
+  ]
+ },
+ "WV": {
+  "code": "WV",
+  "name": "West Virginia",
+  "slug": "west-virginia",
+  "neighbours": [
+   "OH",
+   "PA",
+   "MD",
+   "VA",
+   "KY"
+  ],
+  "timezones": [
+   "America/New_York"
+  ]
+ },
+ "WI": {
+  "code": "WI",
+  "name": "Wisconsin",
+  "slug": "wisconsin",
+  "neighbours": [
+   "MI",
+   "MN",
+   "IA",
+   "IL"
+  ],
+  "timezones": [
+   "America/Chicago"
+  ]
+ },
+ "WY": {
+  "code": "WY",
+  "name": "Wyoming",
+  "slug": "wyoming",
+  "neighbours": [
+   "MT",
+   "SD",
+   "NE",
+   "CO",
+   "UT",
+   "ID"
+  ],
+  "timezones": [
+   "America/Denver"
+  ]
+ }
+}
