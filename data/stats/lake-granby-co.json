@@ -1,82 +1,1064 @@
 {
- "period_start": "2026-11-13",
- "period_end": "2026-11-21",
- "n_days": 9,
- "has_history": false,
- "backfilled_days": 0,
- "record_high": null,
- "record_low": null,
+ "period_start": "1953-10-01",
+ "period_end": "2026-11-22",
+ "n_days": 24809,
+ "has_history": true,
+ "backfilled_days": 24800,
+ "record_high": {
+  "elev_ft": 8280.05,
+  "date": "1962-07-13"
+ },
+ "record_low": {
+  "elev_ft": 8190.93,
+  "date": "1978-04-16"
+ },
  "year_high": {
-  "elev_ft": 8234.44,
-  "date": "2026-11-14"
+  "elev_ft": 8263.59,
+  "date": "2025-11-23"
  },
  "year_low": {
-  "elev_ft": 8233.17,
-  "date": "2026-11-21"
+  "elev_ft": 8232.95,
+  "date": "2026-11-22"
  },
- "same_day_last_year": null,
- "median_this_date": null,
+ "same_day_last_year": {
+  "elev_ft": 8263.72,
+  "date": "2025-11-22"
+ },
+ "median_this_date": {
+  "elev_ft": 8263.55,
+  "years": 69,
+  "first_year": 1953,
+  "last_year": 2026
+ },
  "yearly": [
   {
-   "year": 2026,
-   "high": 8234.44,
-   "high_date": "2026-11-14",
-   "low": 8233.17,
-   "low_date": "2026-11-21",
-   "n": 9,
+   "year": 1953,
+   "high": 8271.59,
+   "high_date": "1953-10-01",
+   "low": 8263.7,
+   "low_date": "1953-12-31",
+   "n": 92,
    "partial": true
+  },
+  {
+   "year": 1954,
+   "high": 8263.6,
+   "high_date": "1954-01-01",
+   "low": 8228.64,
+   "low_date": "1954-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1955,
+   "high": 8232.4,
+   "high_date": "1955-07-15",
+   "low": 8209.47,
+   "low_date": "1955-04-21",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1956,
+   "high": 8238.0,
+   "high_date": "1956-07-06",
+   "low": 8194.37,
+   "low_date": "1956-04-21",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1957,
+   "high": 8270.23,
+   "high_date": "1957-09-08",
+   "low": 8195.21,
+   "low_date": "1957-04-30",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1958,
+   "high": 8279.31,
+   "high_date": "1958-07-08",
+   "low": 8251.71,
+   "low_date": "1958-04-14",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1959,
+   "high": 8266.44,
+   "high_date": "1959-07-15",
+   "low": 8243.31,
+   "low_date": "1959-05-10",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1960,
+   "high": 8272.59,
+   "high_date": "1960-07-17",
+   "low": 8240.3,
+   "low_date": "1960-04-05",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1961,
+   "high": 8271.43,
+   "high_date": "1961-11-05",
+   "low": 8240.08,
+   "low_date": "1961-04-28",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1962,
+   "high": 8280.05,
+   "high_date": "1962-07-13",
+   "low": 8258.33,
+   "low_date": "1962-04-19",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1963,
+   "high": 8265.24,
+   "high_date": "1963-01-01",
+   "low": 8243.53,
+   "low_date": "1963-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1964,
+   "high": 8243.85,
+   "high_date": "1964-07-16",
+   "low": 8219.82,
+   "low_date": "1964-12-31",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1965,
+   "high": 8257.16,
+   "high_date": "1965-08-27",
+   "low": 8200.42,
+   "low_date": "1965-04-21",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1966,
+   "high": 8250.93,
+   "high_date": "1966-07-04",
+   "low": 8225.35,
+   "low_date": "1966-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1967,
+   "high": 8242.95,
+   "high_date": "1967-07-30",
+   "low": 8202.96,
+   "low_date": "1967-05-09",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1968,
+   "high": 8246.32,
+   "high_date": "1968-07-17",
+   "low": 8213.9,
+   "low_date": "1968-05-02",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1969,
+   "high": 8265.5,
+   "high_date": "1969-07-25",
+   "low": 8223.75,
+   "low_date": "1969-04-20",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1970,
+   "high": 8276.76,
+   "high_date": "1970-07-23",
+   "low": 8241.71,
+   "low_date": "1970-05-05",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1971,
+   "high": 8279.97,
+   "high_date": "1971-07-24",
+   "low": 8262.98,
+   "low_date": "1971-05-14",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1972,
+   "high": 8278.71,
+   "high_date": "1972-07-07",
+   "low": 8257.85,
+   "low_date": "1972-03-31",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1973,
+   "high": 8279.95,
+   "high_date": "1973-07-02",
+   "low": 8256.04,
+   "low_date": "1973-05-05",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1974,
+   "high": 8279.65,
+   "high_date": "1974-07-19",
+   "low": 8264.08,
+   "low_date": "1974-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1975,
+   "high": 8278.17,
+   "high_date": "1975-07-27",
+   "low": 8250.53,
+   "low_date": "1975-05-14",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1976,
+   "high": 8265.45,
+   "high_date": "1976-07-06",
+   "low": 8245.68,
+   "low_date": "1976-12-31",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1977,
+   "high": 8245.53,
+   "high_date": "1977-01-01",
+   "low": 8216.14,
+   "low_date": "1977-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1978,
+   "high": 8250.2,
+   "high_date": "1978-07-24",
+   "low": 8190.93,
+   "low_date": "1978-04-16",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1979,
+   "high": 8260.74,
+   "high_date": "1979-08-30",
+   "low": 8212.62,
+   "low_date": "1979-05-05",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1980,
+   "high": 8276.66,
+   "high_date": "1980-07-16",
+   "low": 8244.95,
+   "low_date": "1980-04-16",
+   "n": 274,
+   "partial": true
+  },
+  {
+   "year": 1985,
+   "high": 8272.17,
+   "high_date": "1985-10-01",
+   "low": 8266.76,
+   "low_date": "1985-12-31",
+   "n": 92,
+   "partial": true
+  },
+  {
+   "year": 1986,
+   "high": 8279.85,
+   "high_date": "1986-07-13",
+   "low": 8254.66,
+   "low_date": "1986-04-29",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1987,
+   "high": 8271.9,
+   "high_date": "1987-06-22",
+   "low": 8259.23,
+   "low_date": "1987-12-31",
+   "n": 363,
+   "partial": false
+  },
+  {
+   "year": 1988,
+   "high": 8273.35,
+   "high_date": "1988-07-05",
+   "low": 8248.7,
+   "low_date": "1988-04-02",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1989,
+   "high": 8255.3,
+   "high_date": "1989-06-23",
+   "low": 8224.75,
+   "low_date": "1989-12-31",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 1990,
+   "high": 8242.61,
+   "high_date": "1990-07-13",
+   "low": 8206.36,
+   "low_date": "1990-03-16",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 1991,
+   "high": 8252.04,
+   "high_date": "1991-08-21",
+   "low": 8216.34,
+   "low_date": "1991-05-07",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 1992,
+   "high": 8251.65,
+   "high_date": "1992-07-28",
+   "low": 8226.2,
+   "low_date": "1992-04-05",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1993,
+   "high": 8272.18,
+   "high_date": "1993-07-21",
+   "low": 8231.06,
+   "low_date": "1993-02-28",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 1994,
+   "high": 8273.87,
+   "high_date": "1994-06-29",
+   "low": 8249.99,
+   "low_date": "1994-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1995,
+   "high": 8279.8,
+   "high_date": "1995-07-22",
+   "low": 8236.56,
+   "low_date": "1995-03-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1996,
+   "high": 8279.88,
+   "high_date": "1996-06-19",
+   "low": 8265.45,
+   "low_date": "1996-05-05",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1997,
+   "high": 8279.82,
+   "high_date": "1997-07-10",
+   "low": 8261.86,
+   "low_date": "1997-05-05",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1998,
+   "high": 8279.78,
+   "high_date": "1998-07-01",
+   "low": 8266.55,
+   "low_date": "1998-05-02",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1999,
+   "high": 8279.66,
+   "high_date": "1999-06-29",
+   "low": 8262.37,
+   "low_date": "1999-05-09",
+   "n": 363,
+   "partial": false
+  },
+  {
+   "year": 2000,
+   "high": 8279.67,
+   "high_date": "2000-06-21",
+   "low": 8241.52,
+   "low_date": "2000-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2001,
+   "high": 8264.13,
+   "high_date": "2001-06-14",
+   "low": 8237.56,
+   "low_date": "2001-09-04",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2002,
+   "high": 8245.31,
+   "high_date": "2002-01-01",
+   "low": 8205.52,
+   "low_date": "2002-12-31",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 2003,
+   "high": 8259.87,
+   "high_date": "2003-07-30",
+   "low": 8191.52,
+   "low_date": "2003-03-17",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2004,
+   "high": 8246.55,
+   "high_date": "2004-01-01",
+   "low": 8229.98,
+   "low_date": "2004-05-03",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2005,
+   "high": 8265.51,
+   "high_date": "2005-08-17",
+   "low": 8218.78,
+   "low_date": "2005-04-01",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2006,
+   "high": 8265.51,
+   "high_date": "2006-06-24",
+   "low": 8244.55,
+   "low_date": "2006-04-17",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2007,
+   "high": 8265.25,
+   "high_date": "2007-07-10",
+   "low": 8239.59,
+   "low_date": "2007-04-22",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2008,
+   "high": 8266.65,
+   "high_date": "2008-07-11",
+   "low": 8235.78,
+   "low_date": "2008-04-21",
+   "n": 299,
+   "partial": true
+  },
+  {
+   "year": 2009,
+   "high": 8276.23,
+   "high_date": "2009-07-16",
+   "low": 8238.1,
+   "low_date": "2009-04-20",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2010,
+   "high": 8279.64,
+   "high_date": "2010-07-09",
+   "low": 8249.44,
+   "low_date": "2010-04-20",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2011,
+   "high": 8279.0,
+   "high_date": "2011-08-04",
+   "low": 8252.04,
+   "low_date": "2011-05-14",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2012,
+   "high": 8268.78,
+   "high_date": "2012-01-01",
+   "low": 8239.16,
+   "low_date": "2012-12-31",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2013,
+   "high": 8258.1,
+   "high_date": "2013-12-04",
+   "low": 8217.75,
+   "low_date": "2013-04-28",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2014,
+   "high": 8279.55,
+   "high_date": "2014-07-17",
+   "low": 8239.51,
+   "low_date": "2014-04-19",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2015,
+   "high": 8279.41,
+   "high_date": "2015-07-09",
+   "low": 8269.86,
+   "low_date": "2015-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2016,
+   "high": 8279.51,
+   "high_date": "2016-07-03",
+   "low": 8255.41,
+   "low_date": "2016-04-13",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2017,
+   "high": 8279.55,
+   "high_date": "2017-07-02",
+   "low": 8255.98,
+   "low_date": "2017-04-11",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2018,
+   "high": 8277.57,
+   "high_date": "2018-07-01",
+   "low": 8261.98,
+   "low_date": "2018-04-23",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2019,
+   "high": 8279.6,
+   "high_date": "2019-07-14",
+   "low": 8248.13,
+   "low_date": "2019-04-21",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2020,
+   "high": 8278.86,
+   "high_date": "2020-07-01",
+   "low": 8258.6,
+   "low_date": "2020-04-05",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 2021,
+   "high": 8270.07,
+   "high_date": "2021-07-07",
+   "low": 8250.75,
+   "low_date": "2021-04-26",
+   "n": 364,
+   "partial": false
+  },
+  {
+   "year": 2022,
+   "high": 8278.66,
+   "high_date": "2022-07-08",
+   "low": 8242.59,
+   "low_date": "2022-03-25",
+   "n": 363,
+   "partial": false
+  },
+  {
+   "year": 2023,
+   "high": 8279.5,
+   "high_date": "2023-07-20",
+   "low": 8257.01,
+   "low_date": "2023-04-18",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2024,
+   "high": 8279.47,
+   "high_date": "2024-06-26",
+   "low": 8263.08,
+   "low_date": "2024-12-31",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2025,
+   "high": 8278.54,
+   "high_date": "2025-07-07",
+   "low": 8250.17,
+   "low_date": "2025-03-28",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 2026,
+   "high": 8257.15,
+   "high_date": "2026-01-01",
+   "low": 8232.95,
+   "low_date": "2026-11-22",
+   "n": 326,
+   "partial": false
   }
  ],
  "monthly": [
   {
+   "year": 2021,
+   "month": 12,
+   "avg": 8256.27,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 1,
+   "avg": 8251.9,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 2,
+   "avg": 8247.08,
+   "n": 28
+  },
+  {
+   "year": 2022,
+   "month": 3,
+   "avg": 8243.28,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 4,
+   "avg": 8244.6,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 5,
+   "avg": 8255.51,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 6,
+   "avg": 8272.11,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 7,
+   "avg": 8278.13,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 8,
+   "avg": 8275.37,
+   "n": 31
+  },
+  {
+   "year": 2022,
+   "month": 9,
+   "avg": 8272.16,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 10,
+   "avg": 8271.9,
+   "n": 29
+  },
+  {
+   "year": 2022,
+   "month": 11,
+   "avg": 8272.17,
+   "n": 30
+  },
+  {
+   "year": 2022,
+   "month": 12,
+   "avg": 8272.27,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 1,
+   "avg": 8269.6,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 2,
+   "avg": 8265.23,
+   "n": 28
+  },
+  {
+   "year": 2023,
+   "month": 3,
+   "avg": 8260.63,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 4,
+   "avg": 8257.36,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 5,
+   "avg": 8263.94,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 6,
+   "avg": 8277.21,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 7,
+   "avg": 8279.32,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 8,
+   "avg": 8277.51,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 9,
+   "avg": 8273.93,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 10,
+   "avg": 8272.14,
+   "n": 31
+  },
+  {
+   "year": 2023,
+   "month": 11,
+   "avg": 8272.0,
+   "n": 30
+  },
+  {
+   "year": 2023,
+   "month": 12,
+   "avg": 8271.93,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 1,
+   "avg": 8272.11,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 2,
+   "avg": 8272.5,
+   "n": 28
+  },
+  {
+   "year": 2024,
+   "month": 3,
+   "avg": 8271.83,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 4,
+   "avg": 8269.71,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 5,
+   "avg": 8271.25,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 6,
+   "avg": 8277.72,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 7,
+   "avg": 8278.5,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 8,
+   "avg": 8275.29,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 9,
+   "avg": 8271.52,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 10,
+   "avg": 8269.52,
+   "n": 31
+  },
+  {
+   "year": 2024,
+   "month": 11,
+   "avg": 8268.6,
+   "n": 30
+  },
+  {
+   "year": 2024,
+   "month": 12,
+   "avg": 8265.29,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 1,
+   "avg": 8260.56,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 2,
+   "avg": 8255.85,
+   "n": 28
+  },
+  {
+   "year": 2025,
+   "month": 3,
+   "avg": 8251.59,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 4,
+   "avg": 8252.17,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 5,
+   "avg": 8259.9,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 6,
+   "avg": 8273.32,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 7,
+   "avg": 8277.68,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 8,
+   "avg": 8273.6,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 9,
+   "avg": 8268.73,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 10,
+   "avg": 8266.02,
+   "n": 31
+  },
+  {
+   "year": 2025,
+   "month": 11,
+   "avg": 8264.48,
+   "n": 30
+  },
+  {
+   "year": 2025,
+   "month": 12,
+   "avg": 8259.84,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 1,
+   "avg": 8254.67,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 2,
+   "avg": 8249.51,
+   "n": 28
+  },
+  {
+   "year": 2026,
+   "month": 3,
+   "avg": 8246.7,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 4,
+   "avg": 8250.01,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 5,
+   "avg": 8250.67,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 6,
+   "avg": 8254.19,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 7,
+   "avg": 8251.21,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 8,
+   "avg": 8245.07,
+   "n": 31
+  },
+  {
+   "year": 2026,
+   "month": 9,
+   "avg": 8238.77,
+   "n": 30
+  },
+  {
+   "year": 2026,
+   "month": 10,
+   "avg": 8235.31,
+   "n": 31
+  },
+  {
    "year": 2026,
    "month": 11,
-   "avg": 8233.97,
-   "n": 9
+   "avg": 8234.23,
+   "n": 22
   }
  ],
  "last_14": [
   {
-   "date": "2026-11-08",
-   "elev_ft": null,
-   "pct_full": null,
-   "storage_af": null,
-   "change_ft": null
-  },
-  {
    "date": "2026-11-09",
-   "elev_ft": null,
+   "elev_ft": 8234.44,
    "pct_full": null,
-   "storage_af": null,
-   "change_ft": null
+   "storage_af": 258387,
+   "change_ft": -0.02
   },
   {
    "date": "2026-11-10",
-   "elev_ft": null,
+   "elev_ft": 8234.45,
    "pct_full": null,
-   "storage_af": null,
-   "change_ft": null
+   "storage_af": 258436,
+   "change_ft": 0.01
   },
   {
    "date": "2026-11-11",
-   "elev_ft": null,
+   "elev_ft": 8234.46,
    "pct_full": null,
-   "storage_af": null,
-   "change_ft": null
+   "storage_af": 258485,
+   "change_ft": 0.01
   },
   {
    "date": "2026-11-12",
-   "elev_ft": null,
+   "elev_ft": 8234.41,
    "pct_full": null,
-   "storage_af": null,
-   "change_ft": null
+   "storage_af": 258234,
+   "change_ft": -0.05
   },
   {
    "date": "2026-11-13",
    "elev_ft": 8234.42,
    "pct_full": null,
    "storage_af": null,
-   "change_ft": null
+   "change_ft": 0.01
   },
   {
    "date": "2026-11-14",
@@ -133,92 +1115,95 @@
    "pct_full": null,
    "storage_af": null,
    "change_ft": -0.23
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 8232.95,
+   "pct_full": null,
+   "storage_af": 250933,
+   "change_ft": -0.22
   }
  ],
  "spark_30": [
   {
-   "date": "2026-10-23",
-   "elev_ft": null
-  },
-  {
    "date": "2026-10-24",
-   "elev_ft": null
+   "elev_ft": 8234.87
   },
   {
    "date": "2026-10-25",
-   "elev_ft": null
+   "elev_ft": 8234.79
   },
   {
    "date": "2026-10-26",
-   "elev_ft": null
+   "elev_ft": 8234.75
   },
   {
    "date": "2026-10-27",
-   "elev_ft": null
+   "elev_ft": 8234.69
   },
   {
    "date": "2026-10-28",
-   "elev_ft": null
+   "elev_ft": 8234.66
   },
   {
    "date": "2026-10-29",
-   "elev_ft": null
+   "elev_ft": 8234.68
   },
   {
    "date": "2026-10-30",
-   "elev_ft": null
+   "elev_ft": 8234.65
   },
   {
    "date": "2026-10-31",
-   "elev_ft": null
+   "elev_ft": 8234.65
   },
   {
    "date": "2026-11-01",
-   "elev_ft": null
+   "elev_ft": 8234.66
   },
   {
    "date": "2026-11-02",
-   "elev_ft": null
+   "elev_ft": 8234.63
   },
   {
    "date": "2026-11-03",
-   "elev_ft": null
+   "elev_ft": 8234.63
   },
   {
    "date": "2026-11-04",
-   "elev_ft": null
+   "elev_ft": 8234.63
   },
   {
    "date": "2026-11-05",
-   "elev_ft": null
+   "elev_ft": 8234.6
   },
   {
    "date": "2026-11-06",
-   "elev_ft": null
+   "elev_ft": 8234.59
   },
   {
    "date": "2026-11-07",
-   "elev_ft": null
+   "elev_ft": 8234.5
   },
   {
    "date": "2026-11-08",
-   "elev_ft": null
+   "elev_ft": 8234.46
   },
   {
    "date": "2026-11-09",
-   "elev_ft": null
+   "elev_ft": 8234.44
   },
   {
    "date": "2026-11-10",
-   "elev_ft": null
+   "elev_ft": 8234.45
   },
   {
    "date": "2026-11-11",
-   "elev_ft": null
+   "elev_ft": 8234.46
   },
   {
    "date": "2026-11-12",
-   "elev_ft": null
+   "elev_ft": 8234.41
   },
   {
    "date": "2026-11-13",
@@ -255,6 +1240,10 @@
   {
    "date": "2026-11-21",
    "elev_ft": 8233.17
+  },
+  {
+   "date": "2026-11-22",
+   "elev_ft": 8232.95
   }
  ],
  "gaps": [],

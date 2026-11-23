@@ -1,16 +1,16 @@
 {
- "period_start": "1990-01-01",
+ "period_start": "1966-01-31",
  "period_end": "2026-11-19",
- "n_days": 13472,
+ "n_days": 21885,
  "has_history": true,
- "backfilled_days": 13465,
+ "backfilled_days": 21878,
  "record_high": {
-  "elev_ft": 7519.33,
-  "date": "2015-06-20"
+  "elev_ft": 7519.64,
+  "date": "1970-07-08"
  },
  "record_low": {
-  "elev_ft": 7411.73,
-  "date": "2026-10-19"
+  "elev_ft": 7361.4,
+  "date": "1966-01-31"
  },
  "year_high": {
   "elev_ft": 7468.56,
@@ -25,12 +25,228 @@
   "date": "2025-11-19"
  },
  "median_this_date": {
-  "elev_ft": 7491.63,
-  "years": 37,
-  "first_year": 1990,
+  "elev_ft": 7492.39,
+  "years": 60,
+  "first_year": 1967,
   "last_year": 2026
  },
  "yearly": [
+  {
+   "year": 1966,
+   "high": 7437.87,
+   "high_date": "1966-12-31",
+   "low": 7361.4,
+   "low_date": "1966-01-31",
+   "n": 12,
+   "partial": true
+  },
+  {
+   "year": 1967,
+   "high": 7474.11,
+   "high_date": "1967-07-20",
+   "low": 7437.9,
+   "low_date": "1967-01-01",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1968,
+   "high": 7502.95,
+   "high_date": "1968-08-30",
+   "low": 7432.85,
+   "low_date": "1968-04-30",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1969,
+   "high": 7509.63,
+   "high_date": "1969-11-02",
+   "low": 7454.44,
+   "low_date": "1969-04-19",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1970,
+   "high": 7519.64,
+   "high_date": "1970-07-08",
+   "low": 7465.0,
+   "low_date": "1970-04-08",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1971,
+   "high": 7498.01,
+   "high_date": "1971-01-01",
+   "low": 7439.96,
+   "low_date": "1971-04-30",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1972,
+   "high": 7485.07,
+   "high_date": "1972-07-04",
+   "low": 7450.23,
+   "low_date": "1972-04-05",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1973,
+   "high": 7519.38,
+   "high_date": "1973-07-22",
+   "low": 7448.39,
+   "low_date": "1973-04-26",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1974,
+   "high": 7497.47,
+   "high_date": "1974-07-06",
+   "low": 7441.48,
+   "low_date": "1974-04-05",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1975,
+   "high": 7508.2,
+   "high_date": "1975-08-21",
+   "low": 7432.27,
+   "low_date": "1975-05-14",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1976,
+   "high": 7498.05,
+   "high_date": "1976-07-08",
+   "low": 7467.97,
+   "low_date": "1976-04-02",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1977,
+   "high": 7476.01,
+   "high_date": "1977-01-01",
+   "low": 7430.5,
+   "low_date": "1977-10-30",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1978,
+   "high": 7518.68,
+   "high_date": "1978-07-20",
+   "low": 7434.81,
+   "low_date": "1978-03-02",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1979,
+   "high": 7518.5,
+   "high_date": "1979-07-28",
+   "low": 7442.17,
+   "low_date": "1979-04-18",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1980,
+   "high": 7518.83,
+   "high_date": "1980-07-20",
+   "low": 7453.85,
+   "low_date": "1980-04-17",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1981,
+   "high": 7486.73,
+   "high_date": "1981-01-01",
+   "low": 7454.82,
+   "low_date": "1981-12-29",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1982,
+   "high": 7509.25,
+   "high_date": "1982-09-30",
+   "low": 7430.17,
+   "low_date": "1982-04-09",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1983,
+   "high": 7518.97,
+   "high_date": "1983-07-10",
+   "low": 7468.76,
+   "low_date": "1983-04-23",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1984,
+   "high": 7518.56,
+   "high_date": "1984-08-27",
+   "low": 7427.71,
+   "low_date": "1984-04-16",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1985,
+   "high": 7515.84,
+   "high_date": "1985-07-24",
+   "low": 7453.97,
+   "low_date": "1985-04-07",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1986,
+   "high": 7519.24,
+   "high_date": "1986-07-10",
+   "low": 7455.73,
+   "low_date": "1986-03-27",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1987,
+   "high": 7516.23,
+   "high_date": "1987-07-02",
+   "low": 7448.2,
+   "low_date": "1987-04-09",
+   "n": 365,
+   "partial": false
+  },
+  {
+   "year": 1988,
+   "high": 7485.33,
+   "high_date": "1988-01-01",
+   "low": 7460.43,
+   "low_date": "1988-05-12",
+   "n": 366,
+   "partial": false
+  },
+  {
+   "year": 1989,
+   "high": 7501.72,
+   "high_date": "1989-06-30",
+   "low": 7473.4,
+   "low_date": "1989-01-01",
+   "n": 365,
+   "partial": false
+  },
   {
    "year": 1990,
    "high": 7503.1,

@@ -1,9 +1,9 @@
 {
- "period_start": "1990-01-01",
+ "period_start": "1985-12-22",
  "period_end": "2026-11-20",
- "n_days": 10977,
+ "n_days": 11289,
  "has_history": true,
- "backfilled_days": 10969,
+ "backfilled_days": 11281,
  "record_high": {
   "elev_ft": 4227.97,
   "date": "2017-05-24"
@@ -25,12 +25,57 @@
   "date": "2025-11-20"
  },
  "median_this_date": {
-  "elev_ft": 4218.53,
-  "years": 30,
-  "first_year": 1995,
+  "elev_ft": 4218.48,
+  "years": 31,
+  "first_year": 1988,
   "last_year": 2026
  },
  "yearly": [
+  {
+   "year": 1985,
+   "high": 4221.95,
+   "high_date": "1985-12-22",
+   "low": 4221.66,
+   "low_date": "1985-12-31",
+   "n": 3,
+   "partial": true
+  },
+  {
+   "year": 1986,
+   "high": 4222.79,
+   "high_date": "1986-07-01",
+   "low": 4221.0,
+   "low_date": "1986-01-31",
+   "n": 89,
+   "partial": true
+  },
+  {
+   "year": 1987,
+   "high": 4222.89,
+   "high_date": "1987-03-15",
+   "low": 4217.77,
+   "low_date": "1987-10-12",
+   "n": 73,
+   "partial": true
+  },
+  {
+   "year": 1988,
+   "high": 4221.58,
+   "high_date": "1988-05-08",
+   "low": 4215.02,
+   "low_date": "1988-09-11",
+   "n": 74,
+   "partial": true
+  },
+  {
+   "year": 1989,
+   "high": 4222.49,
+   "high_date": "1989-05-21",
+   "low": 4216.46,
+   "low_date": "1989-01-01",
+   "n": 73,
+   "partial": true
+  },
   {
    "year": 1990,
    "high": 4220.52,
