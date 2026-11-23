@@ -692,7 +692,9 @@
       "soft": 108,
       "hard": 168,
       "basis": "Source posts this series about 4 days behind (observed 2026-11-23)."
-    }
+    },
+    "records_from": "1969-07-13",
+    "records_from_reason": "first filling"
   },
   {
     "id": "bois-darc-lake-tx",
@@ -983,7 +985,9 @@
     "page": "live",
     "demand": 210,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/212",
-    "valid_range_basis": "min: full pool - 120 ft; max: USBR maximum water surface + 5 ft"
+    "valid_range_basis": "min: full pool - 120 ft; max: USBR maximum water surface + 5 ft",
+    "records_from": "1941-11-23",
+    "records_from_reason": "first filling"
   },
   {
     "id": "cachuma-lake-ca",
@@ -1034,7 +1038,9 @@
     "page": "live",
     "demand": 880,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/10786",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: full pool + 30 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: full pool + 30 ft",
+    "records_from": "1958-04-05",
+    "records_from_reason": "first filling"
   },
   {
     "id": "caddo-lake-la",
@@ -1232,7 +1238,9 @@
     "page": "live",
     "demand": 110,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/14",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: full pool + 30 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: full pool + 30 ft",
+    "records_from": "1955-06-06",
+    "records_from_reason": "first filling"
   },
   {
     "id": "canyon-lake-tx",
@@ -2368,7 +2376,9 @@
     "published": true,
     "page": "live",
     "demand": 4400,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/falcon"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/falcon",
+    "records_from": "1954-07-04",
+    "records_from_reason": "first filling"
   },
   {
     "id": "fall-river-lake-ks",
@@ -2518,7 +2528,9 @@
       "soft": 108,
       "hard": 168,
       "basis": "Source posts this series about 4 days behind (observed 2026-11-23)."
-    }
+    },
+    "records_from": "1972-06-30",
+    "records_from_reason": "first filling"
   },
   {
     "id": "folsom-lake-ca",
@@ -3504,7 +3516,9 @@
     "published": true,
     "page": "live",
     "demand": 0,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/joe-pool"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/joe-pool",
+    "records_from": "1989-05-18",
+    "records_from_reason": "first filling"
   },
   {
     "id": "john-redmond-reservoir-ks",
@@ -3653,7 +3667,9 @@
       "soft": 108,
       "hard": 168,
       "basis": "Source posts this series about 4 days behind (observed 2026-11-23)."
-    }
+    },
+    "records_from": "1996-04-12",
+    "records_from_reason": "first filling"
   },
   {
     "id": "kaw-lake-ok",
@@ -3997,7 +4013,9 @@
     "published": true,
     "page": "live",
     "demand": 5400,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/amistad"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/amistad",
+    "records_from": "1971-10-17",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-amon-g-carter-tx",
@@ -4590,7 +4608,9 @@
     "published": true,
     "page": "live",
     "demand": 6600,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/buchanan"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/buchanan",
+    "records_from": "1938-07-27",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-casitas-ca",
@@ -6547,7 +6567,9 @@
     "page": "live",
     "demand": 60500,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/6123",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft",
+    "records_from": "1941-05-23",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-mendocino-ca",
@@ -6749,7 +6771,9 @@
     "page": "live",
     "demand": 320,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/6133",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft",
+    "records_from": "1951-02-28",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-nacogdoches-tx",
@@ -7304,7 +7328,9 @@
       "soft": 108,
       "hard": 168,
       "basis": "Source posts this series about 4 days behind (observed 2026-11-23)."
-    }
+    },
+    "records_from": "1975-07-02",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-ray-hubbard-tx",
@@ -8090,7 +8116,9 @@
     "published": true,
     "page": "live",
     "demand": 49500,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/travis"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/travis",
+    "records_from": "1942-05-31",
+    "records_from_reason": "first filling"
   },
   {
     "id": "lake-tyler-tx",
@@ -9188,7 +9216,9 @@
     "page": "live",
     "demand": 720,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/612",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft",
+    "records_from": "1973-05-12",
+    "records_from_reason": "first filling"
   },
   {
     "id": "navarro-mills-lake-tx",
@@ -10221,7 +10251,9 @@
     "page": "live",
     "demand": 140,
     "source_url": "https://data.usbr.gov/rise/api/catalog-item/682",
-    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft"
+    "valid_range_basis": "min: USBR dead pool - 5 ft; max: USBR maximum water surface + 5 ft",
+    "records_from": "1984-02-03",
+    "records_from_reason": "first filling"
   },
   {
     "id": "ray-roberts-lake-tx",
@@ -10271,7 +10303,9 @@
     "published": true,
     "page": "live",
     "demand": 390,
-    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/ray-roberts"
+    "source_url": "https://www.waterdatafortexas.org/reservoirs/individual/ray-roberts",
+    "records_from": "1989-07-16",
+    "records_from_reason": "first filling"
   },
   {
     "id": "red-bluff-reservoir-tx",

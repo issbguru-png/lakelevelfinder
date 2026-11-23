@@ -14,6 +14,7 @@ How each lake page is tied to one official series (plan 3.5–3.7). Generated fi
 ```
 python3 tools/map_lakes.py --cache /some/cache/dir    # network; ~10 min cold (TWDB full-history CSVs), seconds warm
 python3 tools/demand.py                               # demand.json + each lake's "demand"
+python3 tools/first_fill.py --write                   # records_from for series that start with a reservoir's first filling
 python3 -m pipeline.refdata                           # validate data/ref/*.json
 ```
 
@@ -28,3 +29,11 @@ python3 -m pipeline.refdata                           # validate data/ref/*.json
 - **Seasonal pools:** CWMS seasonal levels store the highest value as `full_pool_ft` and the level id as `primary.full_pool_level`, so the pipeline can read the value in force on each run. TWDB seasonal pools are noted in `full_pool_note`; the JSON's `conservation_pool_elevation` is the value in force.
 - **Validation range (`valid_range_basis` on each non-TWDB lake):** TWDB = dead pool − 5 ft (or the 20-year low − 5 ft if lower) to the record high + 10 ft from the despiked full-history CSV, kept between full pool + 10 and + 60 ft; CWMS = lowest USACE bottom level − 5 ft to top of dam (or top of flood + 10); RISE = USBR dead pool − 5 ft to USBR maximum water surface + 5 ft (else full ± margin); CDEC = daily history since 1990 (0.1th/99.9th percentile) ± 10 ft.
 - **Names and ids:** plan 6.1. The searched form was chosen from `lakes-keywords.csv` (clean "lake X" counts rather than "X lake level" forms, which inflate "X lake"). Ids end with the dam's state.
+
+## Records and first filling
+
+Some series start when the dam closed (Lake Mead 1935, Lake Powell 1963, Lake Travis 1940), so their lowest stored
+values come from the first filling. `tools/first_fill.py` finds them from the data alone and sets `records_from`
+(the first day the level came within 10% of the drawdown range of full pool) with `records_from_reason: "first filling"`.
+`pipeline/stats.py` counts records and the same-date median from that day; charts and the yearly table keep every
+value and mark the filling years. Run it again after a backfill adds older years.

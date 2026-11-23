@@ -4,6 +4,7 @@
  "n_days": 244,
  "has_history": false,
  "backfilled_days": 236,
+ "records_from": null,
  "record_high": null,
  "record_low": null,
  "year_high": {

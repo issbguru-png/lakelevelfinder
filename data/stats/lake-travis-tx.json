@@ -4,13 +4,14 @@
  "n_days": 30722,
  "has_history": true,
  "backfilled_days": 30720,
+ "records_from": "1942-05-31",
  "record_high": {
   "elev_ft": 710.31,
   "date": "1991-12-26"
  },
  "record_low": {
-  "elev_ft": 548.2,
-  "date": "1940-10-31"
+  "elev_ft": 614.18,
+  "date": "1951-08-14"
  },
  "year_high": {
   "elev_ft": 684.71,

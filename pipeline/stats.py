@@ -5,6 +5,8 @@ Templates only print these figures; no number is typed into copy by hand.
   (period_start-period_end). Never call it an all-time record unless the full history was backfilled.
 - same_day_last_year: nearest valid reading within ±3 days of the date one year before period_end.
 - median_this_date: median of the same calendar day across all stored years, only with >= 5 years.
+- records_from: when the lake record sets it (tools/first_fill.py), the series starts with the reservoir's first
+  filling; records and the median count only from that date. Charts, yearly[] and monthly[] keep every value.
 - yearly[]: one row per calendar year; partial when fewer than 300 daily values.
 - last_14[] / spark_30[]: one entry per calendar day; a missing day is elev_ft null (a break, not a line).
 """
@@ -31,7 +33,7 @@ def _year_ago(d, years=1):
         return d.replace(year=d.year - years, day=28)
 
 
-def compute(rows, today=None):
+def compute(rows, today=None, records_from=None):
     rows = [r for r in rows if r.get("elev_ft") is not None]
     if not rows:
         return {"period_start": None, "period_end": None, "n_days": 0, "has_history": False,
@@ -43,12 +45,18 @@ def compute(rows, today=None):
     start, end = rows[0]["date"], rows[-1]["date"]
     n = len(rows)
     has_hist = n >= MIN_RECORD_DAYS
+    rf = dt.date.fromisoformat(records_from) if isinstance(records_from, str) else records_from
+    rec = [r for r in rows if r["date"] >= rf] if rf else rows
+    if not rec:
+        rf, rec = None, rows
+    has_hist = has_hist and len(rec) >= MIN_RECORD_DAYS
     out = {"period_start": start.isoformat(), "period_end": end.isoformat(), "n_days": n, "has_history": has_hist,
-           "backfilled_days": sum(1 for r in rows if r.get("flag") == "bf")}
+           "backfilled_days": sum(1 for r in rows if r.get("flag") == "bf"),
+           "records_from": rf.isoformat() if rf else None}
 
-    # Records: the highest/lowest daily value; the earliest date wins a tie.
-    hi = max(rows, key=lambda r: (r["elev_ft"], -r["date"].toordinal()))
-    lo = min(rows, key=lambda r: (r["elev_ft"], r["date"].toordinal()))
+    # Records: the highest/lowest daily value from records_from on; the earliest date wins a tie.
+    hi = max(rec, key=lambda r: (r["elev_ft"], -r["date"].toordinal()))
+    lo = min(rec, key=lambda r: (r["elev_ft"], r["date"].toordinal()))
     out["record_high"] = _pt(hi) if has_hist else None
     out["record_low"] = _pt(lo) if has_hist else None
 
@@ -60,7 +68,7 @@ def compute(rows, today=None):
     out["same_day_last_year"] = _pt(ago) if ago else None
 
     md = (end.month, end.day)
-    same_day = [r for r in rows if (r["date"].month, r["date"].day) == md]
+    same_day = [r for r in rec if (r["date"].month, r["date"].day) == md]
     years = sorted({r["date"].year for r in same_day})
     out["median_this_date"] = ({"elev_ft": r2(median([r["elev_ft"] for r in same_day])), "years": len(years),
                                 "first_year": years[0], "last_year": years[-1]}
@@ -112,8 +120,20 @@ def change_from_series(rows, day, days, tol=0):
     return r2(a["elev_ft"] - b["elev_ft"])
 
 
+_RECORDS_FROM = None
+
+
+def records_from(lake_id):
+    """records_from of a lake in data/ref/lakes.json (set by tools/first_fill.py), else None."""
+    global _RECORDS_FROM
+    if _RECORDS_FROM is None:
+        lakes = common.load_json(common.DATA / "ref" / "lakes.json", [])
+        _RECORDS_FROM = {lk["id"]: lk.get("records_from") for lk in lakes if isinstance(lk, dict)}
+    return _RECORDS_FROM.get(lake_id)
+
+
 def write(lake_id, rows, dry=False):
-    st = compute(rows)
+    st = compute(rows, records_from=records_from(lake_id))
     st["lake_id"] = lake_id
     if not dry:
         common.save_json(common.DATA / "stats" / f"{lake_id}.json", st)

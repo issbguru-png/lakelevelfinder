@@ -979,10 +979,13 @@ class Site:
             return ""
         enough = (stats.get("n_days") or 0) >= 365 and (pe - ps).days >= 365
         rh, rl = stats["record_high"], stats["record_low"]
+        rf = as_date(stats.get("records_from"))
 
         def t(label, rec):
             return self.tile(label, num(rec["elev_ft"]), "ft", f'<time datetime="{E(str(rec["date"]))}">{d_med(as_date(rec["date"]))}</time>')
-        if enough:
+        if enough and rf:
+            tiles = t(f"Highest since {rf.year}", rh) + t(f"Lowest since {rf.year}", rl)
+        elif enough:
             tiles = t("Highest in record", rh) + t("Lowest in record", rl)
         else:
             tiles = t(f"Highest since {d_med(ps)}", rh) + t(f"Lowest since {d_med(ps)}", rl)
@@ -1000,12 +1003,14 @@ class Site:
                    + f'<i class="rng__n" style="left:{pos(el):.1f}%"></i></div>'
                    f'<p class="rng__e" aria-hidden="true"><span>{num(lo)} ft</span><span>{num(hi)} ft</span></p>'
                    f'<p class="rng__c">The {d_short(v["rdate"])} level, {num(el)} ft, is <strong>{num(el - lo)} ft above</strong> the lowest and '
-                   f'<strong>{num(hi - el)} ft below</strong> the highest level in our record.'
+                   f'<strong>{num(hi - el)} ft below</strong> the highest level '
+                   + (f"since {d_med(rf)}." if rf else "in our record.")
                    + (f" The dashed mark is full pool ({pool_txt(pool)} ft)." if pool is not None else "") + "</p></div>")
         note = ('<p class="muted small">'
                 + (f'Period of record: {E(v["short"])} data, <time datetime="{ps.isoformat()}">{d_med(ps)}</time> to '
                    f'<time datetime="{pe.isoformat()}">{d_med(pe)}</time>. ' if enough else "")
                 + 'Records come from the values we store for this lake, so they cover only the period shown. '
+                + (self.first_fill_note(rf) if enough and rf else "")
                 + (f'{self.a(self.lake_url(lk) + "history/", "Year-by-year highs and lows")}.' if lk["id"] in self.history_ids else "")
                 + "</p>")
         return f'<ul class="tiles tiles--4">{tiles}</ul>{rng}{note}'
@@ -1262,10 +1267,14 @@ class Site:
                        + (f"{num(abs(diff))} ft {'lower' if diff > 0 else 'higher'} than today." if round(diff, 2) else "the same as today.")))
         if stats and stats.get("record_high") and (stats.get("n_days") or 0) >= 365:
             rh, rl = stats["record_high"], stats["record_low"]
+            rf = as_date(stats.get("records_from"))
+            frm = rf or as_date(stats["period_start"])
             qa.append(("What are the highest and lowest levels on record?",
-                       f"In our record ({E(v['short'])} data, {d_med(as_date(stats['period_start']))} to {d_med(as_date(stats['period_end']))}) "
+                       f"In our record ({E(v['short'])} data, {d_med(frm)} to {d_med(as_date(stats['period_end']))}) "
                        f"the highest level was {num(rh['elev_ft'])} ft on {d_med(as_date(rh['date']))} and the lowest was "
-                       f"{num(rl['elev_ft'])} ft on {d_med(as_date(rl['date']))}."))
+                       f"{num(rl['elev_ft'])} ft on {d_med(as_date(rl['date']))}."
+                       + (f" Lower values from {d_med(as_date(stats['period_start']))} to {d_med(rf)}, while the reservoir was "
+                          "filling for the first time, are not counted as records." if rf else "")))
         src = v["src"]
         cad = {"daily_average": "one daily average per day", "daily_instant": "one reading per day",
                "hourly": "readings every hour", "15min": "readings every 15 minutes"}.get(src.get("value_kind"), "new readings regularly")
@@ -1299,15 +1308,24 @@ class Site:
         desc = (f"{name} levels since {first.year}: charts, the highest and lowest level of each year, record levels, "
                 f"and a CSV download.")
         pts = [(r["date"], r["elev"]) for r in ser]
-        hi = max(pts, key=lambda p: p[1])
-        lo = min(pts, key=lambda p: p[1])
+        hi_all = max(pts, key=lambda p: p[1])
+        lo_all = min(pts, key=lambda p: p[1])
+        # records count from records_from when the series starts with the reservoir's first filling (stats.py)
+        rf = as_date(stats.get("records_from"))
+        rec = [p for p in pts if p[0] >= rf] if rf else []
+        if not rec:
+            rf, rec = None, pts
+        hi = max(rec, key=lambda p: (p[1], -p[0].toordinal()))
+        lo = min(rec, key=lambda p: (p[1], p[0].toordinal()))
         years = sorted({d.year for d, _ in pts})
         summary = (f'<p class="lead">Our {E(name)} record holds {len(pts):,} values from {E(v["short"])}, '
                    f'from <time datetime="{first.isoformat()}">{d_med(first)}</time> to <time datetime="{last.isoformat()}">{d_med(last)}</time>. '
-                   f'The highest was <strong>{num(hi[1])} ft</strong> on {d_med(hi[0])}; the lowest was <strong>{num(lo[1])} ft</strong> on {d_med(lo[0])}.'
+                   + (f'Since it first filled ({d_med(rf)}), the highest was <strong>{num(hi[1])} ft</strong> on {d_med(hi[0])} '
+                      f'and the lowest <strong>{num(lo[1])} ft</strong> on {d_med(lo[0])}.' if rf else
+                      f'The highest was <strong>{num(hi[1])} ft</strong> on {d_med(hi[0])}; the lowest was <strong>{num(lo[1])} ft</strong> on {d_med(lo[0])}.')
                    + (f' Full pool is {pool_txt(v["pool"])} ft.' if v["pool"] is not None else "") + "</p>")
         today = self.a(self.lake_url(lk), f"{name} water level today", cls="more__a")
-        blocks = [self.lst_hist_hero(lk, v, pts, hi, lo, years), summary]
+        blocks = [self.lst_hist_hero(lk, v, pts, hi, lo, years, rf), summary]
         # charts: the long-term view first; every range is in the HTML, radio buttons choose which one shows
         items = []
         span = (last - first).days
@@ -1320,7 +1338,8 @@ class Site:
                 full_pool=v["pool"], max_gap_days=max(45, days * 3), height=290, xticks="years", marks=False,
                 line_label=f"{name}, {avg.lower()}",
                 caption=f"{avg} (older years may hold only monthly values), {first.year} to {last.year}. "
-                        f"Highest value {num(hi[1])} ft ({d_med(hi[0])}); lowest {num(lo[1])} ft ({d_med(lo[0])}). "
+                        f"Highest value {num(hi_all[1])} ft ({d_med(hi_all[0])}); lowest {num(lo_all[1])} ft ({d_med(lo_all[0])})"
+                        + (f", during the first filling" if rf and lo_all[0] < rf else "") + ". "
                         "Gaps in the line are periods without values.")))
         five = self.five_chart(lk, v, 3, 290 if not items else 250)
         if five:
@@ -1336,8 +1355,8 @@ class Site:
             blocks.append(self.sec("chart", "chart", f"{E(name)} level over time", sub,
                                    f'<div class="lst-ch">{self.tabs("hr", items)}</div>'))
         blocks.append(self.sec("records", "flag", f"{E(name)} level records", "Highs and lows in the values we store for this lake.",
-                               self.lst_hist_tiles(lk, v, stats, pts, hi, lo, years)))
-        yt = self.lst_yearly(stats, hi[1], lo[1], v["pool"])
+                               self.lst_hist_tiles(lk, v, stats, pts, hi, lo, years, rf)))
+        yt = self.lst_yearly(stats, hi[1], lo[1], v["pool"], rf)
         if yt:
             blocks.append(self.sec("yearly", "cal", "Highest and lowest level each year",
                                    "Years with fewer than 300 daily values are marked partial. The bar shows each year’s range "
@@ -1404,14 +1423,20 @@ class Site:
                 f'{head}<th scope="col" class="num">All years<small>{years[0]}–{years[-1]}</small></th></tr></thead>'
                 f'<tbody>{rows}</tbody></table></div>')
 
+    def first_fill_note(self, rf):
+        """One sentence for lakes whose stored series starts with the reservoir's first filling (tools/first_fill.py)."""
+        return (f'Records count from <time datetime="{rf.isoformat()}">{d_med(rf)}</time>, the first day the level came '
+                "within 10% of full pool; the lower values from the reservoir’s first filling stay in the charts and "
+                "yearly table but are not counted as records. ")
+
     # history helpers (prefix lst_)
-    def lst_hist_hero(self, lk, v, pts, hi, lo, years):
+    def lst_hist_hero(self, lk, v, pts, hi, lo, years, rf=None):
         """Dark hero card: the period of record, and where the latest stored value sits between the record low and high."""
         (first, _), (last, el) = pts[0], pts[-1]
         rng = ""
         if hi[1] > lo[1]:
             pos = lambda x: (x - lo[1]) / (hi[1] - lo[1]) * 100
-            p = pos(el)
+            p = max(0.0, min(100.0, pos(el)))
             pool = v["pool"] if v["pool"] is not None and lo[1] <= v["pool"] <= hi[1] and abs(pos(v["pool"]) - p) > 2.5 else None
             lean = "lst-rg__l--a" if p < 18 else "lst-rg__l--z" if p > 82 else ""
             rng = ('<div class="lst-rg">'
@@ -1422,7 +1447,8 @@ class Site:
                    '<p class="lst-rg__e" aria-hidden="true">'
                    f'<span>Lowest <b>{num(lo[1])} ft</b> {d_med(lo[0])}</span><span>Highest <b>{num(hi[1])} ft</b> {d_med(hi[0])}</span></p>'
                    f'<p class="lst-rg__c">The <time datetime="{last.isoformat()}">{d_med(last)}</time> value, {num(el)} ft, is '
-                   f'<strong>{num(el - lo[1])} ft above</strong> the lowest and <strong>{num(hi[1] - el)} ft below</strong> the highest value in our record.'
+                   f'<strong>{num(el - lo[1])} ft above</strong> the lowest and <strong>{num(hi[1] - el)} ft below</strong> the highest value '
+                   + (f"since the reservoir first filled ({d_med(rf)})." if rf else "in our record.")
                    + (f" The dashed mark is full pool ({pool_txt(pool)} ft)." if pool is not None else "") + "</p></div>")
         n = len(years)
         return (f'<section class="pn lst-hh" aria-label="Period of record"><div class="lst-hh__in"><div>'
@@ -1433,12 +1459,13 @@ class Site:
                 f'to <time datetime="{last.isoformat()}">{d_med(last)}</time>, published by {E(v["short"])}</span></p>'
                 f'<p class="pn__src">Source: {self.ext(v["src_url"], v["src_text"], "ext src-link")}</p></div></section>')
 
-    def lst_hist_tiles(self, lk, v, stats, pts, hi, lo, years):
+    def lst_hist_tiles(self, lk, v, stats, pts, hi, lo, years, rf=None):
         """Record tiles, each with its own date: only values from the stored series and the stats file."""
         def dated(d):
             return f'<time datetime="{d.isoformat()}">{d_med(d)}</time>'
-        tiles = [self.tile("Highest in record", num(hi[1]), "ft", dated(hi[0])),
-                 self.tile("Lowest in record", num(lo[1]), "ft", dated(lo[0]))]
+        word = f"since {rf.year}" if rf else "in record"
+        tiles = [self.tile(f"Highest {word}", num(hi[1]), "ft", dated(hi[0])),
+                 self.tile(f"Lowest {word}", num(lo[1]), "ft", dated(lo[0]))]
         yh, yl = stats.get("year_high"), stats.get("year_low")
         if yh and yl and yh.get("elev_ft") is not None and yl.get("elev_ft") is not None:
             tiles += [self.tile("12-month high", num(yh["elev_ft"]), "ft", dated(as_date(yh["date"]))),
@@ -1453,25 +1480,28 @@ class Site:
         tiles.append(self.tile("First value", num(pts[0][1]), "ft", dated(pts[0][0])))
         tiles.append(self.tile("Latest value", num(pts[-1][1]), "ft", dated(pts[-1][0])))
         note = (f'<p class="muted small">Period of record: {E(v["short"])} data, {dated(pts[0][0])} to {dated(pts[-1][0])}. '
-                "Records come from the values we store for this lake, so they cover only the period shown.</p>")
+                "Records come from the values we store for this lake, so they cover only the period shown. "
+                + (self.first_fill_note(rf) if rf else "") + "</p>")
         return f'<ul class="tiles lst-ti">{"".join(tiles)}</ul>{note}'
 
-    def lst_yearly(self, stats, rhi, rlo, pool):
+    def lst_yearly(self, stats, rhi, rlo, pool, rf=None):
         """Each year's high and low (with dates), a range bar on the record scale, and the record years marked in words."""
         yearly = stats.get("yearly") or []
         if not yearly:
             return ""
         span = (rhi - rlo) or 1
         pos = lambda x: max(0.0, min(100.0, (x - rlo) / span * 100))
-        top = max(y["high"] for y in yearly)
-        bot = min(y["low"] for y in yearly)
+        counted = [y for y in yearly if not rf or y["year"] > rf.year] or yearly
+        top = rhi if rf else max(y["high"] for y in counted)
+        bot = rlo if rf else min(y["low"] for y in counted)
         rows = []
         for y in sorted(yearly, key=lambda y: -y["year"]):
             rh = ' class="num rec"' if y["high"] == top else ' class="num"'
             rl = ' class="num rec"' if y["low"] == bot else ' class="num"'
             a, b = pos(y["low"]), pos(y["high"])
             rows.append(
-                f'<tr><th scope="row">{y["year"]}{" <span class=muted>(partial)</span>" if (y.get("n") or 0) < 300 else ""}</th>'
+                f'<tr><th scope="row">{y["year"]}{" <span class=muted>(partial)</span>" if (y.get("n") or 0) < 300 else ""}'
+                f'{" <span class=muted>(first filling)</span>" if rf and y["year"] < rf.year else ""}</th>'
                 f'<td{rh} data-v="{y["high"]}">{num(y["high"])}{"<span class=vh> (record high)</span>" if y["high"] == top else ""}'
                 f'<small>{d_short(as_date(y["high_date"]))}</small></td>'
                 f'<td{rl} data-v="{y["low"]}">{num(y["low"])}{"<span class=vh> (record low)</span>" if y["low"] == bot else ""}'

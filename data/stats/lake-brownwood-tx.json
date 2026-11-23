@@ -4,6 +4,7 @@
  "n_days": 10014,
  "has_history": true,
  "backfilled_days": 10013,
+ "records_from": null,
  "record_high": {
   "elev_ft": 1431.32,
   "date": "2002-07-08"

@@ -4,13 +4,14 @@
  "n_days": 22973,
  "has_history": true,
  "backfilled_days": 22966,
+ "records_from": "1975-07-02",
  "record_high": {
   "elev_ft": 3708.34,
   "date": "1983-07-14"
  },
  "record_low": {
-  "elev_ft": 3394.5,
-  "date": "1964-05-11"
+  "elev_ft": 3516.62,
+  "date": "2026-09-15"
  },
  "year_high": {
   "elev_ft": 3544.15,
@@ -25,9 +26,9 @@
   "date": "2025-11-19"
  },
  "median_this_date": {
-  "elev_ft": 3625.84,
-  "years": 63,
-  "first_year": 1964,
+  "elev_ft": 3633.5,
+  "years": 52,
+  "first_year": 1975,
   "last_year": 2026
  },
  "yearly": [

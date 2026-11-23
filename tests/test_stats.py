@@ -86,6 +86,32 @@ class Stats(unittest.TestCase):
         self.assertEqual(len(st["spark_30"]), 30)
         self.assertEqual(st["backfilled_days"], 31)
 
+    def test_records_from_skips_first_filling(self):
+        # 2 years filling from 500 ft, then 6 years between 640 and 680 ft
+        start = dt.date(2010, 1, 1)
+        f = lambda i: 500.0 + i * 0.25 if i < 2 * 365 else 640.0 + (i % 365) / 365 * 40
+        rows = synthetic(start, 8 * 365, f=f)
+        plain = stats.compute(rows)
+        self.assertEqual(plain["record_low"]["elev_ft"], 500.0)
+        self.assertIsNone(plain["records_from"])
+        st = stats.compute(rows, records_from="2012-01-01")
+        self.assertEqual(st["records_from"], "2012-01-01")
+        self.assertEqual(st["record_low"]["elev_ft"], 640.0)
+        self.assertGreaterEqual(st["record_low"]["date"], "2012-01-01")
+        self.assertEqual(st["period_start"], "2010-01-01")            # the period and yearly rows keep every value
+        self.assertEqual(st["yearly"][0]["low"], 500.0)
+        self.assertGreater(st["median_this_date"]["elev_ft"], 600)
+
+    def test_first_fill_rule(self):
+        from tools import first_fill
+        vals = [((dt.date(2000, 1, 1) + dt.timedelta(days=i)).isoformat(),
+                 500.0 + i * 0.1 if i < 1500 else 640.0 + (i % 365) / 365 * 40) for i in range(5000)]
+        rf = first_fill.first_fill(vals, 680.0)
+        self.assertIsNotNone(rf)
+        self.assertTrue("2003-01-01" < rf < "2004-12-31")
+        steady = [(d, 640.0 + (i % 365) / 365 * 40) for i, (d, _) in enumerate(vals)]
+        self.assertIsNone(first_fill.first_fill(steady, 680.0))
+
     def test_long_series(self):
         start = dt.date(2020, 1, 1)
         rows = synthetic(start, 6 * 365 + 30, f=lambda i: 600.0 + (i % 400) / 10.0)
