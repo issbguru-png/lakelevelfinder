@@ -11,7 +11,7 @@ if [ -s .commitmsg ]; then git commit -q -F .commitmsg; else git commit -q -m "d
 for i in 1 2 3; do
   if git push -q; then exit 0; fi
   echo "push rejected; rebasing on the remote (attempt $i)"
-  git pull -q --rebase -X theirs || { git rebase --abort || true; sleep 5; }
+  git pull -q --rebase --autostash -X theirs || { git rebase --abort || true; sleep 5; }
 done
 echo "push failed after 3 attempts" >&2
 exit 1

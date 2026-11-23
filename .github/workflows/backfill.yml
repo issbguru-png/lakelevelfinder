@@ -30,6 +30,21 @@ jobs:
           else
             python3 tools/backfill.py --source "$SOURCE"
           fi
+      - name: Clean series and recompute stats (no network)
+        run: |
+          python3 tools/clean_series.py
+          python3 - <<'PY'
+          import json, sys
+          sys.path.insert(0, ".")
+          from pipeline import series, stats
+          n = 0
+          for lake in json.load(open("data/ref/lakes.json")):
+              rows = series.read(lake["id"])
+              if rows:
+                  stats.write(lake["id"], rows)
+                  n += 1
+          print(f"stats for {n} lake(s)")
+          PY
       - name: Unit tests
         run: python3 -m unittest discover -s tests
       - name: Commit series
@@ -37,8 +52,8 @@ jobs:
         run: |
           git config user.name "lakelevelfinder-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/series data/stats
+          git add data/series data/stats data/backfill-state.json
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -q -m "backfill: $SOURCE ${LAKE:-all lakes} ($(git diff --cached --name-only | wc -l | tr -d ' ') files)"
-          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && exit 0; sleep 10; done
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && exit 0; sleep 10; done
           exit 1
