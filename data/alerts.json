@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T19:30:32Z",
+ "generated_at": "2026-11-24T20:30:31Z",
  "alerts": [
-  "range-reject: lake-mcclure-ca primary cdec EXC: timestamp 2026-11-21 older than the accepted 2026-11-23"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-24) vs USGS-08073000 69.01 ft (2026-11-24T20:00:00Z): intraday hidden"
  ]
 }

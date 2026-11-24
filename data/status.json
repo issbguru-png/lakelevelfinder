@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-24T19:30:32Z",
+   "last_success": "2026-11-24T20:30:31Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-24T19:30:32Z",
+   "last_attempt": "2026-11-24T20:30:31Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-24T19:30:32Z",
+   "last_success": "2026-11-24T20:30:31Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-24T19:30:32Z",
+   "last_attempt": "2026-11-24T20:30:31Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -57,19 +57,17 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-24T19:30:32Z",
+ "generated_at": "2026-11-24T20:30:31Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "d22f199",
- "lake_notes": {
-  "lake-mcclure-ca": "primary cdec: reject: timestamp 2026-11-21 older than the accepted 2026-11-23"
- },
+ "build_id": "a94f616",
+ "lake_notes": {},
  "held": {},
  "alerts": [
-  "range-reject: lake-mcclure-ca primary cdec EXC: timestamp 2026-11-21 older than the accepted 2026-11-23"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-24) vs USGS-08073000 69.01 ft (2026-11-24T20:00:00Z): intraday hidden"
  ],
  "last_daily": "2026-11-24"
 }
