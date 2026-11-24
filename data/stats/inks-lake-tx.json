@@ -1038,10 +1038,10 @@
   },
   {
    "date": "2026-11-23",
-   "elev_ft": 887.15,
-   "pct_full": 95.1,
-   "storage_af": 13335,
-   "change_ft": -0.01
+   "elev_ft": 887.14,
+   "pct_full": 95.0,
+   "storage_af": 13328,
+   "change_ft": -0.02
   }
  ],
  "spark_30": [
@@ -1163,7 +1163,7 @@
   },
   {
    "date": "2026-11-23",
-   "elev_ft": 887.15
+   "elev_ft": 887.14
   }
  ],
  "gaps": [],

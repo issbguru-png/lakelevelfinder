@@ -1,7 +1,7 @@
 {
  "period_start": "1996-10-02",
- "period_end": "2026-11-22",
- "n_days": 10818,
+ "period_end": "2026-11-24",
+ "n_days": 10820,
  "has_history": true,
  "backfilled_days": 10817,
  "records_from": null,
@@ -18,15 +18,15 @@
   "date": "2026-06-12"
  },
  "year_low": {
-  "elev_ft": 826.16,
-  "date": "2026-11-22"
+  "elev_ft": 826.06,
+  "date": "2026-11-24"
  },
  "same_day_last_year": {
-  "elev_ft": 831.82,
-  "date": "2025-11-22"
+  "elev_ft": 831.87,
+  "date": "2025-11-24"
  },
  "median_this_date": {
-  "elev_ft": 828.89,
+  "elev_ft": 828.86,
   "years": 31,
   "first_year": 1996,
   "last_year": 2026
@@ -306,9 +306,9 @@
    "year": 2026,
    "high": 832.25,
    "high_date": "2026-06-12",
-   "low": 826.16,
-   "low_date": "2026-11-22",
-   "n": 325,
+   "low": 826.06,
+   "low_date": "2026-11-24",
+   "n": 327,
    "partial": false
   }
  ],
@@ -670,25 +670,11 @@
   {
    "year": 2026,
    "month": 11,
-   "avg": 826.33,
-   "n": 22
+   "avg": 826.31,
+   "n": 24
   }
  ],
  "last_14": [
-  {
-   "date": "2026-11-09",
-   "elev_ft": 826.34,
-   "pct_full": 71.0,
-   "storage_af": 264064,
-   "change_ft": -0.04
-  },
-  {
-   "date": "2026-11-10",
-   "elev_ft": 826.33,
-   "pct_full": 70.9,
-   "storage_af": 263963,
-   "change_ft": -0.01
-  },
   {
    "date": "2026-11-11",
    "elev_ft": 826.31,
@@ -772,17 +758,23 @@
    "pct_full": 70.5,
    "storage_af": 262255,
    "change_ft": -0.01
+  },
+  {
+   "date": "2026-11-23",
+   "elev_ft": 826.09,
+   "pct_full": 70.3,
+   "storage_af": 261554,
+   "change_ft": -0.07
+  },
+  {
+   "date": "2026-11-24",
+   "elev_ft": 826.06,
+   "pct_full": 70.2,
+   "storage_af": 261254,
+   "change_ft": -0.03
   }
  ],
  "spark_30": [
-  {
-   "date": "2026-10-24",
-   "elev_ft": 826.79
-  },
-  {
-   "date": "2026-10-25",
-   "elev_ft": 826.78
-  },
   {
    "date": "2026-10-26",
    "elev_ft": 826.76
@@ -894,6 +886,14 @@
   {
    "date": "2026-11-22",
    "elev_ft": 826.16
+  },
+  {
+   "date": "2026-11-23",
+   "elev_ft": 826.09
+  },
+  {
+   "date": "2026-11-24",
+   "elev_ft": 826.06
   }
  ],
  "gaps": [

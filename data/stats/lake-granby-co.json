@@ -3,7 +3,7 @@
  "period_end": "2026-11-22",
  "n_days": 24809,
  "has_history": true,
- "backfilled_days": 24800,
+ "backfilled_days": 24799,
  "records_from": null,
  "record_high": {
   "elev_ft": 8280.05,
@@ -1121,7 +1121,7 @@
    "date": "2026-11-22",
    "elev_ft": 8232.95,
    "pct_full": null,
-   "storage_af": 250933,
+   "storage_af": null,
    "change_ft": -0.22
   }
  ],
