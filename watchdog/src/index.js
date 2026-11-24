@@ -52,7 +52,8 @@ export default {
     const problems = [];
     let ageMin = null;
     try {
-      const r = await fetch(`https://${env.SITE_DOMAIN}/data/status.json?t=${Date.now()}`, { cf: { cacheTtl: 0 } });
+      const base = env.STATUS_URL || `https://${env.SITE_DOMAIN}/data/status.json`;
+      const r = await fetch(`${base}?t=${Date.now()}`, { cf: { cacheTtl: 0 } });
       if (!r.ok) problems.push(`status.json HTTP ${r.status}`);
       else {
         const s = await r.json();
@@ -106,7 +107,12 @@ export default {
       `Message-ID: <${Date.now()}@${env.SITE_DOMAIN}>`, "Content-Type: text/plain; charset=utf-8", "",
       ...problems, "", "Runbook: docs/runbook.md in the repo.",
     ].join("\r\n");
-    await env.ALERT.send(new EmailMessage(`watchdog@${env.SITE_DOMAIN}`, env.ALERT_TO, body));
-    await env.WATCHDOG.put("last_alert", String(Date.now()));
+    try {
+      await env.ALERT.send(new EmailMessage(`watchdog@${env.SITE_DOMAIN}`, env.ALERT_TO, body));
+      await env.WATCHDOG.put("last_alert", String(Date.now()));
+    } catch (e) {
+      // Sending needs Email Routing on the site's zone (not set up before launch); the problems still show in the logs.
+      console.log(`alert not sent (${e}): ${problems.join("; ")}`);
+    }
   },
 };

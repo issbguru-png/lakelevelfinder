@@ -10,6 +10,9 @@
   "triggers": { "crons": ["*/10 * * * *"] },
   "vars": {
     "SITE_DOMAIN": "lakelevelfinder.com",
+    // Before launch (domain not live) the watchdog reads status.json from the public repo instead of the site.
+    // Set to "" after the first deploy so it checks what visitors see (docs/runbook.md step 8).
+    "STATUS_URL": "https://raw.githubusercontent.com/issbguru-png/lakelevelfinder/main/data/status.json",
     "ALERT_TO": "REPLACE_WITH_VERIFIED_ADDRESS",
     "GH_REPO": "REPLACE_WITH_OWNER/REPLACE_WITH_REPO",
     "GH_WORKFLOW": "update.yml",
