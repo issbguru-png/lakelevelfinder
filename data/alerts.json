@@ -1,8 +1,4 @@
 {
- "generated_at": "2026-11-24T16:30:31Z",
- "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-24) vs USGS-08073000 69.12 ft (2026-11-24T16:00:00Z): intraday hidden",
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-19 older than the accepted 2026-11-23",
-  "range-reject: lake-mcclure-ca primary cdec EXC: timestamp 2026-11-21 older than the accepted 2026-11-23"
- ]
+ "generated_at": "2026-11-24T17:30:37Z",
+ "alerts": []
 }
