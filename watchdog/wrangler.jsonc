@@ -1,6 +1,6 @@
 {
   // Watchdog Worker for lakelevelfinder.com (plan §8.7). Deployed by the manual GitHub workflow
-  // .github/workflows/watchdog-deploy.yml, which fills the REPLACE_WITH_ placeholders on the runner:
+  // .github/workflows/watchdog-deploy.yml, which fills the placeholders on the runner:
   // the KV namespace id ("lakelevelfinder-watchdog-kv"), the alert address (repo secret WATCHDOG_ALERT_TO,
   // a verified Email Routing destination) and the repo name (from GITHUB_REPOSITORY). Nothing private is committed.
   "$schema": "../node_modules/wrangler/config-schema.json",
