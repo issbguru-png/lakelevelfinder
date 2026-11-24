@@ -1,11 +1,11 @@
 {
   "name": "Lake Level Finder",
   "domain": "lakelevelfinder.com",
-  "domain_confirmed": false,
+  "domain_confirmed": true,
   "tagline": "Lake and reservoir levels from official gauges. Independent. Not a government website.",
   "contact_email": "contact@lakelevelfinder.com",
   "corrections_email": "contact@lakelevelfinder.com",
-  "launch_date": null,
+  "launch_date": "2026-11-24",
   "ga4_id": "G-JJJC0WWL37",
   "sister_sites": [
     {
