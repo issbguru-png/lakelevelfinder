@@ -303,6 +303,13 @@ def main(argv=None, get=None):
                 continue
             layer = attach_intraday(lake, pub, results, state, now, alerts, notes)
             pub = dict(pub, intraday=layer)
+            # the page also shows the intraday reading: a new one moves content_modified (sitemap lastmod) too
+            old = current.get(lid) or {}
+            if layer:
+                same = (old.get("intraday") or {}).get("at") == layer.get("at")
+                cm = (old.get("content_modified") or "") if same else iso(now)
+                if cm > (pub.get("content_modified") or ""):
+                    pub["content_modified"] = cm
             if r is not None and not pub.get("used_fallback"):
                 accepted_now[lid] = pub
             current[lid] = pub

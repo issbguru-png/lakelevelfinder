@@ -29,7 +29,7 @@ p{margin:0 0 12px}
 .brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;font-weight:700;font-size:17px;letter-spacing:-.01em;white-space:nowrap}
 .brand svg{flex:none;border-radius:8px;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 .top__nav{display:flex;align-items:center;gap:4px}
-.top__nav a{color:#dcecf6;text-decoration:none;font-size:15px;padding:8px 9px;border-radius:8px}
+.top__nav a{color:#dcecf6;text-decoration:none;font-size:15px;padding:11px 10px;border-radius:8px}
 .top__nav a:hover,.top__nav a[aria-current]{color:#fff;background:rgba(255,255,255,.1)}
 .top__find{display:flex}
 @media (max-width:400px){.hide-xs{display:none}}

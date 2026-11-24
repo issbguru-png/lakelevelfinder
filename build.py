@@ -528,10 +528,14 @@ class Site:
         if sitemap and not noindex:
             self.pages[path] = {"lastmod": lastmod, "group": group, "title": title}
 
+    def state_indexed(self, code):
+        """A state hub is indexed (and linked site-wide) once it has 3 or more lakes with a data feed (state_page rule)."""
+        return sum(1 for lk in self.hub_lakes.get(code) or [] if lk["id"] in self.live_ids) >= 3
+
     def state_crumb(self, code, st):
         """Breadcrumb for a lake's state: "Texas lake levels" when the state hub exists, else the plain name to the home page."""
         u = self.state_url(code)
-        return (f"{st['name']} lake levels", u) if u else (st["name"], "/")
+        return (f"{st['name']} lake levels", u) if (u and self.state_indexed(code)) else None
 
     def crumbs_html(self, crumbs):
         parts = [self.a(u, n) for n, u in crumbs[:-1]] + [f'<span aria-current="page">{E(crumbs[-1][0])}</span>']
@@ -672,7 +676,7 @@ class Site:
         lid, name = lk["id"], lk["name"]
         url = self.lake_url(lk)
         st = self.states.get(lk.get("state"), {"name": lk.get("state"), "slug": None})
-        crumbs = [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, url)]
+        crumbs = [c for c in [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, url)] if c]
         e, src, stats = v["e"], v["src"], self.stats.get(lid) or {}
         unknown = v["fresh"] == "unknown" or v["elev"] is None
         has_storage = v["pct"] is not None or bool(lk.get("capacity_af"))
@@ -1368,7 +1372,7 @@ class Site:
         name, lid = lk["name"], lk["id"]
         url = self.lake_url(lk) + "history/"
         st = self.states.get(lk.get("state"), {"name": lk.get("state")})
-        crumbs = [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, self.lake_url(lk)), ("History", url)]
+        crumbs = [c for c in [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, self.lake_url(lk)), ("History", url)] if c]
         ser = [r for r in self.series[lid] if r["elev"] is not None]
         first, last = ser[0]["date"], ser[-1]["date"]
         stats = self.stats.get(lid) or {}
@@ -1425,7 +1429,7 @@ class Site:
                         else f" Full pool is {pool_txt(v['pool'])} ft.")
             blocks.append(self.sec("chart", "chart", f"{E(name)} level over time", sub,
                                    f'<div class="lst-ch">{self.tabs("hr", items)}</div>'))
-        blocks.append(self.sec("records", "flag", f"{E(name)} level records", "Highs and lows in the values we store for this lake.",
+        blocks.append(self.sec("records", "flag", f"Highest and lowest levels at {E(name)}" + (f" since {rf.year}" if rf else ""), "Highs and lows in the values we store for this lake.",
                                self.lst_hist_tiles(lk, v, stats, pts, hi, lo, years, rf)))
         yt = self.lst_yearly(stats, hi[1], lo[1], v["pool"], rf)
         if yt:
@@ -1440,7 +1444,7 @@ class Site:
         cite = (f"{name} water level, {v['src'].get('credit') or v['src'].get('agency')}, via {BRAND}, "
                 f"{SITE_URL}{url} (retrieved {d_med(self.now.date())}).")
         blocks.append(self.sec("download", "dl", "Download the data", "One row per day: date, elevation_ft, percent_full, storage_af, source.",
-                               f'<div class="dlc"><a class="btn" href="{csv_url}" download>{self.ico("dl")}Download CSV</a>'
+                               f'<div class="dlc"><a class="btn" href="{csv_url}" download rel="nofollow">{self.ico("dl")}Download CSV</a>'
                                f'<p class="small">Cite as: {E(cite)}</p></div>'))
         blocks.append(f'<p class="more lst-today">{today}</p>')
         graph = [{"@type": "Dataset", "name": f"{name} daily water level", "description": desc,
@@ -1610,7 +1614,7 @@ class Site:
         url = self.lake_url(lk)
         code = lk.get("state")
         st = self.states.get(code, {"name": code})
-        crumbs = [("Home", "/"), self.state_crumb(code, st), (name, url)]
+        crumbs = [c for c in [("Home", "/"), self.state_crumb(code, st), (name, url)] if c]
         op = self.operators.get(lk.get("operator"))
         off = lk.get("official_url") or (op or {}).get("official_url")
         who = (op or {}).get("name") or "The lake’s operator"
@@ -3200,7 +3204,7 @@ class Site:
         pages = [("/about/", "About"), ("/sources/", "Data sources and methods"), ("/corrections/", "Report a wrong level"),
                  ("/disclaimer/", "Disclaimer"), ("/contact/", "Contact"), ("/privacy/", "Privacy"), ("/terms/", "Terms")]
         states = "".join(f'<li><a href="{self.state_url(c)}" aria-label="{E(self.states[c]["name"])}">{E(c)}</a></li>'
-                         for c in sorted(self.hub_lakes, key=lambda c: self.states[c]["name"]))
+                         for c in sorted(self.hub_lakes, key=lambda c: self.states[c]["name"]) if self.state_indexed(c))
         check_txt, _, agencies = self.source_facts()
         credits = ""
         if agencies:
