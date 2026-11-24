@@ -57,18 +57,15 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-24T05:20:30Z",
+ "generated_at": "2026-11-24T05:49:48Z",
  "lakes_total": 233,
  "lakes_current": 230,
  "lakes_delayed": 3,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "9bfb0b7",
+ "build_id": "5d2cfe3",
  "lake_notes": {},
  "held": {},
- "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.39 ft (2026-11-23) vs USGS-08073000 69.01 ft (2026-11-24T05:00:00Z): intraday hidden",
-  "datum-mismatch: grapevine-lake-tx twdb 532.22 ft (2026-11-23) vs USGS-08054500 532.96 ft (2026-11-24T04:45:00Z): intraday hidden"
- ],
+ "alerts": [],
  "last_daily": "2026-11-23"
 }
