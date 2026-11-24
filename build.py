@@ -228,6 +228,7 @@ class Site:
         self.sources = load_json(ref / "sources.json", {}) or {}
         self.states = load_json(ref / "states.json", {}) or {}
         self.systems = load_json(ref / "systems.json", {}) or {}
+        self.search_names = (load_json(ref / "search_names.json", {}) or {}).get("lakes", {})
         self.operators = load_json(ref / "operators.json", {}) or {}
         self.demand = load_json(ref / "demand.json", {}) or {}
         self.current = load_json(self.data / "current.json", {}) or {}
@@ -477,14 +478,23 @@ class Site:
 
     # ------------------------------------------------------------ page writer
     def write(self, path, title, description, body, *, crumbs=None, lastmod=None, group="pages", noindex=False,
-              graph=None, og_title=None, kind="page", body_class="", sitemap=True, css=None):
+              graph=None, og_title=None, kind="page", body_class="", sitemap=True, css=None, about_id=None):
         canonical = SITE_URL + path
-        g = [{"@type": "WebSite", "@id": SITE_URL + "/#website", "name": BRAND, "url": SITE_URL + "/"}]
-        if crumbs:
-            g.append({"@type": "BreadcrumbList", "itemListElement": [
-                {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE_URL + u} for i, (n, u) in enumerate(crumbs)]})
-        wp = {"@type": "WebPage", "@id": canonical, "url": canonical, "name": og_title or title, "inLanguage": "en-US",
+        g = [{"@type": "Organization", "@id": SITE_URL + "/#org", "name": BRAND, "url": SITE_URL + "/",
+              "logo": {"@type": "ImageObject", "url": SITE_URL + "/logo.png", "width": 512, "height": 512},
+              "email": SITE.get("contact_email")},
+             {"@type": "WebSite", "@id": SITE_URL + "/#website", "name": BRAND,
+              "alternateName": ["LakeLevelFinder", SITE["domain"]], "url": SITE_URL + "/",
+              "publisher": {"@id": SITE_URL + "/#org"}}]
+        wp = {"@type": "WebPage", "@id": canonical, "url": canonical,
+              "name": re.sub(r"\s*\|\s*" + re.escape(BRAND) + r"$", "", og_title or title), "inLanguage": "en-US",
               "isPartOf": {"@id": SITE_URL + "/#website"}}
+        if crumbs:
+            g.append({"@type": "BreadcrumbList", "@id": canonical + "#breadcrumb", "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE_URL + u} for i, (n, u) in enumerate(crumbs)]})
+            wp["breadcrumb"] = {"@id": canonical + "#breadcrumb"}
+        if about_id:
+            wp["about"] = {"@id": about_id}
         if lastmod:
             wp["dateModified"] = lastmod
         g.append(wp)
@@ -496,7 +506,8 @@ class Site:
         if SITE.get("ga4_id"):
             analytics = (SRC / "templates" / "analytics.html").read_text().replace("{{ga4_id}}", SITE["ga4_id"]).replace(
                 "{{domain}}", SITE["domain"])
-        repl = {"title": E(title), "description": E(description), "canonical": canonical, "site_name": E(BRAND),
+        repl = {"title": E(title), "description": E(description), "site_name": E(BRAND),
+                "canonical": "" if noindex else f'<link rel="canonical" href="{canonical}">\n', "og_url": canonical,
                 "og_title": E(og_title or title), "site_url": SITE_URL, "css_href": self.css, "js_href": self.js,
                 "page_css": f'<link rel="stylesheet" href="{self.page_css[css]}">\n' if css else "",
                 "jsonld": jsonld, "analytics": analytics, "body": body, "body_class": body_class,
@@ -516,6 +527,11 @@ class Site:
         self.kind[path] = kind
         if sitemap and not noindex:
             self.pages[path] = {"lastmod": lastmod, "group": group, "title": title}
+
+    def state_crumb(self, code, st):
+        """Breadcrumb for a lake's state: "Texas lake levels" when the state hub exists, else the plain name to the home page."""
+        u = self.state_url(code)
+        return (f"{st['name']} lake levels", u) if u else (st["name"], "/")
 
     def crumbs_html(self, crumbs):
         parts = [self.a(u, n) for n, u in crumbs[:-1]] + [f'<span aria-current="page">{E(crumbs[-1][0])}</span>']
@@ -656,23 +672,17 @@ class Site:
         lid, name = lk["id"], lk["name"]
         url = self.lake_url(lk)
         st = self.states.get(lk.get("state"), {"name": lk.get("state"), "slug": None})
-        crumbs = [("Home", "/"), (st["name"], self.state_url(lk.get("state")) or "/"), (name, url)]
+        crumbs = [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, url)]
         e, src, stats = v["e"], v["src"], self.stats.get(lid) or {}
         unknown = v["fresh"] == "unknown" or v["elev"] is None
         has_storage = v["pct"] is not None or bool(lk.get("capacity_af"))
-        title = f"{name} Water Level Today & % Full | {BRAND}" if has_storage else f"{name} Water Level Today | {BRAND}"
+        tname = (self.search_names.get(lid) or {}).get("title_name") or name     # the name people search (title/meta only)
+        title = f"{tname} Water Level Today & % Full | {BRAND}" if has_storage else f"{tname} Water Level Today | {BRAND}"
         if len(title) > 65:
-            title = f"{name} Water Level Today | {BRAND}"
+            title = f"{tname} Water Level Today | {BRAND}"
         if len(title) > 65:
-            title = f"{name} Water Level Today"
-        cadence = "daily" if v["daily"] else "hourly"
-        parts = [f"{possessive(name)} current water level in feet"]
-        if v["pool"] is not None:
-            parts.append(f"how far it is above or below full pool ({pool_txt(v['pool'])} ft)")
-        if has_storage:
-            parts.append("percent full")
-        parts.append("the change since yesterday")
-        desc = ", ".join(parts) + f", and 30-day and 1-year charts. Source: {src.get('agency', v['short'])}, updated {cadence}."
+            title = f"{tname} Water Level Today"
+        desc = self.lake_desc(lk, v, tname, has_storage)
         ago = (lk.get("aliases") or [])
         graph = []
         # --- lead sentence (known / unknown versions; the script swaps them if the page ages past the hard limit)
@@ -732,7 +742,7 @@ class Site:
             self.records_block(lk, v, stats))
         # what this level means
         if not unknown:
-            sec("what-it-means", "info", f"What {int(v['elev']):,} feet means at {E(name)}", "", self.meaning_block(lk, v),
+            sec("what-it-means", "info", f"What {num(v['elev'])} feet means at {E(name)}", "", self.meaning_block(lk, v),
                 toc_label="What this level means")
             sec("storage", "drop", "Storage", f'Figures for {E(v.get("when_wd", ""))} ({E(v["short"])}).' if v.get("when_wd") else "",
                 self.storage_block(lk, v))
@@ -773,12 +783,36 @@ class Site:
             place["alternateName"] = ago
         if lk.get("lat") is not None and lk.get("lon") is not None:
             place["geo"] = {"@type": "GeoCoordinates", "latitude": lk["lat"], "longitude": lk["lon"]}
-        place["containedInPlace"] = [{"@type": "State", "name": self.states.get(s, {}).get("name", s)}
+        place["containedInPlace"] = [dict({"@type": "State", "name": self.states.get(s, {}).get("name", s)},
+                                          **({"url": SITE_URL + self.state_url(s)} if self.state_url(s) else {}))
                                      for s in (lk.get("states") or [lk.get("state")])]
+        place["@id"] = SITE_URL + url + "#lake"
+        place["url"] = SITE_URL + url
         graph.append(place)
         lm = e.get("content_modified")
         self.write(url, title, desc, self.with_sprite(body), crumbs=crumbs, lastmod=lm, group="lakes", graph=graph, kind="lake",
-                   body_class='class="pg-lake"', css="lake")
+                   body_class='class="pg-lake"', css="lake", about_id=SITE_URL + url + "#lake")
+
+    def lake_desc(self, lk, v, tname, has_storage):
+        """Meta description without live numbers (snippets are cached): what the page shows, the agency, how often.
+        The longest form that fits in 160 characters wins."""
+        cadence = "updated daily" if v["daily"] else "updated hourly"
+        short = v["src"].get("short") or v["short"]
+        pool = f" ({pool_txt(v['pool'])} ft)" if v["pool"] is not None else ""
+        what = []
+        if has_storage:
+            what.append("% full")
+        if v["pool"] is not None:
+            what.append(f"distance from full pool{pool}")
+        lead = f"{tname} water level today in feet" + (", " + " and ".join(what) if what else "")
+        for tail in (", with daily change and 30-day and 1-year charts. Data: {s}, {c}.",
+                     ", with daily change and charts. Data: {s}, {c}.",
+                     ". Daily change and charts. Data: {s}, {c}.",
+                     ". Data: {s}, {c}."):
+            d = lead + tail.format(s=short, c=cadence)
+            if len(d) <= 160:
+                return d
+        return d
 
     JUMP = {"changes": "Changes", "last-14-days": "14 days", "records": "Records", "what-it-means": "What it means",
             "system": "System", "nearby": "Nearby", "about": "Source", "questions": "Questions"}
@@ -823,7 +857,8 @@ class Site:
         known = (f'<div class="pn__known"{" hidden" if unknown else ""}><div class="pn__main">'
                  f'<div class="pn__top"><p class="pn__k">{self.ico("gauge")}{kick}</p>{badges}</div>'
                  f'<p class="pn__elev">{elev_html}<span class="pn__u">ft</span></p>{pool_line}{trend}</div>{viz}</div>')
-        unk = f'<p class="pn__unk"{"" if unknown else " hidden"}>Current level unknown</p>'
+        unk = ('<p class="pn__unk">Current level unknown</p>' if unknown
+               else '<template class="tpl-unk"><p class="pn__unk">Current level unknown</p></template>')
         cls = "pn pn--" + v["fresh"]
         return (f'<section class="{cls}" aria-label="Current level" data-reading-ts="{v.get("ts", "")}" '
                 f'data-soft-h="{_h(e.get("soft_stale_hours", 48))}" data-hard-h="{_h(e.get("hard_stale_hours", 96))}">'
@@ -925,6 +960,15 @@ class Site:
         if not recs:
             return ""
         recs.sort(key=lambda r: r[0], reverse=True)
+        # the headline's date shows the headline value (a provisional daily value may since have been revised in the series)
+        rd = v.get("rdate") if v.get("daily") and v.get("elev") is not None and v["fresh"] != "unknown" else None
+        for i, (d, e, c, p) in enumerate(recs):
+            if rd and d == rd and round(e, 2) != round(v["elev"], 2):
+                prev = recs[i + 1] if i + 1 < len(recs) and (d - recs[i + 1][0]).days == 1 else None
+                recs[i] = (d, v["elev"], round(v["elev"] - prev[1], 2) if prev else None, v["pct"] if v["pct"] is not None else p)
+                if i > 0 and (recs[i - 1][0] - d).days == 1:
+                    n = recs[i - 1]
+                    recs[i - 1] = (n[0], n[1], round(n[1] - v["elev"], 2), n[3])
         has_pct = any(r[3] is not None for r in recs)
         big = max([abs(c) for _, _, c, _ in recs if c is not None] + [0.01])
 
@@ -1165,14 +1209,25 @@ class Site:
         else:
             s2 = f' That reading is from <time datetime="{v["time_attr"]}">{E(v["when_long"])}</time> ({E(v["src"].get("agency", v["short"]))}).'
         s3 = ""
+        st = self.stats.get(lk["id"]) or {}
+        md = st.get("median_this_date")
+        rd = v.get("rdate")
+        if (md and md.get("elev_ft") is not None and v["badges"] and rd
+                and as_date(st.get("period_end")) == rd and (md.get("years") or 0) >= 5):
+            dm = v["elev"] - md["elev_ft"]
+            yrs = f'{md["years"]} years' + (f' ({md["first_year"]}–{md["last_year"]})' if md.get("first_year") else "")
+            s3 += (f" The level is {num(abs(dm))} feet {'above' if dm > 0 else 'below'} the median for {E(d_short(rd))} over {yrs}."
+                   if round(dm, 2) else f" The level equals the median for {E(d_short(rd))} over {yrs}.")
         if v["c24"] is not None and v["badges"]:
             c = v["c24"]
             if round(c, 2) == 0:
-                s3 = " The level did not change from the day before." if v["daily"] else " The level did not change in the last 24 hours."
+                s3 += " The level did not change from the day before." if v["daily"] else " The level did not change in the last 24 hours."
             else:
-                s3 = (f" The lake {'rose' if c > 0 else 'fell'} {num(abs(c))} feet "
+                s3 += (f" The lake {'rose' if c > 0 else 'fell'} {num(abs(c))} feet "
                       + ("from the day before." if v["daily"] else "in the last 24 hours."))
-        return f'<p class="lead lead--known">{s}{s2}{s3}</p>'
+        names = [a for a in (lk.get("aliases") or []) if not a.rstrip().endswith("Dam")]
+        s4 = f" {E(name)} is also called {E(' or '.join(names) if len(names) < 3 else ', '.join(names[:-1]) + ' or ' + names[-1])}." if names else ""
+        return f'<p class="lead lead--known">{s}{s2}{s3}{s4}</p>'
 
 
     def lead_unknown(self, v):
@@ -1183,9 +1238,11 @@ class Site:
                     f'({E(v["short"])}).')
         reason = v["e"].get("reason") or ""
         why = f" {E(reason)}." if reason and not reason.endswith(".") else (f" {E(reason)}" if reason else "")
-        hidden = "" if (v["fresh"] == "unknown" or v["elev"] is None) else " hidden"
-        return (f'<p class="lead lead--unknown"{hidden}>The current level of {E(lk["name"])} is unknown: '
-                f'we have no recent reading from {E(v["short"])}.{why}{last}</p>')
+        p = (f'<p class="lead lead--unknown">The current level of {E(lk["name"])} is unknown: '
+             f'we have no recent reading from {E(v["short"])}.{why}{last}</p>')
+        # while the reading is current the text sits in a <template>, so search snippets never pick it up; site.js
+        # clones it in if the page ages past the hard limit
+        return p if (v["fresh"] == "unknown" or v["elev"] is None) else f'<template class="tpl-unk">{p}</template>'
 
 
     @staticmethod
@@ -1254,6 +1311,10 @@ class Site:
             if v["c30"] is not None:
                 a += f" It is {num(abs(v['c30']))} ft {'higher' if v['c30'] > 0 else 'lower'} than 30 days ago." if round(v["c30"], 2) else " It is at the same level as 30 days ago."
             qa.append((f"Is {name} rising or falling?", a))
+        if not unknown and v["badges"] and v["band"] and v["band"] != "level_only" and v["pool"] is not None and v["vs"] is not None:
+            a = (f"{E(BAND_LABEL[v['band']])}. On {E(v['when_long'])} it was {E(self.vs_words(v))} ({pool_txt(v['pool'])} ft)"
+                 + (f" and {pct_txt(v['pct'])} full" if v["pct"] is not None else "") + f", according to the {E(v['src'].get('agency', v['short']))}.")
+            qa.append((f"Is {name} full right now?", a))
         if v["pool"] is not None:
             a = f"{pool_txt(v['pool'])} ft" + (f" ({E(lk['full_pool_label'])}" + (f", {E(lk['datum'])}" if lk.get("datum") else "") + ")" if lk.get("full_pool_label") else "") + "."
             if lk.get("flood_control"):
@@ -1269,7 +1330,7 @@ class Site:
             rh, rl = stats["record_high"], stats["record_low"]
             rf = as_date(stats.get("records_from"))
             frm = rf or as_date(stats["period_start"])
-            qa.append(("What are the highest and lowest levels on record?",
+            qa.append((f"What are the highest and lowest levels on record at {name}?",
                        f"In our record ({E(v['short'])} data, {d_med(frm)} to {d_med(as_date(stats['period_end']))}) "
                        f"the highest level was {num(rh['elev_ft'])} ft on {d_med(as_date(rh['date']))} and the lowest was "
                        f"{num(rl['elev_ft'])} ft on {d_med(as_date(rl['date']))}."
@@ -1286,8 +1347,18 @@ class Site:
         qa.append(("Where does the data come from?",
                    f"{E(src.get('credit') or src.get('agency', v['short']))}" + (f" (series {E(str(sid))})" if sid else "") + "."
                    + (" The values are provisional and may be revised." if v["provisional"] else "")))
-        if lk.get("aliases"):
-            qa.append((f"What else is {name} called?", f"{E(name)} is also known as {E(', '.join(lk['aliases']))}."))
+        names = [a for a in (lk.get("aliases") or []) if not a.rstrip().endswith("Dam")]
+        dams = [a for a in (lk.get("aliases") or []) if a.rstrip().endswith("Dam")]
+        if names:
+            qa.append((f"What else is {name} called?", f"{E(name)} is also known as {E(', '.join(names))}."))
+        for dam in dams:
+            a = f"{E(dam)} forms {E(name)}, so the water level behind the dam is the lake level"
+            if not unknown:
+                a += (f": {num(v['elev'])} ft {'(daily average) ' if v['kind'] == 'daily_average' else ''}for {E(v['when_long'])}, "
+                      f"according to the {E(v['src'].get('agency', v['short']))}.")
+            else:
+                a += ". We have no current reading."
+            qa.append((f"What is the water level at {dam}?", a))
         return qa
 
 
@@ -1297,7 +1368,7 @@ class Site:
         name, lid = lk["name"], lk["id"]
         url = self.lake_url(lk) + "history/"
         st = self.states.get(lk.get("state"), {"name": lk.get("state")})
-        crumbs = [("Home", "/"), (st["name"], self.state_url(lk.get("state")) or "/"), (name, self.lake_url(lk)), ("History", url)]
+        crumbs = [("Home", "/"), self.state_crumb(lk.get("state"), st), (name, self.lake_url(lk)), ("History", url)]
         ser = [r for r in self.series[lid] if r["elev"] is not None]
         first, last = ser[0]["date"], ser[-1]["date"]
         stats = self.stats.get(lid) or {}
@@ -1374,9 +1445,15 @@ class Site:
         blocks.append(f'<p class="more lst-today">{today}</p>')
         graph = [{"@type": "Dataset", "name": f"{name} daily water level", "description": desc,
                   "url": SITE_URL + url, "temporalCoverage": f"{first.isoformat()}/{last.isoformat()}",
-                  "creator": {"@type": "Organization", "name": v["src"].get("agency", v["short"])},
+                  "creator": dict({"@type": "Organization", "name": v["src"].get("agency", v["short"])},
+                                  **({"url": v["src"]["public_url"]} if v["src"].get("public_url") else {})),
+                  "publisher": {"@id": SITE_URL + "/#org"}, "isAccessibleForFree": True,
+                  "variableMeasured": ["Water surface elevation (ft)"] + (["Percent full"] if any(r.get("pct") is not None for r in ser) else []),
                   "isBasedOn": v["src_url"],
-                  "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": SITE_URL + csv_url}]}]
+                  "distribution": [{"@type": "DataDownload", "name": f"{name} daily levels (CSV)", "encodingFormat": "text/csv",
+                                    "contentUrl": SITE_URL + csv_url}]}]
+        if v["e"].get("content_modified"):
+            graph[0]["dateModified"] = v["e"]["content_modified"]
         if lk.get("lat") is not None:
             graph[0]["spatialCoverage"] = {"@type": "Place", "geo": {"@type": "GeoCoordinates", "latitude": lk["lat"], "longitude": lk["lon"]}}
         alias = f'<p class="aka">{E(alias_text(lk["aliases"]))}</p>' if lk.get("aliases") else ""
@@ -1533,7 +1610,7 @@ class Site:
         url = self.lake_url(lk)
         code = lk.get("state")
         st = self.states.get(code, {"name": code})
-        crumbs = [("Home", "/"), (st["name"], self.state_url(code) or "/"), (name, url)]
+        crumbs = [("Home", "/"), self.state_crumb(code, st), (name, url)]
         op = self.operators.get(lk.get("operator"))
         off = lk.get("official_url") or (op or {}).get("official_url")
         who = (op or {}).get("name") or "The lake’s operator"
@@ -1610,7 +1687,7 @@ class Site:
                 f'<span class="lst-hub__s">{cnt}</span></span></a>')
 
     def lst_neighbour_cards(self, lk, n=6):
-        """Fallback when the state has no lake with a current reading: the most searched ones in neighbouring states."""
+        """Fallback when the state has no lake with a current reading: the most searched ones in neighboring states."""
         near = set()
         for c in lk.get("states") or [lk.get("state")]:
             near |= set((self.states.get(c) or {}).get("neighbours") or [])
@@ -1631,7 +1708,7 @@ class Site:
         published = len(live) >= 3
         word = "reservoir" if code in STATE_RESERVOIR_WORD else "lake"
         url = f"/{st['slug']}/"
-        crumbs = [("Home", "/"), (st["name"], url)]
+        crumbs = [("Home", "/"), (f"{st['name']} lake levels", url)]
         Word = word.capitalize()
         title = f"{st['name']} {Word} Levels Today: All {len(live)} Lakes & Reservoirs"
         if len(title) > 65:
@@ -1639,13 +1716,17 @@ class Site:
         if len(live) < 2:      # unpublished (noindex) hubs: no "All 0 Lakes" or "All 1 Lakes" in the tab
             title = f"{st['name']} {Word} Levels Today | {BRAND}"
         srcs = sorted({self.src_of(lk).get("agency", "") for lk in live})
-        desc = (f"Current levels for {len(live)} {st['name']} lakes and reservoirs: feet above or below full pool, percent full "
-                f"and daily change, from {', '.join(s for s in srcs if s) or 'official sources'}.")
+        shorts = sorted({SHORT_SOURCE.get(self.src_of(lk).get("id"), "") for lk in live} - {""})
+        desc = (f"{st['name']} lake levels today: {len(live)} lakes and reservoirs with feet from full pool, percent full and "
+                f"daily change. Data: {', '.join(shorts) or 'agency gauges'}.")
+        if len(desc) > 160:
+            desc = (f"{st['name']} lake levels today: {len(live)} lakes and reservoirs with feet from full pool, percent full "
+                    f"and daily change, each with its reading date.")
         if len(live) == 1:
             desc = (f"Current level for the {st['name']} lake we track with a data feed: feet above or below full pool, percent full "
-                    f"and daily change, from {', '.join(s for s in srcs if s) or 'official sources'}.")
+                    f"and daily change, from {', '.join(s for s in srcs if s) or 'agency gauges'}.")
         elif not live:
-            desc = f"{st['name']} lakes we list, who runs them, and lake levels in neighbouring states."
+            desc = f"{st['name']} lakes we list, who runs them, and lake levels in neighboring states."
         nm = E(st["name"])
         views = [self.view(lk) for lk in live]
         cur = [v for v in views if v["fresh"] != "unknown" and v["elev"] is not None]
@@ -1711,7 +1792,7 @@ class Site:
                 k = sum(1 for lk in self.hub_lakes.get(n, []) if lk["id"] in self.live_ids)
                 nbs.append(self.a(self.state_url(n), f'{E(self.states[n]["name"])}' + (f" <small>{k}</small>" if k else ""), raw=True))
         if nbs:
-            parts.append(self.sec("nearby", "map", "Neighbouring states", "Lake levels across the state line; the number is lakes with a data feed.",
+            parts.append(self.sec("nearby", "map", "Neighboring states", "Lake levels across the state line; the number is lakes with a data feed.",
                                   f'<p class="chips-l hb-ch">{"".join(nbs)}</p>'))
         graph = []
         qa = [(f"How many {st['name']} lakes are on this page?",
@@ -1724,7 +1805,7 @@ class Site:
                        f"({num(v0['elev'])} ft, reading for {E(v0.get('when_long', ''))})."))
         if live:
             qa.append(("Where do these levels come from?",
-                       f"From {E(', '.join(s for s in srcs if s) or 'official sources')}. Each row shows its own reading date; "
+                       f"From {E(', '.join(s for s in srcs if s) or 'agency gauges')}. Each row shows its own reading date; "
                        f"see {self.a('/sources/', 'data sources and methods')}."))
         parts.append(self.sec("faq", "help", "Questions", "", f'<div class="hb-fq">{self.faq_html(qa, graph)}</div>'))
         body = "{{sprite}}" + self.crumbs_html(crumbs) + "".join(parts)
@@ -1732,6 +1813,7 @@ class Site:
                    sitemap=published, graph=graph, kind="hub", body_class='class="pg-hub"', css="hub")
 
     def operator_page(self, slug):
+        # the FAQ here is visible only (no FAQPage JSON-LD): one trivial question earns no rich result
         op = self.operators[slug]
         lakes = sorted([lk for lk in self.live + self.profiles if lk.get("operator") == slug], key=lambda lk: self.hub_sort(lk["name"]))
         live = [lk for lk in lakes if lk["id"] in self.live_ids]
@@ -1783,12 +1865,16 @@ class Site:
         graph = []
         qa = [(f"Is {E(BRAND)} part of the {E(op['name'])}?",
                f"No. {E(BRAND)} is independent and is not a government website. For decisions, use the operator’s own notices.")]
-        parts.append(self.sec("faq", "help", "Questions", "", f'<div class="hb-fq">{self.faq_html(qa, graph)}</div>'))
+        parts.append(self.sec("faq", "help", "Questions", "", f'<div class="hb-fq">{self.faq_html(qa, [])}</div>'))
         body = "{{sprite}}" + self.crumbs_html(crumbs) + "".join(parts)
+        thin = not live or (len(live) < 3 and slug not in self.SEARCHED_OPERATORS)   # same rule as state hubs
         self.write(url, f"{nm} Lake Levels Today | {BRAND}" if len(nm) < 30 else f"{nm} Lake Levels Today",
                    f"Current levels for the {op['name']} lakes we track, with feet above or below full pool and the reading date.",
                    self.hub_with_sprite(body), crumbs=crumbs, lastmod=self.lastmod_of(live), group="hubs", graph=graph, kind="hub",
-                   noindex=not live, sitemap=bool(live), body_class='class="pg-hub"', css="hub")
+                   noindex=thin, sitemap=not thin, body_class='class="pg-hub"', css="hub")
+
+    # operators people search by name keep an indexable page even with one or two lakes
+    SEARCHED_OPERATORS = {"lcra", "grda", "tva", "duke-energy"}
 
     def system_page(self, slug):
         s = self.sys_built[slug]
@@ -1846,8 +1932,13 @@ class Site:
         if foot:
             parts.append(f'<p class="hb-src small">{" · ".join(foot)}</p>')
         body = "{{sprite}}" + self.crumbs_html(crumbs) + "".join(parts)
-        title = f"{s['name']}: Combined Storage & Lake Levels Today"
-        self.write(url, title if len(title) <= 65 else f"{s.get('title_name') or s['name']}: Combined Storage Today",
+        if nums:
+            title = f"{s['name']}: Combined Storage & Lake Levels Today"
+            title = title if len(title) <= 65 else f"{s.get('title_name') or s['name']}: Combined Storage Today"
+        else:   # promise combined storage only when the page shows it
+            title = f"{s.get('title_name') or s['name']} Water Levels Today | {BRAND}"
+            title = title if len(title) <= 65 else f"{s.get('title_name') or s['name']} Water Levels Today"
+        self.write(url, title,
                    f"Combined storage and percent full for the {s['name']}, with each reservoir's level and reading date.",
                    self.hub_with_sprite(body), crumbs=crumbs, lastmod=self.lastmod_of(members), group="hubs", kind="hub",
                    body_class='class="pg-hub"', css="hub")
@@ -1895,6 +1986,13 @@ class Site:
                       if f'href="#i-{k}"' in out and f'id="i-{k}"' not in out)
         i = out.find("</svg>", out.find('<svg class="sprite"'))
         return out[:i] + add + out[i:] if add and i > 0 else out
+
+    def card_date(self, v):
+        """The short reading date on a lake card, as <time> with the full ISO date when the reading has one."""
+        d = v.get("rdate")
+        txt = E(v.get("when_short", ""))
+        return (f'<time class="lkc__d" datetime="{d.isoformat()}">{txt}</time>' if d and txt
+                else f'<span class="lkc__d">{txt}</span>')
 
     def hub_span(self, dates, prefix="dated "):
         ds = sorted({d for d in dates if d})
@@ -1974,7 +2072,7 @@ class Site:
             f'<span class="lkc__v">{("<b>" + num(v["elev"]) + "</b> ft") if ok else "Level unknown"}</span>'
             f'<span class="lkc__s">{E(" · ".join(sub)) if sub else ("" if ok else "The source has not updated")}</span>'
             f'{sp}<span class="lkc__f">{self.badge(v["band"], True, True) if ok and v["badges"] else ""}'
-            f'{self.home_trend(v) if ok else ""}<span class="lkc__d">{E(v.get("when_short", ""))}</span></span></a></li>')
+            f'{self.home_trend(v) if ok else ""}{self.card_date(v)}</span></a></li>')
 
     def hub_lake_blocks(self, live, place, lid, show_state=False, word="lakes"):
         """Most searched lakes as cards, then every lake as a compact A–Z list. Six lakes or fewer: cards only.
@@ -2125,7 +2223,7 @@ class Site:
         graph = [{"@type": "ItemList", "name": title, "numberOfItems": len(vs),
                   "itemListElement": [{"@type": "ListItem", "position": i, "url": SITE_URL + self.lake_url(v["lk"]), "name": v["lk"]["name"]}
                                       for i, v in enumerate(vs, 1)]}] if vs else []
-        self.write(path, title, f"Lakes and reservoirs {rule}, from official gauge data. Each lake shows its reading date.",
+        self.write(path, title, f"Lakes and reservoirs {rule}, from public agency gauge data. Each lake shows its reading date.",
                    self.with_sprite(body), crumbs=crumbs, lastmod=self.lastmod_of([v["lk"] for v in vs]), group="hubs", kind="list",
                    graph=graph, body_class='class="pg-lst pg-rank"', css="list")
 
@@ -2308,7 +2406,7 @@ class Site:
             f'<span class="lkc__v">{("<b>" + num(v["elev"]) + "</b> ft") if ok else "Level unknown"}</span>'
             f'<span class="lkc__s">{E(" · ".join(sub)) if sub else ("" if ok else "The source has not updated")}</span>'
             f'{meter}<span class="lkc__f">{self.badge(v["band"], True, use) if ok and v["badges"] else ""}'
-            f'{self.home_trend(v) if ok else ""}<span class="lkc__d">{E(v.get("when_short", ""))}</span></span></a></li>')
+            f'{self.home_trend(v) if ok else ""}{self.card_date(v)}</span></a></li>')
 
     HL_BAND = {"above_full": "af", "full": "f", "near_full": "nf", "below_full": "bf", "low": "lo", "very_low": "vl", "level_only": "lv"}
 
@@ -2410,7 +2508,7 @@ class Site:
         hero = (
             f'<section class="hero{"" if feature else " hero--solo"}"><div class="hero__in"><div class="hero__c">'
             '<h1>Lake and reservoir water levels, <span class="hero__u">today</span></h1>'
-            '<p class="hero__t">Feet from full pool, percent full and daily change, read from official gauges. Every number shows its date.</p>'
+            '<p class="hero__t">Feet from full pool, percent full and daily change, read from public agency gauges. Every number shows its date.</p>'
             '<form class="find" id="find" action="/" role="search" data-index="/data/search.json">'
             '<label for="q" class="vh">Search for a lake</label>'
             f'<div class="find__row">{self.ico("search")}'
@@ -2426,7 +2524,7 @@ class Site:
         how = (
             '<section class="sec how" id="how">' + self.sec_head("shield", "How it works, and why you can check it",
                                                                  f'Sources in use: {E(", ".join(src_full))}.') + '<ol class="tru">'
-            '<li><h3>Official sources</h3><p>Every level comes from a public agency gauge. The agency is named and linked on each lake page, so you can check the number yourself.</p></li>'
+            '<li><h3>Agency sources</h3><p>Every level comes from a public agency gauge. The agency is named and linked on each lake page, so you can check the number yourself.</p></li>'
             f'<li><h3>Checked every {E(check_txt)}</h3><p>Each source is read on its own schedule. The level shown changes only when the agency publishes a new value.</p></li>'
             '<li><h3>Never an old reading as current</h3><p>Each number shows the day or time it covers. If a source stops updating, the page says “Current level unknown”.</p></li>'
             f'<li><h3>Independent</h3><p>{E(BRAND)} is not a government website and does not run any gauge. Charts, records and answers come from one stored series.</p></li></ol>'
@@ -2440,10 +2538,7 @@ class Site:
             '<p>Anglers and boaters use the level to judge ramps and shallow water, lake-home owners watch docks and shorelines, and water managers and reporters follow drought and flood storage. '
             f'Start with a lake search, pick a {self.a("/#states", "state")}, or compare lakes on the {self.a("/lowest-lakes/", "lowest")} and {self.a("/fullest-lakes/", "fullest")} lists. '
             f'Readings are provisional and can be revised by the agency; do not use them for navigation or flood decisions.</p></div>{guide_html}</section>')
-        graph = [{"@type": "Organization", "@id": SITE_URL + "/#org", "name": BRAND, "url": SITE_URL + "/",
-                  "logo": SITE_URL + "/favicon.svg", "email": SITE.get("contact_email")},
-                 {"@type": "WebSite", "@id": SITE_URL + "/#website", "name": BRAND, "alternateName": ["LakeLevelFinder", SITE["domain"]],
-                  "url": SITE_URL + "/", "publisher": {"@id": SITE_URL + "/#org"}}]
+        graph = []   # Organization and WebSite come from write() on every page
         qa = [
             ("How often are the lake levels updated?",
              f"Each source is checked every {E(check_txt)}, depending on the agency. Some agencies publish a new value several times a day and others publish one "
@@ -2466,7 +2561,7 @@ class Site:
                + "<div>" + self.faq_html(qa, graph) + "</div></section>")
         body = (
             "{{sprite}}" + hero
-            + '<section class="sec" id="top">' + self.sec_head("gauge", "Most searched lakes", f"Levels as of {E(today)}. Each lake shows its own reading date.")
+            + '<section class="sec" id="top">' + self.sec_head("gauge", "Most searched lakes", f"List made {E(today)}. Each lake shows its own reading date.")
             + f'<ul class="lkcs">{cards}</ul>'
             + (f'<h3 class="sh3">More popular lakes</h3>{tables}' if tables else "") + "</section>"
             '<section class="sec" id="lists">' + self.sec_head("bars", "The national picture", "Every lake with a current reading, sorted into bands and ranked lists.")
@@ -2481,8 +2576,8 @@ class Site:
         used = set(re.findall(r'href="#i-([a-z]+)"', body))
         body = body.replace("{{sprite}}", self.home_sprite(used))
         self.write("/", f"{BRAND}: US Lake & Reservoir Water Levels Today",
-                   f"Current water levels for {n_live:,} US lakes and reservoirs: feet above or below full pool, percent full and "
-                   f"daily change, from official gauges, each with its reading date.",
+                   f"Lake levels today for {n_live:,} US lakes and reservoirs: feet from full pool, percent full and daily change "
+                   f"from public agency gauges, each with its reading date.",
                    body, lastmod=self.lastmod_of(self.live), group="pages", graph=graph, kind="home", body_class='class="pg-home"',
                    css="home")
 
@@ -2513,7 +2608,7 @@ class Site:
         if guide:
             art = {"@type": "Article", "headline": h1, "description": desc, "inLanguage": "en-US",
                    "mainEntityOfPage": SITE_URL + path, "image": SITE_URL + "/og-default.png",
-                   "publisher": {"@type": "Organization", "name": BRAND, "url": SITE_URL + "/"}}
+                   "author": {"@id": SITE_URL + "/#org"}, "publisher": {"@id": SITE_URL + "/#org"}}
             if upd:
                 art["dateModified"] = upd
             graph.append(art)

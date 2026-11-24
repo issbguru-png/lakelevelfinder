@@ -13,6 +13,7 @@
     }
     if (age > hard && !pn.classList.contains("pn--unknown")) {
       pn.classList.add("pn--unknown"); ev("stale_shown");
+      d.querySelectorAll("template.tpl-unk").forEach(function (t) { t.parentNode.replaceChild(t.content.cloneNode(true), t); });
       var q = function (sel) { return pn.querySelector(sel); };
       if (q(".pn__known")) q(".pn__known").hidden = true;
       if (q(".pn__unk")) q(".pn__unk").hidden = false;

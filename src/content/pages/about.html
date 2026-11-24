@@ -19,7 +19,7 @@ updated: 2026-11-23
 
 <h2>How it works</h2>
 <ol>
-<li>An automated job reads the public data feeds of the agencies that measure each lake: the Texas Water Development Board, the U.S. Army Corps of Engineers, the Bureau of Reclamation, the California Department of Water Resources and the U.S. Geological Survey. It checks every hour; daily sources are read as often as they publish.</li>
+<li>An automated job reads the public data feeds of the agencies that measure each lake: the Texas Water Development Board, the U.S. Army Corps of Engineers, the Bureau of Reclamation, the California Department of Water Resources and the U.S. Geological Survey. The job runs every hour and reads each source on its own schedule: every hour for Army Corps and USGS gauges, every 3 hours for TWDB and CDEC, every 6 hours for Reclamation (see Data sources).</li>
 <li>Every new reading is checked before it is used. It must be in feet, inside the lake's plausible range, not dated in the future, and not a sudden jump the next check does not confirm. A reading that fails a check is held back and the last good reading stays on the page with its own date.</li>
 <li>The site compares the reading with the lake's full-pool level from the same agency (or from the operator's published value, with its link), then labels the level and the 24-hour trend using fixed rules.</li>
 <li>Pages are rebuilt from those files. If a source stops updating, the page first warns that the reading may be out of date, then says "Current level unknown" and keeps the last reading visible with its date. This check also runs in your browser, so it works even if our own updates stop.</li>

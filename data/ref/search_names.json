@@ -1,0 +1,74 @@
+{
+  "_note": "Search names for <title> and meta description only (H1 keeps the lake's formal name). From the demand research: the form people search, a state when the lake name is shared, or a dam name people search for the lake. Kept apart from lakes.json because tools/map_lakes.py rewrites that file.",
+  "lakes": {
+    "lake-mead-nv": {
+      "title_name": "Lake Mead (Hoover Dam)"
+    },
+    "lake-corpus-christi-tx": {
+      "title_name": "Lake Corpus Christi (Lake Mathis)"
+    },
+    "canyon-lake-tx": {
+      "title_name": "Canyon Lake TX"
+    },
+    "grand-lake-ok": {
+      "title_name": "Grand Lake OK"
+    },
+    "lake-eufaula-ok": {
+      "title_name": "Lake Eufaula OK"
+    },
+    "falls-lake-nc": {
+      "title_name": "Falls Lake NC"
+    },
+    "beaver-lake-ar": {
+      "title_name": "Beaver Lake AR"
+    },
+    "lake-murray-sc": {
+      "title_name": "Lake Murray SC"
+    },
+    "douglas-lake-tn": {
+      "title_name": "Douglas Lake TN"
+    },
+    "choke-canyon-reservoir-tx": {
+      "title_name": "Choke Canyon Lake"
+    },
+    "toledo-bend-reservoir-tx": {
+      "title_name": "Toledo Bend Lake"
+    },
+    "sam-rayburn-reservoir-tx": {
+      "title_name": "Sam Rayburn Lake"
+    },
+    "thurmond-lake-ga": {
+      "title_name": "Lake Thurmond (Clarks Hill)"
+    },
+    "cedar-creek-reservoir-tx": {
+      "title_name": "Cedar Creek Lake"
+    },
+    "lake-tenkiller-ok": {
+      "title_name": "Tenkiller Lake"
+    },
+    "lewis-smith-lake-al": {
+      "title_name": "Smith Lake AL"
+    },
+    "hubbard-creek-reservoir-tx": {
+      "title_name": "Hubbard Creek Lake"
+    },
+    "youghiogheny-river-lake-pa": {
+      "title_name": "Yough Lake"
+    },
+    "lake-russell-ga": {
+      "title_name": "Lake Russell"
+    },
+    "jim-chapman-lake-tx": {
+      "title_name": "Cooper Lake (Jim Chapman)"
+    },
+    "caballo-lake-nm": {
+      "title_name": "Caballo Lake"
+    },
+    "camanche-reservoir-ca": {
+      "title_name": "Lake Camanche"
+    },
+    "willard-bay-ut": {
+      "title_name": "Willard Bay"
+    }
+  }
+}
