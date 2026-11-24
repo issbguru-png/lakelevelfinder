@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-24T11:30:29Z",
+   "last_success": "2026-11-24T12:30:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-24T11:30:29Z",
+   "last_attempt": "2026-11-24T12:30:30Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-24T11:30:29Z",
+   "last_success": "2026-11-24T12:30:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-24T11:30:29Z",
+   "last_attempt": "2026-11-24T12:30:30Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 69,
@@ -57,13 +57,13 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-24T11:30:29Z",
+ "generated_at": "2026-11-24T12:30:30Z",
  "lakes_total": 233,
  "lakes_current": 225,
  "lakes_delayed": 8,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "7005688",
+ "build_id": "236ab64",
  "lake_notes": {},
  "held": {},
  "alerts": [],
