@@ -1,4 +1,7 @@
 {
- "generated_at": "2026-11-24T04:20:28Z",
- "alerts": []
+ "generated_at": "2026-11-24T05:20:30Z",
+ "alerts": [
+  "datum-mismatch: addicks-reservoir-tx twdb 76.39 ft (2026-11-23) vs USGS-08073000 69.01 ft (2026-11-24T05:00:00Z): intraday hidden",
+  "datum-mismatch: grapevine-lake-tx twdb 532.22 ft (2026-11-23) vs USGS-08054500 532.96 ft (2026-11-24T04:45:00Z): intraday hidden"
+ ]
 }
