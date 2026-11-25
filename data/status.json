@@ -2,10 +2,10 @@
  "sources": {
   "twdb": {
    "ok": true,
-   "last_success": "2026-11-25T16:30:30Z",
+   "last_success": "2026-11-25T19:22:49Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-25T16:30:30Z",
+   "last_attempt": "2026-11-25T19:22:49Z",
    "series_errors": 0,
    "lakes": 123,
    "current": 123,
@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-25T18:30:29Z",
+   "last_success": "2026-11-25T19:22:49Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-25T18:30:29Z",
+   "last_attempt": "2026-11-25T19:22:49Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-25T18:30:29Z",
+   "last_success": "2026-11-25T19:22:49Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-25T18:30:29Z",
+   "last_attempt": "2026-11-25T19:22:49Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -46,10 +46,10 @@
   },
   "cdec": {
    "ok": true,
-   "last_success": "2026-11-25T16:30:30Z",
+   "last_success": "2026-11-25T19:22:49Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-25T16:30:30Z",
+   "last_attempt": "2026-11-25T19:22:49Z",
    "series_errors": 0,
    "lakes": 20,
    "current": 20,
@@ -57,17 +57,15 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-25T18:30:29Z",
+ "generated_at": "2026-11-25T19:22:49Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "91d9c1f",
+ "build_id": "9c4595b",
  "lake_notes": {},
  "held": {},
- "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-25) vs USGS-08073000 69.18 ft (2026-11-25T18:00:00Z): intraday hidden"
- ],
+ "alerts": [],
  "last_daily": "2026-11-25"
 }
