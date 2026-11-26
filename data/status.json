@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-26T19:20:29Z",
+   "last_success": "2026-11-26T20:20:32Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-26T19:20:29Z",
+   "last_attempt": "2026-11-26T20:20:32Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-26T19:20:29Z",
+   "last_success": "2026-11-26T20:20:32Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-26T19:20:29Z",
+   "last_attempt": "2026-11-26T20:20:32Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -57,22 +57,17 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-26T19:20:29Z",
+ "generated_at": "2026-11-26T20:20:32Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "4639d7d",
- "lake_notes": {
-  "don-pedro-reservoir-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-25",
-  "lake-mcclure-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-25"
- },
+ "build_id": "eed356e",
+ "lake_notes": {},
  "held": {},
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-26) vs USGS-08073000 69.26 ft (2026-11-26T19:00:00Z): intraday hidden",
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-25",
-  "range-reject: lake-mcclure-ca primary cdec EXC: timestamp 2026-11-24 older than the accepted 2026-11-25"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-26) vs USGS-08073000 69.22 ft (2026-11-26T20:00:00Z): intraday hidden"
  ],
  "last_daily": "2026-11-26"
 }
