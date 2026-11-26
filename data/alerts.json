@@ -1,7 +1,4 @@
 {
- "generated_at": "2026-11-26T22:20:34Z",
- "alerts": [
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-25",
-  "range-reject: lake-mcclure-ca primary cdec EXC: timestamp 2026-11-24 older than the accepted 2026-11-25"
- ]
+ "generated_at": "2026-11-26T23:20:29Z",
+ "alerts": []
 }
