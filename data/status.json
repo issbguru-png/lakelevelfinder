@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-26T20:20:32Z",
+   "last_success": "2026-11-26T21:20:37Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-26T20:20:32Z",
+   "last_attempt": "2026-11-26T21:20:37Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-26T20:20:32Z",
+   "last_success": "2026-11-26T21:20:37Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-26T20:20:32Z",
+   "last_attempt": "2026-11-26T21:20:37Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -57,17 +57,17 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-26T20:20:32Z",
+ "generated_at": "2026-11-26T21:20:37Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "eed356e",
+ "build_id": "ddb2ef3",
  "lake_notes": {},
  "held": {},
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-26) vs USGS-08073000 69.22 ft (2026-11-26T20:00:00Z): intraday hidden"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-26) vs USGS-08073000 69.17 ft (2026-11-26T21:00:00Z): intraday hidden"
  ],
  "last_daily": "2026-11-26"
 }
