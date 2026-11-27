@@ -1,7 +1,7 @@
 {
  "period_start": "2017-01-01",
- "period_end": "2026-11-24",
- "n_days": 3608,
+ "period_end": "2026-11-25",
+ "n_days": 3609,
  "has_history": true,
  "backfilled_days": 3598,
  "records_from": null,
@@ -22,11 +22,11 @@
   "date": "2026-10-21"
  },
  "same_day_last_year": {
-  "elev_ft": 604.81,
-  "date": "2025-11-24"
+  "elev_ft": 605.06,
+  "date": "2025-11-25"
  },
  "median_this_date": {
-  "elev_ft": 593.08,
+  "elev_ft": 593.2,
   "years": 10,
   "first_year": 2017,
   "last_year": 2026
@@ -119,7 +119,7 @@
    "high_date": "2026-06-11",
    "low": 591.66,
    "low_date": "2026-10-21",
-   "n": 328,
+   "n": 329,
    "partial": false
   }
  ],
@@ -481,18 +481,11 @@
   {
    "year": 2026,
    "month": 11,
-   "avg": 594.81,
-   "n": 24
+   "avg": 594.96,
+   "n": 25
   }
  ],
  "last_14": [
-  {
-   "date": "2026-11-11",
-   "elev_ft": 594.09,
-   "pct_full": 10.9,
-   "storage_af": 8964,
-   "change_ft": 0.14
-  },
   {
    "date": "2026-11-12",
    "elev_ft": 594.23,
@@ -583,13 +576,16 @@
    "pct_full": null,
    "storage_af": 11175,
    "change_ft": 0.25
+  },
+  {
+   "date": "2026-11-25",
+   "elev_ft": 598.54,
+   "pct_full": null,
+   "storage_af": 11317,
+   "change_ft": 0.24
   }
  ],
  "spark_30": [
-  {
-   "date": "2026-10-26",
-   "elev_ft": 591.98
-  },
   {
    "date": "2026-10-27",
    "elev_ft": 591.99
@@ -705,6 +701,10 @@
   {
    "date": "2026-11-24",
    "elev_ft": 598.3
+  },
+  {
+   "date": "2026-11-25",
+   "elev_ft": 598.54
   }
  ],
  "gaps": [],

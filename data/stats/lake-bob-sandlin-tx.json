@@ -18,7 +18,7 @@
   "date": "2026-06-25"
  },
  "year_low": {
-  "elev_ft": 334.3,
+  "elev_ft": 334.29,
   "date": "2026-11-26"
  },
  "same_day_last_year": {
@@ -387,7 +387,7 @@
    "year": 2026,
    "high": 336.86,
    "high_date": "2026-06-25",
-   "low": 334.3,
+   "low": 334.29,
    "low_date": "2026-11-26",
    "n": 330,
    "partial": false
@@ -849,10 +849,10 @@
   },
   {
    "date": "2026-11-26",
-   "elev_ft": 334.3,
+   "elev_ft": 334.29,
    "pct_full": 85.7,
-   "storage_af": 175702,
-   "change_ft": -0.01
+   "storage_af": 175620,
+   "change_ft": -0.02
   }
  ],
  "spark_30": [
@@ -974,7 +974,7 @@
   },
   {
    "date": "2026-11-26",
-   "elev_ft": 334.3
+   "elev_ft": 334.29
   }
  ],
  "gaps": [],
