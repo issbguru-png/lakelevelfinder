@@ -2,10 +2,10 @@
  "sources": {
   "twdb": {
    "ok": true,
-   "last_success": "2026-11-27T04:20:36Z",
+   "last_success": "2026-11-27T07:10:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T04:20:36Z",
+   "last_attempt": "2026-11-27T07:10:30Z",
    "series_errors": 0,
    "lakes": 123,
    "current": 123,
@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-27T06:10:31Z",
+   "last_success": "2026-11-27T07:10:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T06:10:31Z",
+   "last_attempt": "2026-11-27T07:10:30Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-27T06:10:31Z",
+   "last_success": "2026-11-27T07:10:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T06:10:31Z",
+   "last_attempt": "2026-11-27T07:10:30Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -46,10 +46,10 @@
   },
   "cdec": {
    "ok": true,
-   "last_success": "2026-11-27T04:20:36Z",
+   "last_success": "2026-11-27T07:10:30Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T04:20:36Z",
+   "last_attempt": "2026-11-27T07:10:30Z",
    "series_errors": 0,
    "lakes": 20,
    "current": 20,
@@ -57,17 +57,20 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-27T06:10:31Z",
+ "generated_at": "2026-11-27T07:10:30Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "8a5a8e9",
- "lake_notes": {},
+ "build_id": "2fc5395",
+ "lake_notes": {
+  "don-pedro-reservoir-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-25"
+ },
  "held": {},
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-26) vs USGS-08073000 69.38 ft (2026-11-27T05:45:00Z): intraday hidden"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-27) vs USGS-08073000 69.41 ft (2026-11-27T06:45:00Z): intraday hidden",
+  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-25"
  ],
  "last_daily": "2026-11-26"
 }
