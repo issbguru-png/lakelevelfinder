@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-28T07:10:35Z",
+   "last_success": "2026-11-28T07:57:23Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T07:10:35Z",
+   "last_attempt": "2026-11-28T07:57:23Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-28T07:10:35Z",
+   "last_success": "2026-11-28T07:57:23Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T07:10:35Z",
+   "last_attempt": "2026-11-28T07:57:23Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -57,19 +57,15 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-28T07:10:35Z",
+ "generated_at": "2026-11-28T07:57:23Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "59792c5",
- "lake_notes": {
-  "don-pedro-reservoir-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-26"
- },
+ "build_id": "0c691a1",
+ "lake_notes": {},
  "held": {},
- "alerts": [
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-26"
- ],
+ "alerts": [],
  "last_daily": "2026-11-27"
 }

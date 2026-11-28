@@ -1,6 +1,4 @@
 {
- "generated_at": "2026-11-28T07:10:35Z",
- "alerts": [
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-26"
- ]
+ "generated_at": "2026-11-28T07:57:23Z",
+ "alerts": []
 }
