@@ -2,10 +2,10 @@
  "sources": {
   "twdb": {
    "ok": true,
-   "last_success": "2026-11-28T07:10:35Z",
+   "last_success": "2026-11-28T10:00:29Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T07:10:35Z",
+   "last_attempt": "2026-11-28T10:00:29Z",
    "series_errors": 0,
    "lakes": 123,
    "current": 123,
@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-28T09:00:26Z",
+   "last_success": "2026-11-28T10:00:29Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T09:00:26Z",
+   "last_attempt": "2026-11-28T10:00:29Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-28T09:00:26Z",
+   "last_success": "2026-11-28T10:00:29Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T09:00:26Z",
+   "last_attempt": "2026-11-28T10:00:29Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -34,10 +34,10 @@
   },
   "rise": {
    "ok": true,
-   "last_success": "2026-11-28T04:10:29Z",
+   "last_success": "2026-11-28T10:00:29Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T04:10:29Z",
+   "last_attempt": "2026-11-28T10:00:29Z",
    "series_errors": 0,
    "lakes": 17,
    "current": 17,
@@ -46,10 +46,10 @@
   },
   "cdec": {
    "ok": true,
-   "last_success": "2026-11-28T07:10:35Z",
+   "last_success": "2026-11-28T10:00:29Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T07:10:35Z",
+   "last_attempt": "2026-11-28T10:00:29Z",
    "series_errors": 0,
    "lakes": 20,
    "current": 20,
@@ -57,20 +57,19 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-28T09:00:26Z",
+ "generated_at": "2026-11-28T10:00:29Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "9f4bc5a",
+ "build_id": "2ddb54c",
  "lake_notes": {
-  "falls-lake-nc": "series gaps in the last 30 days: 1",
-  "jordan-lake-nc": "series gaps in the last 30 days: 1",
-  "kerr-lake-va": "series gaps in the last 30 days: 1",
-  "new-bullards-bar-reservoir-ca": "series gaps in the last 30 days: 1"
+  "don-pedro-reservoir-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-26"
  },
  "held": {},
- "alerts": [],
+ "alerts": [
+  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-26"
+ ],
  "last_daily": "2026-11-28"
 }
