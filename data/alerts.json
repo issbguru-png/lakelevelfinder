@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-28T16:56:07Z",
+ "generated_at": "2026-11-28T18:00:29Z",
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-28) vs USGS-08073000 69.33 ft (2026-11-28T16:30:00Z): intraday hidden"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-28) vs USGS-08073000 69.28 ft (2026-11-28T17:30:00Z): intraday hidden"
  ]
 }
