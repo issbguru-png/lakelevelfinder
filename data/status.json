@@ -2,10 +2,10 @@
  "sources": {
   "twdb": {
    "ok": true,
-   "last_success": "2026-11-27T22:10:30Z",
+   "last_success": "2026-11-28T01:10:35Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T22:10:30Z",
+   "last_attempt": "2026-11-28T01:10:35Z",
    "series_errors": 0,
    "lakes": 123,
    "current": 123,
@@ -14,18 +14,18 @@
   },
   "usgs": {
    "ok": true,
-   "last_success": "2026-11-28T00:10:35Z",
+   "last_success": "2026-11-28T01:10:35Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T00:10:35Z",
+   "last_attempt": "2026-11-28T01:10:35Z",
    "series_errors": 0
   },
   "cwms": {
    "ok": true,
-   "last_success": "2026-11-28T00:10:35Z",
+   "last_success": "2026-11-28T01:10:35Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-28T00:10:35Z",
+   "last_attempt": "2026-11-28T01:10:35Z",
    "series_errors": 0,
    "lakes": 73,
    "current": 73,
@@ -46,10 +46,10 @@
   },
   "cdec": {
    "ok": true,
-   "last_success": "2026-11-27T22:10:30Z",
+   "last_success": "2026-11-28T01:10:35Z",
    "last_error": null,
    "consecutive_failures": 0,
-   "last_attempt": "2026-11-27T22:10:30Z",
+   "last_attempt": "2026-11-28T01:10:35Z",
    "series_errors": 0,
    "lakes": 20,
    "current": 20,
@@ -57,17 +57,19 @@
    "unknown": 0
   }
  },
- "generated_at": "2026-11-28T00:10:35Z",
+ "generated_at": "2026-11-28T01:10:35Z",
  "lakes_total": 233,
  "lakes_current": 233,
  "lakes_delayed": 0,
  "lakes_unknown": 0,
  "pages_built": null,
- "build_id": "8355c65",
- "lake_notes": {},
+ "build_id": "bec9001",
+ "lake_notes": {
+  "don-pedro-reservoir-ca": "primary cdec: reject: timestamp 2026-11-24 older than the accepted 2026-11-26"
+ },
  "held": {},
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-27) vs USGS-08073000 69.19 ft (2026-11-27T23:45:00Z): intraday hidden"
+  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-26"
  ],
  "last_daily": "2026-11-27"
 }
