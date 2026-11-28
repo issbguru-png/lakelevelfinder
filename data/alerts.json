@@ -1,7 +1,6 @@
 {
- "generated_at": "2026-11-28T04:10:29Z",
+ "generated_at": "2026-11-28T05:10:29Z",
  "alerts": [
-  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-27) vs USGS-08073000 69.16 ft (2026-11-28T03:45:00Z): intraday hidden",
-  "range-reject: don-pedro-reservoir-ca primary cdec DNP: timestamp 2026-11-24 older than the accepted 2026-11-26"
+  "datum-mismatch: addicks-reservoir-tx twdb 76.38 ft (2026-11-27) vs USGS-08073000 69.19 ft (2026-11-28T04:45:00Z): intraday hidden"
  ]
 }
